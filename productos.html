@@ -173,217 +173,328 @@
             </div>
 
             <!-- Filtros -->
-            <div class="text-center mb-4">
-                <button class="btn btn-outline-primary filter-btn" data-filter="*">Todos</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter=".monitores">Monitores</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter=".mesas">Mesas de Operaciones</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter=".electro">Electrocardiógrafos</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter=".otros">Otros</button>
+
+            <!-- Columna izquierda: filtros -->
+            <div class="container my-5">
+                <div class="row">
+
+                    <!-- Columna izquierda: filtros -->
+                    <div class="col-md-3">
+                        <h4 class="mb-3">Filtrar por categoría</h4>
+                        <div class="list-group">
+                            <button class="list-group-item list-group-item-action filter-btn"
+                                data-filter="*">Todos</button>
+                            <button class="list-group-item list-group-item-action filter-btn"
+                                data-filter=".monitores">Monitores</button>
+                            <button class="list-group-item list-group-item-action filter-btn" data-filter=".mesas">Mesas
+                                de Operaciones</button>
+                            <button class="list-group-item list-group-item-action filter-btn"
+                                data-filter=".electro">Electrocardiógrafos</button>
+                            <button class="list-group-item list-group-item-action filter-btn"
+                                data-filter=".otros">Otros</button>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha: productos -->
+                    <div class="col-md-9">
+                        <div class="row grid">
+                            <!-- Producto 1 -->
+                            <div class="col-md-4 mb-4 grid-item mesas">
+                                <div class="card h-100">
+                                    <img src="images/productos/MesaOperaciones.jpeg" class="card-img-top"
+                                        alt="Mesa de Operaciones">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Mesa de Operaciones</h5>
+                                        <p class="card-text">DR. MAX 7000S SERIES</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20la%20Mesa%20de%20Operaciones%20BENQ%20MEDICAL%20-%20DR.%20MAX%207000S%20SERIES."
+                                            target="_blank" class="btn btn-success">
+                                            <i class="fa fa-whatsapp"></i> Solicitar por WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Producto 2 -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/Incubadora.jpeg" class="card-img-top"
+                                        alt="Incubadora Neonatal">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Incubadora Neonatal</h5>
+                                        <p class="card-text">BISTOS BT-500</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20la%20Incubadora%20Neonatal%20BISTOS%20BT-500."
+                                            target="_blank" class="btn btn-success">
+                                            <i class="fa fa-whatsapp"></i> Solicitar por WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Producto 3 -->
+                            <div class="col-md-4 mb-4 grid-item monitores">
+                                <div class="card h-100">
+                                    <img src="images/productos/MonitorPaciente.jpeg" class="card-img-top"
+                                        alt="Monitor de Paciente">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Monitor de Paciente</h5>
+                                        <p class="card-text">LIFE SCOPE G7 CSM-1701/1702</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Monitor%20de%20Paciente%20NIHON%20KOHDEN%20-%20LIFE%20SCOPE%20G7%20CSM-1701/1702."
+                                            target="_blank" class="btn btn-success">
+                                            <i class="fa fa-whatsapp"></i> Solicitar por WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Producto 4 -->
+                            <div class="col-md-4 mb-4 grid-item monitores">
+                                <div class="card h-100">
+                                    <img src="images/productos/MonitorP2.jpeg" class="card-img-top"
+                                        alt="Monitor de Paciente">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Monitor de Paciente</h5>
+                                        <p class="card-text">UCI / UCC</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Monitor%20de%20Paciente%20UCI/UCC."
+                                            target="_blank" class="btn btn-success">
+                                            <i class="fa fa-whatsapp"></i> Solicitar por WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Producto 5 -->
+                            <div class="col-md-4 mb-4 grid-item electro">
+                                <div class="card h-100">
+                                    <img src="images/productos/Electro.jpeg" class="card-img-top"
+                                        alt="ElectroCardiógrafo">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ElectroCardiógrafo</h5>
+                                        <p class="card-text">NIHON KOHDEN ECG - 2350</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20ElectroCardiógrafo%20NIHON%20KOHDEN%20ECG-2350."
+                                            target="_blank" class="btn btn-success">
+                                            <i class="fa fa-whatsapp"></i> Solicitar por WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Producto 6 -->
+                            <div class="col-md-4 mb-4 grid-item mesas">
+                                <div class="card h-100">
+                                    <img src="images/productos/MesaO2.jpeg" class="card-img-top"
+                                        alt="Mesa de Operaciones">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Mesa de Operaciones</h5>
+                                        <p class="card-text">POSEIDON Q200 SERIES</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20la%20Mesa%20de%20Operaciones%20POSEIDON%20Q200%20SERIES."
+                                            target="_blank" class="btn btn-success">
+                                            <i class="fa fa-whatsapp"></i> Solicitar por WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--De aqui en adelante deberas copiar-->
+
+                            <!-- Detector de latidos Fetales -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/DetectorLatidos.jpeg" class="card-img-top"
+                                        alt="Detector de latidos Fetales">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Detector de latidos Fetales</h5>
+                                        <p class="card-text">BISTOS BT-220</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Detector%20de%20latidos%20Fetales%20BISTOS%20BT-220."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Coches Hospitalarios -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/CochesH.jpeg" class="card-img-top"
+                                        alt="Coches Hospitalarios">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Coches Hospitalarios</h5>
+                                        <p class="card-text">BAILIDA EX-SERIES</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20los%20Coches%20Hospitalarios%20BAILIDA%20EX-SERIES."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Maquina de Anestesia -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/MAnastesia.jpeg" class="card-img-top"
+                                        alt="Maquina de Anestesia">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Maquina de Anestesia</h5>
+                                        <p class="card-text">AEON7200A FULL</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20la%20Maquina%20de%20Anestesia%20AEON7200A%20FULL."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bomba de Jeringa -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/BombaJeringa.jpeg" class="card-img-top"
+                                        alt="Bomba de Jeringa">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Bomba de Jeringa</h5>
+                                        <p class="card-text">ENMIND EN-S7 SMART</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20la%20Bomba%20de%20Jeringa%20ENMIND%20EN-S7%20SMART."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Autoclave de Sobremesa -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/AutoClave.jpeg" class="card-img-top"
+                                        alt="Autoclave de Sobremesa">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Autoclave de Sobremesa</h5>
+                                        <p class="card-text">SHINVA MOST-T-B SERIES</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Autoclave%20de%20Sobremesa%20SHINVA%20MOST-T-B%20SERIES."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Coches Hospitalarios 2 -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/CochesH2.jpeg" class="card-img-top"
+                                        alt="Coches Hospitalarios">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Coches Hospitalarios</h5>
+                                        <p class="card-text">BAILIDA EX-SERIES</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20los%20Coches%20Hospitalarios%20BAILIDA%20EX-SERIES."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mesa de Operaciones -->
+                            <div class="col-md-4 mb-4 grid-item mesas">
+                                <div class="card h-100">
+                                    <img src="images/productos/MesaO3.jpeg" class="card-img-top"
+                                        alt="Mesa de Operaciones">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Mesa de Operaciones</h5>
+                                        <p class="card-text">DRMAX 7000S SERIES</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20la%20Mesa%20de%20Operaciones%20DRMAX%207000S%20SERIES."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Desfibrilador -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/Desfribilador.jpeg" class="card-img-top"
+                                        alt="Desfibrilador">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Desfibrilador</h5>
+                                        <p class="card-text">CARDIOLIFE TEC-5600</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Desfibrilador%20CARDIOLIFE%20TEC-5600."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ElectroCardiógrafo -->
+                            <div class="col-md-4 mb-4 grid-item electro">
+                                <div class="card h-100">
+                                    <img src="images/productos/Electro2.jpeg" class="card-img-top"
+                                        alt="ElectroCardiógrafo">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ElectroCardiógrafo</h5>
+                                        <p class="card-text">NIHON KOHDEN ECG-2550</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20ElectroCardiógrafo%20NIHON%20KOHDEN%20ECG-2550."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ElectroBisturi -->
+                            <div class="col-md-4 mb-4 grid-item electro">
+                                <div class="card h-100">
+                                    <img src="images/productos/ElectroBisturi.jpeg" class="card-img-top"
+                                        alt="ElectroBisturi">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ElectroBisturi</h5>
+                                        <p class="card-text">DAIWHA 200W</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20ElectroBisturi%20DAIWHA%20200W."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ElectroBisturi Monopolar Bipolar -->
+                            <div class="col-md-4 mb-4 grid-item electro">
+                                <div class="card h-100">
+                                    <img src="images/productos/ElectroBisturiMonopolar.jpeg" class="card-img-top"
+                                        alt="ElectroBisturi Monopolar Bipolar">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ElectroBisturi Monopolar Bipolar 200w</h5>
+                                        <p class="card-text">MEDITOM DT-200S</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20ElectroBisturi%20Monopolar%20Bipolar%20200w%20MEDITOM%20DT-200S."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aspirador de Secreciones -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <img src="images/productos/AspiradorSecreciones.jpeg" class="card-img-top"
+                                        alt="Aspirador de Secreciones">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Aspirador de Secreciones</h5>
+                                        <p class="card-text">HOSPIVAC 350</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Aspirador%20de%20Secreciones%20HOSPIVAC%20350."
+                                            target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i>
+                                            Solicitar por
+                                            WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aquí van los demás productos -->
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row grid">
 
-                <!-- Producto 1 -->
-                <div class="col-md-4 mb-4 grid-item mesas">
-                    <div class="card h-100">
-                        <img src="images/productos/MesaOperaciones.jpeg" class="card-img-top" alt="Producto 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Mesa de Operaciones</h5>
-                            <p class="card-text">BENQ MEDICAL - DR. MAX 7000S SERIES</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Producto 2 -->
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/Incubadora.jpeg" class="card-img-top" alt="Producto 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Incubadora Neonatal</h5>
-                            <p class="card-text">BISTOS BT-500</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Producto 3 -->
-                <div class="col-md-4 mb-4 grid-item monitores">
-                    <div class="card h-100">
-                        <img src="images/productos/MonitorPaciente.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Monitor DE Paciente</h5>
-                            <p class="card-text">NIHON KOHDEN -LIFE SCOPE G7 CSM-1701/1702</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item monitores">
-                    <div class="card h-100">
-                        <img src="images/productos/MonitorP2.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Monitor de Paciente</h5>
-                            <p class="card-text">UCI / UCC</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item electro">
-                    <div class="card h-100">
-                        <img src="images/productos/Electro.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">ElectroCardiógrafo</h5>
-                            <p class="card-text">NIHON KOHDEN ECG - 2350</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item mesas">
-                    <div class="card h-100">
-                        <img src="images/productos/MesaO2.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Mesa de Operaciones</h5>
-                            <p class="card-text">POSEIDON Q200 SERIES</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/DetectorLatidos.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Detector de latidos Fetales</h5>
-                            <p class="card-text">BISTOS BT-220</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/CochesH.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Coches Hospitalarios</h5>
-                            <p class="card-text">BAILIDA EX-SERIES</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/MAnastesia.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Maquina de Anestesia</h5>
-                            <p class="card-text">AEON7200A FULL</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/BombaJeringa.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Bomba de Jeringa</h5>
-                            <p class="card-text">ENMIND EN-S7 SMART</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/AutoClave.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Autoclave de Sobremesa</h5>
-                            <p class="card-text">SHINVA MOST-T-B SERIES</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/CochesH2.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Coches Hospitalarios</h5>
-                            <p class="card-text">BAILIDA EX-SERIES</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item mesas">
-                    <div class="card h-100">
-                        <img src="images/productos/MesaO3.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Mesa de Operaciones</h5>
-                            <p class="card-text">DRMAX 7000S SERIES</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/Desfribilador.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Desfibrilador</h5>
-                            <p class="card-text">CARDIOLIFE TEC-5600</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item electro">
-                    <div class="card h-100">
-                        <img src="images/productos/Electro2.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">ElectroCardiógrafo</h5>
-                            <p class="card-text">NIHON KOHDEN ECG-2550</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item electro">
-                    <div class="card h-100">
-                        <img src="images/productos/ElectroBisturi.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">ElectroBisturi</h5>
-                            <p class="card-text">DAIWHA 200W</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item electro">
-                    <div class="card h-100">
-                        <img src="images/productos/ElectroBisturiMonopolar.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">ElectroBisturi Monopolar Bipolar 200w</h5>
-                            <p class="card-text">MEDITOM DT-200S</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 grid-item otros">
-                    <div class="card h-100">
-                        <img src="images/productos/AspiradorSecreciones.jpeg" class="card-img-top" alt="Producto 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Aspirador de Secreciones</h5>
-                            <p class="card-text">HOSPIVAC 350</p>
-                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
     <!-- End Productos -->
