@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>DCG BIOMEDIC</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/1-3ce20b1c.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            /* quita borde gris */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background-color: #1f8a70;
+            /* verde corporativo */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #145c4a;
+        }
+
+        .card-title {
+            font-weight: 700;
+            color: #1f3a56;
+            /* azul oscuro */
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .card {
+            border-bottom: 4px solid #1f8a70;
+            /* verde biomédico */
+        }
+    </style>
+
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <!-- <div id="preloader">
+		<div class="loader">
+			<img src="images/preloader.gif" alt="" />
+		</div>
+    </div>end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start top bar -->
+    <div class="main-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-top">
+                        <!--<a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>-->
+                        <div class="mail-b"><a href="mailto:dcgbiomedic@gmail.com"><i class="fa fa-envelope-o"
+                                    aria-hidden="true"></i>
+                                dcgbiomedic@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="wel-nots">
+                        <p>¡Bienvenidos!</p>
+                    </div>
+                    <div class="right-top">
+                        <ul>
+                            <li><a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank"><i
+                                        class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+                            <li><a href="https://www.instagram.com/cadenillaspalma/" target="_blank"><i
+                                        class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <!--<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End top bar -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/1-3ce20b1c.ico" alt="image" style="height: 100px; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+                    aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link " href="index.html">Inicio</a></li>
+                        <li><a class="nav-link active" href="productos.html">Productos</a></li>
+                        <li><a class="nav-link" href="nosotros.html">Empresa</a></li>
+                        <li><a class="nav-link " href="servicios.html">Servicios</a></li>
+                        <li><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <!--<li><a class="nav-link" href="equipo.html">Equipo</a></li>-->
+                        <li><a class="nav-link" href="clientes.html">Clientes</a></li>
+                        <!--<li><a class="nav-link" href="#blog">Blog</a></li>-->
+                        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li> <!-- Botón WhatsApp -->
+
+                            <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20más%20información%20sobre%20sus%20servicios."
+                                target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
+                                <i class="fa fa-whatsapp"></i> WhatsApp
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+
+    <!-- Start Productos -->
+    <div id="productos" class="productos-box py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-box">
+                        <h2>Equipos Médicos</h2>
+                        <p>Filtra por categoría para encontrar lo que necesitas</p>
+
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtros -->
+            <div class="text-center mb-4">
+                <button class="btn btn-outline-primary filter-btn" data-filter="*">Todos</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter=".monitores">Monitores</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter=".mesas">Mesas de Operaciones</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter=".electro">Electrocardiógrafos</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter=".otros">Otros</button>
+            </div>
+            <div class="row grid">
+
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4 grid-item mesas">
+                    <div class="card h-100">
+                        <img src="images/productos/MesaOperaciones.jpeg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mesa de Operaciones</h5>
+                            <p class="card-text">BENQ MEDICAL - DR. MAX 7000S SERIES</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/Incubadora.jpeg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Incubadora Neonatal</h5>
+                            <p class="card-text">BISTOS BT-500</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4 grid-item monitores">
+                    <div class="card h-100">
+                        <img src="images/productos/MonitorPaciente.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Monitor DE Paciente</h5>
+                            <p class="card-text">NIHON KOHDEN -LIFE SCOPE G7 CSM-1701/1702</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item monitores">
+                    <div class="card h-100">
+                        <img src="images/productos/MonitorP2.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Monitor de Paciente</h5>
+                            <p class="card-text">UCI / UCC</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item electro">
+                    <div class="card h-100">
+                        <img src="images/productos/Electro.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ElectroCardiógrafo</h5>
+                            <p class="card-text">NIHON KOHDEN ECG - 2350</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item mesas">
+                    <div class="card h-100">
+                        <img src="images/productos/MesaO2.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mesa de Operaciones</h5>
+                            <p class="card-text">POSEIDON Q200 SERIES</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/DetectorLatidos.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Detector de latidos Fetales</h5>
+                            <p class="card-text">BISTOS BT-220</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/CochesH.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coches Hospitalarios</h5>
+                            <p class="card-text">BAILIDA EX-SERIES</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/MAnastesia.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Maquina de Anestesia</h5>
+                            <p class="card-text">AEON7200A FULL</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/BombaJeringa.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bomba de Jeringa</h5>
+                            <p class="card-text">ENMIND EN-S7 SMART</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/AutoClave.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Autoclave de Sobremesa</h5>
+                            <p class="card-text">SHINVA MOST-T-B SERIES</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/CochesH2.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coches Hospitalarios</h5>
+                            <p class="card-text">BAILIDA EX-SERIES</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item mesas">
+                    <div class="card h-100">
+                        <img src="images/productos/MesaO3.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mesa de Operaciones</h5>
+                            <p class="card-text">DRMAX 7000S SERIES</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/Desfribilador.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Desfibrilador</h5>
+                            <p class="card-text">CARDIOLIFE TEC-5600</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item electro">
+                    <div class="card h-100">
+                        <img src="images/productos/Electro2.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ElectroCardiógrafo</h5>
+                            <p class="card-text">NIHON KOHDEN ECG-2550</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item electro">
+                    <div class="card h-100">
+                        <img src="images/productos/ElectroBisturi.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ElectroBisturi</h5>
+                            <p class="card-text">DAIWHA 200W</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item electro">
+                    <div class="card h-100">
+                        <img src="images/productos/ElectroBisturiMonopolar.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ElectroBisturi Monopolar Bipolar 200w</h5>
+                            <p class="card-text">MEDITOM DT-200S</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 grid-item otros">
+                    <div class="card h-100">
+                        <img src="images/productos/AspiradorSecreciones.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Aspirador de Secreciones</h5>
+                            <p class="card-text">HOSPIVAC 350</p>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Productos -->
+
+
+    <!-- Start Footer -->
+    <footer class="footer-box" style="background: #212529; color: #fff; padding: 60px 0 20px;">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Sobre la Empresa -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget">
+                        <img src="images/1-3ce20b1c.ico" alt="Logo" style="height: 80px; margin-bottom: 20px; ">
+                        <p style="color: #bbb;">Líderes en ingeniería biomédica con más de 10 años de experiencia
+                            brindando soporte técnico y soluciones integrales a centros de salud en todo el Perú.</p>
+                        <div class="footer-social-icon mt-3">
+                            <a href="https://www.facebook.com" target="_blank" class="mr-3 text-white"><i
+                                    class="fa fa-facebook fa-lg"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" class="mr-3 text-white"><i
+                                    class="fa fa-instagram fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget px-lg-5">
+                        <h3
+                            style="color: #fff; border-bottom: 2px solid #007bff; display: inline-block; margin-bottom: 20px;">
+                            Navegación</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white-50 py-1 d-block">Inicio</a></li>
+                            <li><a href="nosotros.html" class="text-white-50 py-1 d-block">Empresa</a></li>
+                            <li><a href="servicios.html" class="text-white-50 py-1 d-block">Servicios</a></li>
+                            <li><a href="galeria.html" class="text-white-50 py-1 d-block">Galería</a></li>
+                            <li><a href="contacto.html" class="text-white-50 py-1 d-block">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Columna 3: Contacto Directo -->
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h3
+                            style="color: #fff; border-bottom: 2px solid #007bff; display: inline-block; margin-bottom: 20px;">
+                            Contacto</h3>
+                        <ul class="list-unstyled">
+                            <li class="text-white-50 mb-2">
+                                <i class="fa fa-map-marker text-primary mr-2"></i> Lima y Provincias, Perú
+                            </li>
+                            <li class="text-white-50 mb-2">
+                                <i class="fa fa-phone text-primary mr-2"></i> +51 957 745 935
+                            </li>
+                            <li class="text-white-50 mb-2">
+                                <i class="fa fa-envelope text-primary mr-2"></i> dcgbiomedic@gmail.com
+                            </li>
+                            <li class="text-white-50">
+                                <i class="fa fa-clock-o text-primary mr-2"></i> Lun - Sáb: 8:00 AM - 7:00 PM
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border-color: #444; margin-top: 40px;">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="footer-company-name mb-0" style="color: #888;">
+                        Todos los derechos reservados &copy; 2026
+                        <a href="#" style="color: #007bff; font-weight: bold;">DCG Biomedic</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // Inicializar Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows'
+        });
+
+        // Filtrar al hacer clic
+        $('.filter-btn').on('click', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+    </script>
+</body>
+
+</html>
