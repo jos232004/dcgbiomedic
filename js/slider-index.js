@@ -7,7 +7,11 @@ $(document).ready(function () {
 		preserveTargetSize: true,
 		targetWidth: 1000,
 		targetHeight: 300,
-		responsive: true
+		responsive: true,
+		elementTransitionDuration: 600,
+		elementTransitionStart: 100,
+		elementTransitionIn: 'slideDown',
+		elementTransitionOut: 'slideUp'
 	}).data('plugin_pogoSlider');
 
 	var transitionDemoOpts = {

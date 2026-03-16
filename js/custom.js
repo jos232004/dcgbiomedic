@@ -1,6 +1,53 @@
 (function($) {
     "use strict";
-	
+	/* Modal WhatsApp */
+	$(function() {
+		// Botones que abren el modal
+		$(document).on('click', '.whatsapp-modal-btn', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			$('#whatsappModal').modal('show');
+		});
+
+		// Botón enviar en el modal
+		$('#sendWhatsappBtn').on('click', function() {
+			var nombre = $('#userName').val().trim();
+			var email = $('#userEmail').val().trim();
+			var telefono = $('#userPhone').val().trim();
+			var mensaje = $('#userMessage').val().trim();
+
+			// Validación básica
+			if (!nombre || !email) {
+				alert('Por favor completa tu nombre y correo electrónico');
+				return;
+			}
+
+			// Construir el mensaje final
+			var mensajeFinal = "*Datos de contacto:*\n";
+			mensajeFinal += "Nombre: " + nombre + "\n";
+			mensajeFinal += "Email: " + email + "\n";
+			if (telefono) {
+				mensajeFinal += "Teléfono: " + telefono + "\n";
+			}
+			mensajeFinal += "\n" + mensaje;
+
+			// Codificar el mensaje para URL
+			var mensajeCodificado = encodeURIComponent(mensajeFinal);
+
+			// URL de WhatsApp
+			var urlWhatsapp = "https://wa.me/51957745935?text=" + mensajeCodificado;
+
+			// Abrir WhatsApp
+			window.open(urlWhatsapp, '_blank');
+
+			// Cerrar modal
+			$('#whatsappModal').modal('hide');
+
+			// Limpiar formulario
+			$('#whatsappForm')[0].reset();
+		});
+	});
+
 	/* ..............................................
 	Loader 
     ................................................. */
