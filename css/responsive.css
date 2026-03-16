@@ -39,7 +39,7 @@
 		margin: 12px 0px;
 	}
 	.lbox-details::before{
-		background: rgba(0,0,0,0.9);
+		background: rgba(0, 0, 0, 0.512);
 	}
 	.countdown{
 		height: 188px;
@@ -90,19 +90,22 @@
 		float: none;
 		margin: 0;
 		text-align: center;
+		/*Podemos quitar esto para volver a mostrar el bienvenido y las redes sociales*/
 	}
 	.right-top ul li{
 		float: none;
 		display: inline-block;
+		/*Podemos quitar esto para volver a mostrar el bienvenido y las redes sociales*/
 	}
 	.mail-b{
 		float: none;
+		/*Podemos quitar esto para volver a mostrar el correo en celular*/
 	}
 	.mail-b a{
 		padding: 5px 20px;
 	}
 	.lbox-details h1{
-		font-size: 24px;
+		font-size: 18px;/*Aqui modificamos las letras del banner*/
 	}
 	.lbox-details h2{
 		font-size: 18px;
@@ -160,7 +163,7 @@
 		margin: 12px 0px;
 	}
 	.lbox-details::before{
-		background: rgba(0,0,0,0.9);
+		background: rgba(0, 0, 0, 0.512);
 	}
 	.countdown{
 		height: 188px;
