@@ -10,14 +10,17 @@
 
 	<!-- Site Metas -->
 	<title>DCG BIOMEDIC | Soluciones Biomédicas Integrales</title>
-	<meta name="keywords" content="ingeniería biomédica, mantenimiento de equipos médicos, Chepén, DCG BIOMEDIC, reparación de equipos médicos">
-	<meta name="description" content="Especialistas en ingeniería biomédica en Chepén. Ofrecemos mantenimiento preventivo, correctivo y soluciones integrales para equipos médicos de alta calidad.">
+	<meta name="keywords"
+		content="ingeniería biomédica, mantenimiento de equipos médicos, Chepén, DCG BIOMEDIC, reparación de equipos médicos">
+	<meta name="description"
+		content="Especialistas en ingeniería biomédica en Chepén. Ofrecemos mantenimiento preventivo, correctivo y soluciones integrales para equipos médicos de alta calidad.">
 	<meta name="author" content="DCG BIOMEDIC">
 
 	<!-- Open Graph para WhatsApp y Redes Sociales -->
 	<meta property="og:title" content="DCG BIOMEDIC | Ingeniería Biomédica">
-	<meta property="og:description" content="Mantenimiento y soluciones integrales para equipos médicos en Chepén. ¡Contáctanos!">
-	<meta property="og:image" content="https://jos232004.github.io/dcgbiomedic/images/1-3ce20b1c.ico"> 
+	<meta property="og:description"
+		content="Mantenimiento y soluciones integrales para equipos médicos en Chepén. ¡Contáctanos!">
+	<meta property="og:image" content="https://jos232004.github.io/dcgbiomedic/images/1-3ce20b1c.ico">
 	<meta property="og:url" content="https://jos232004.github.io/dcgbiomedic/">
 	<meta property="og:type" content="website">
 
@@ -44,21 +47,47 @@
 			object-fit: contain;
 			background-color: #fff;
 		}
-		.tiktok-wrapper {
+
+		
+
+		/* Botón de WhatsApp Flotante */
+		.btn-whatsapp-flotante {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 55px;
+			right: 20px;
+			background-color: #25d366;
+			color: #FFF;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 35px;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+			z-index: 9999;
 			display: flex;
+			align-items: center;
 			justify-content: center;
-			padding: 10px;
+			transition: all 0.3s ease;
+			background: linear-gradient(-45deg, #25d366, #128c7e, #25d366);
+			background-size: 200% 200%;
+			animation: coloresDinamicos 5s ease infinite;
 		}
-		.tiktok-embed {
-			border-radius: 15px !important;
-			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-			overflow: hidden;
-			background: #fff;
-			min-width: 325px !important;
+
+		.btn-whatsapp-flotante:hover {
+			background-color: #128c7e;
+			color: #FFF;
+			transform: scale(1.1);
 		}
-		.owl-item {
-			display: flex;
-			justify-content: center;
+
+
+		@media (max-width: 768px) {
+			.btn-whatsapp-flotante {
+				width: 50px;
+				height: 50px;
+				bottom: 65px;
+				right: 20px;
+				font-size: 25px;
+			}
 		}
 	</style>
 
@@ -71,16 +100,20 @@
 	  "url": "https://jos232004.github.io/dcgbiomedic/"
 	}
 	</script>
+
 </head>
+
+
 
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
+
 	<!-- LOADER -->
-	<!-- <div id="preloader">
+	<div id="preloader">
 		<div class="loader">
 			<img src="images/preloader.gif" alt="" />
 		</div>
-    </div>end loader -->
+	</div>
 	<!-- END LOADER -->
 
 	<!-- Start top bar -->
@@ -141,12 +174,9 @@
 						<!--<li><a class="nav-link" href="#blog">Blog</a></li>-->
 						<li><a class="nav-link" href="contacto.html">Contacto</a></li>
 						<li> <!-- Botón WhatsApp -->
-
-							<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20más%20información%20sobre%20sus%20servicios."
-								target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
+							<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
 								<i class="fa fa-whatsapp"></i> WhatsApp
 							</a>
-
 						</li>
 					</ul>
 				</div>
@@ -160,9 +190,9 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="pogoSlider" id="js-main-slider">
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="800"
 						style="background-image:url(images/baner1.jpeg);">
-						<div class="lbox-caption pogoSlider-slide-element">
+						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
 							<div class="lbox-details">
 								<h1>Bienvenidos DCG BIOMEDIC</h1>
 								<!--<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>-->
@@ -170,9 +200,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="800"
 						style="background-image:url(images/banner2.jpg);">
-						<div class="lbox-caption pogoSlider-slide-element">
+						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
 							<div class="lbox-details">
 								<h1>¡Líderes en ingeniería biomédica con más de 10 años de experiencia!</h1>
 								<!--<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum</p>-->
@@ -180,11 +210,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="800"
 						style="background-image:url(images/banner3.png);">
-						<div class="lbox-caption pogoSlider-slide-element">
+						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
 							<div class="lbox-details">
-								<h1>Bienvenidos DCG BIOMEDIC</h1>
+								<h1>Brindamos soporte técnico y soluciones integrales a centros de salud en todo el Perú.</h1>
 
 								<a href="contacto.html" class="btn">Contactanos</a>
 							</div>
@@ -197,7 +227,7 @@
 	</div>
 	<!-- End Banner -->
 	<!-- Start Counter Section -->
-	<div class="counter-section section-padding" style="background: #1f3a56; padding: 20px 0; color: white;">
+	<div class="counter-section section-padding" style="background: #062539; padding: 15px 0; color: white;">
 		<div class="container">
 			<div class="row">
 				<!-- Estadística 1 -->
@@ -252,67 +282,58 @@
 	</div>
 	<!-- End Counter Section -->
 
-
-
-
 	<!-- Start Reels Carousel -->
-	<div id="reels" class="reels-box py-5 bg-light">
+
+	<div id="services" class="services-box" style="background-color: #FFF;">
 		<div class="container text-center">
 			<h2>Reels Institucionales</h2>
-			<p>Descubre más sobre Vital Medic en nuestras redes sociales.</p>
+			<p>Descubre más sobre DCG BIOMEDIC en nuestras redes sociales.</p>
 
 			<div class="owl-carousel owl-theme">
 
 				<!-- Reel 1 -->
 				<div class="item">
 					<div class="tiktok-wrapper">
-						<blockquote class="tiktok-embed"
-							cite="https://www.tiktok.com/@dcgbiomedic/video/7451722643327307014"
-							data-video-id="7451722643327307014" style="width: 100%; margin: 0 auto;">
-							<section></section>
-						</blockquote>
+						<video width="100%" height="auto" autoplay muted loop playsinline poster="images/portada1.jpg"
+							style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: #000;">
+							<source src="videos/video1.mp4" type="video/mp4">
+							Tu navegador no soporta el formato de video.
+						</video>
 					</div>
 				</div>
 
 				<!-- Reel 2 -->
 				<div class="item">
 					<div class="tiktok-wrapper">
-						<blockquote class="tiktok-embed"
-							cite="https://www.tiktok.com/@dcgbiomedic/video/7447331661877939461"
-							data-video-id="7447331661877939461" style="width: 100%; margin: 0 auto;">
-							<section></section>
-						</blockquote>
+						<video width="100%" height="auto" autoplay muted loop playsinline poster="images/portada1.jpg"
+							style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: #000;">
+							<source src="videos/video2.mp4" type="video/mp4">
+							Tu navegador no soporta el formato de video.
+						</video>
 					</div>
-				</div>
-				<!-- Reel 3 - TikTok -->
-				<div class="item">
-					<div class="tiktok-wrapper">
-						<blockquote class="tiktok-embed"
-							cite="https://www.tiktok.com/@dcgbiomedic/video/7445424071296470278"
-							data-video-id="7445424071296470278" style="max-width: 605px;min-width: 325px;">
-							<section>
-							</section>
-						</blockquote>
-					</div>
-
-
 				</div>
 
 				<!-- Reel 3 - TikTok -->
 				<div class="item">
 					<div class="tiktok-wrapper">
-						<blockquote class="tiktok-embed"
-							cite="https://www.tiktok.com/@dcgbiomedic/video/7443582815725227319"
-							data-video-id="7443582815725227319" style="max-width: 605px;min-width: 325px;">
-							<section>
-							</section>
-						</blockquote>
+						<video width="100%" height="auto" autoplay muted loop playsinline poster="images/portada1.jpg"
+							style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: #000;">
+							<source src="videos/video3.mp4" type="video/mp4">
+							Tu navegador no soporta el formato de video.
+						</video>
 					</div>
 				</div>
 
-
-
-
+				<!-- Reel 4 - TikTok -->
+				<div class="item">
+					<div class="tiktok-wrapper">
+						<video width="100%" height="auto" autoplay muted loop playsinline poster="images/portada1.jpg"
+							style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: #000;">
+							<source src="videos/video4.mp4" type="video/mp4">
+							Tu navegador no soporta el formato de video.
+						</video>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -327,7 +348,6 @@
 					<div class="col-lg-12">
 						<div class="title-box">
 							<h2>Sobre Nosotros</h2>
-							<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>-->
 						</div>
 					</div>
 				</div>
@@ -372,7 +392,7 @@
 	<!-- End About us -->
 
 	<!-- Start Services -->
-	<div id="services" class="services-box">
+	<div id="services" class="services-box" style="background-color: #FFF;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -408,6 +428,7 @@
 								<p class="description">
 									Servicio especializado de reparación de equipos biomédicos con cobertura inmediata.
 								</p>
+								<a href="servicios.html" class="new-btn-d br-2">Ver Más</a>
 							</div>
 						</div>
 
@@ -419,6 +440,7 @@
 								<p class="description">
 									Calibración de equipos médicos para asegurar precisión y cumplimiento de normativas.
 								</p>
+								<a href="servicios.html" class="new-btn-d br-2">Ver Más</a>
 
 							</div>
 						</div>
@@ -449,7 +471,7 @@
 				<div class="col-lg-12">
 					<div class="title-box">
 						<h2>Equipo</h2>
-						<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>-->
+						<p>Conoce a nuestro equipo de profesionales altamente capacitados.</p>
 					</div>
 				</div>
 			</div>
@@ -512,11 +534,8 @@
 
 	<!-- End Team -->
 
-
-	<!-- End Team -->
-
 	<!-- Start Contact -->
-	<div id="contact" class="contact-box">
+	<div id="contact" class="contact-box" style="background-color: #FFF;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -530,8 +549,7 @@
 			<div class="row">
 				<!-- Botón WhatsApp -->
 				<div class="col-md-6 text-center mb-4">
-					<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20más%20información%20sobre%20sus%20servicios."
-						target="_blank" class="btn btn-success btn-lg">
+					<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" class="btn btn-success btn-lg">
 						<i class="fa fa-whatsapp"></i> Enviar mensaje por WhatsApp
 					</a>
 				</div>
@@ -563,9 +581,9 @@
 						<p style="color: #bbb;">Líderes en ingeniería biomédica con más de 10 años de experiencia
 							brindando soporte técnico y soluciones integrales a centros de salud en todo el Perú.</p>
 						<div class="footer-social-icon mt-3">
-							<a href="https://www.facebook.com" target="_blank" class="mr-3 text-white"><i
-									class="fa fa-facebook fa-lg"></i></a>
-							<a href="https://www.instagram.com" target="_blank" class="mr-3 text-white"><i
+						<a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank" class="mr-3 text-white"><i
+								class="fa fa-facebook fa-lg"></i></a>
+						<a href="https://www.instagram.com/cadenillaspalma/" target="_blank" class="mr-3 text-white"><i
 									class="fa fa-instagram fa-lg"></i></a>
 						</div>
 					</div>
@@ -625,10 +643,53 @@
 	</footer>
 	<!-- End Footer -->
 
+	<!-- Botón Flotante -->
+	<button type="button" class="btn-whatsapp-flotante whatsapp-modal-btn" style="border: none; background: linear-gradient(-45deg, #25d366, #128c7e, #25d366); background-size: 200% 200%; animation: coloresDinamicos 5s ease infinite; cursor: pointer;">
+		<i class="fa fa-whatsapp"></i>
+	</button>
 
 	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
 
-	<!-- ALL JS FILES -->
+	<!-- Modal Formulario WhatsApp -->
+	<div class="modal fade" id="whatsappModal" tabindex="-1" role="dialog" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="background-color: #00b141; border: none;">
+					<h5 class="modal-title" id="whatsappModalLabel" style="color: white; font-weight: bold;">Enviar mensaje por WhatsApp</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="whatsappForm">
+						<div class="form-group">
+							<label for="userName">Nombre Completo</label>
+							<input type="text" class="form-control" id="userName" placeholder="Tu nombre" required>
+						</div>
+						<div class="form-group">
+							<label for="userEmail">Correo Electrónico</label>
+							<input type="email" class="form-control" id="userEmail" placeholder="tu@email.com" required>
+						</div>
+						<div class="form-group">
+							<label for="userPhone">Teléfono</label>
+							<input type="tel" class="form-control" id="userPhone" placeholder="+51 9XX XXX XXX">
+						</div>
+						<div class="form-group">
+							<label for="userMessage">Mensaje</label>
+							<textarea class="form-control" id="userMessage" rows="4" placeholder="Cuéntanos cómo podemos ayudarte...">Hola DCG Biomedic, necesito más información sobre sus servicios.</textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer" style="border-top: 1px solid #e9ecef;">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-success" id="sendWhatsappBtn">
+						<i class="fa fa-whatsapp"></i> Enviar por WhatsApp
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin Modal WhatsApp -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -636,7 +697,6 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.pogo-slider.min.js"></script>
 	<script src="js/slider-index.js"></script>
-	<script src="js/smoothscroll.js"></script>
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
@@ -645,38 +705,26 @@
 	<script src="js/isotope.min.js"></script>
 	<script src="js/images-loded.min.js"></script>
 	<script src="js/custom.js"></script>
-	<script async src="https://www.tiktok.com/embed.js"></script>
+
 
 
 	<script>
-		$(document).ready(function () {
-			var owl = $('.owl-carousel');
 
-			owl.owlCarousel({
-				loop: true,
-				margin: 10,
-				nav: true,
-				responsive: {
-					0: { items: 1 },
-					600: { items: 2 },
-					1000: { items: 3 }
-				},
-				// Esto es lo más importante:
-				onTranslated: function () {
-					if (window.twttr) { 
-						twttr.widgets.load();
-					}
-					if (window.tiktok && window.tiktok.embed) {
-						window.tiktok.embed.render(); 
-					} else {
-						
-						var script = document.createElement('script');
-						script.src = "https://www.tiktok.com";
-						document.body.appendChild(script);
-					}
-				}
-			});
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 15,
+			nav: true,
+			navText: [
+				"<i class='fa fa-chevron-left' style='font-size:40px; color:#1f3a56;'></i>",
+				"<i class='fa fa-chevron-right' style='font-size:40px; color:#1f3a56;'></i>"
+			],
+			responsive: {
+				0: { items: 1 },
+				768: { items: 2 },
+				1000: { items: 3 }
+			}
 		});
+
 
 		// Animación de contadores
 		$('.count-number').each(function () {
@@ -691,31 +739,11 @@
 			});
 		});
 
-		$('.owl-carousel').owlCarousel({
-			loop: true,
-			margin: 10,
-			autoplay: false,
-			nav: true,
-			navText: [
-				"<i class='fa fa-chevron-left' style='font-size:40px; color:#1f3a56;'></i>",
-				"<i class='fa fa-chevron-right' style='font-size:40px; color:#1f3a56;'></i>"
-			],
-			responsive: {
-				0: { items: 1 },
-				600: { items: 1 },
-				1000: { items: 2 }
-			}
-		});
+
+
 	</script>
-	<script async src="https://www.tiktok.com"></script>
+
 
 </body>
 
 </html>
-
-
-
-
-
-
-
