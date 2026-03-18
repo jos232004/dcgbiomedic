@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Site Metas -->
+	<title>DCG BIOMEDIC | Soluciones Biomédicas Integrales</title>
+	<meta name="keywords"
+		content="ingeniería biomédica, mantenimiento de equipos médicos, Chepén, DCG BIOMEDIC, reparación de equipos médicos">
+	<meta name="description"
+		content="Especialistas en ingeniería biomédica en Chepén. Ofrecemos mantenimiento preventivo, correctivo y soluciones integrales para equipos médicos de alta calidad.">
+	<meta name="author" content="DCG BIOMEDIC">
+
+	<!-- Open Graph para WhatsApp y Redes Sociales -->
+	<meta property="og:title" content="DCG BIOMEDIC | Ingeniería Biomédica">
+	<meta property="og:description"
+		content="Mantenimiento y soluciones integrales para equipos médicos en Chepén. ¡Contáctanos!">
+	<meta property="og:image" content="https://jos232004.github.io/dcgbiomedic/images/1-3ce20b1c.ico">
+	<meta property="og:url" content="https://jos232004.github.io/dcgbiomedic/">
+	<meta property="og:type" content="website">
+
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="images/1-3ce20b1c.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/pogo-slider.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com"></script>
+      <script src="https://oss.maxcdn.com"></script>
+    <![endif]-->
+
+	<style>
+		#aboutCarousel .carousel-item img {
+			height: 350px;
+			width: 100%;
+			object-fit: contain;
+			background-color: #fff;
+		}
+
+		/* Videos/Reels Responsive */
+		.tiktok-wrapper {
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+			max-width: 100%;
+			overflow: hidden;
+		}
+
+		.tiktok-wrapper video {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.owl-carousel.owl-theme .owl-stage {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+
+		.owl-carousel.owl-theme .owl-item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: auto;
+		}
+
+		/* Botón de WhatsApp Flotante */
+		.btn-whatsapp-flotante {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 55px;
+			right: 20px;
+			background-color: #25d366;
+			color: #FFF;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 35px;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+			z-index: 9999;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.3s ease;
+			background: linear-gradient(-45deg, #25d366, #128c7e, #25d366);
+			background-size: 200% 200%;
+			animation: coloresDinamicos 5s ease infinite;
+		}
+
+		.btn-whatsapp-flotante:hover {
+			background-color: #128c7e;
+			color: #FFF;
+			transform: scale(1.1);
+		}
+
+
+		@media (max-width: 768px) {
+			.btn-whatsapp-flotante {
+				width: 50px;
+				height: 50px;
+				bottom: 65px;
+				right: 20px;
+				font-size: 25px;
+			}
+
+			/* Responsive Videos */
+			.tiktok-wrapper {
+				padding: 5px;
+				margin: 0 auto;
+			}
+
+			.tiktok-wrapper video {
+				width: 100%;
+				height: auto;
+			}
+
+			.owl-carousel.owl-theme .owl-item {
+				width: 100%;
+				padding: 5px;
+			}
+
+			#services .container {
+				padding: 0 10px;
+			}
+
+			#services.services-box h2 {
+				font-size: 1.5rem;
+				margin-bottom: 10px;
+			}
+
+			#services.services-box p {
+				font-size: 0.9rem;
+			}
+
+			/* Serviceox responsive */
+			.serviceBox {
+				padding: 20px 15px 15px !important;
+				margin-bottom: 15px;
+			}
+
+			.serviceBox .title {
+				font-size: 16px;
+			}
+
+			.serviceBox .description {
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+	</style>
+
+	<!-- Datos estructurados corregidos para Google -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "WebSite",
+	  "name": "DCG BIOMEDIC",
+	  "url": "https://jos232004.github.io/dcgbiomedic/"
+	}
+	</script>
+
+</head>
+
+
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+
+	<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader">
+			<img src="images/preloader.gif" alt="" />
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+	<!-- Start top bar -->
+	<div class="main-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="left-top">
+						<!--<a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>-->
+						<div class="mail-b"><a href="mailto:dcgbiomedic@gmail.com"><i class="fa fa-envelope-o"
+									aria-hidden="true"></i>
+								dcgbiomedic@gmail.com</a></div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="wel-nots">
+						<p>¡Bienvenidos!</p>
+					</div>
+					<div class="right-top">
+						<ul>
+							<li><a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank"><i
+										class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+							<li><a href="https://www.instagram.com/cadenillaspalma/" target="_blank"><i
+										class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<!--<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End top bar -->
+
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/1-3ce20b1c.ico" alt="image" style="height: 100px; width: auto;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+					aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+					<ul class="navbar-nav">
+						<li><a class="nav-link active" href="index.html">Inicio</a></li>
+						<li><a class="nav-link" href="productos.html">Productos</a></li>
+						<li><a class="nav-link" href="nosotros.html">Empresa</a></li>
+						<li><a class="nav-link " href="servicios.html">Servicios</a></li>
+						<li><a class="nav-link" href="galeria.html">Galería</a></li>
+						<!--<li><a class="nav-link" href="equipo.html">Equipo</a></li>-->
+						<li><a class="nav-link" href="clientes.html">Clientes</a></li>
+						<!--<li><a class="nav-link" href="#blog">Blog</a></li>-->
+						<li><a class="nav-link" href="contacto.html">Contacto</a></li>
+						<li> <!-- Botón WhatsApp -->
+							<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
+								<i class="fa fa-whatsapp"></i> WhatsApp
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+
+	<!-- Start Banner -->
+	<div class="ulockd-home-slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="pogoSlider" id="js-main-slider">
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="800"
+						style="background-image:url(images/baner1.jpeg);">
+						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
+							<div class="lbox-details">
+								<h1>Bienvenidos DCG BIOMEDIC</h1>
+								<!--<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>-->
+								<a href="contacto.html" class="btn">Contactanos</a>
+							</div>
+						</div>
+					</div>
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="800"
+						style="background-image:url(images/banner2.jpg);">
+						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
+							<div class="lbox-details">
+								<h1>¡Líderes en ingeniería biomédica con más de 10 años de experiencia!</h1>
+								<!--<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum</p>-->
+								<a href="contacto.html" class="btn">Contactanos</a>
+							</div>
+						</div>
+					</div>
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="800"
+						style="background-image:url(images/banner3.png);">
+						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
+							<div class="lbox-details">
+								<h1>Brindamos soporte técnico y soluciones integrales a centros de salud en todo el Perú.</h1>
+
+								<a href="contacto.html" class="btn">Contactanos</a>
+							</div>
+						</div>
+
+					</div>
+				</div><!-- .pogoSlider -->
+			</div>
+		</div>
+	</div>
+	<!-- End Banner -->
+	<!-- Start Counter Section -->
+	<div class="counter-section section-padding" style="background: #062539; padding: 15px 0; color: white;">
+		<div class="container">
+			<div class="row">
+				<!-- Estadística 1 -->
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="counter-item text-center">
+						<div class="icon-box" style="font-size: 40px; margin-bottom: 10px;">
+							<i class="fa fa-stethoscope" aria-hidden="true"></i>
+						</div>
+						<h2 class="timer count-title count-number" data-to="500" data-speed="1500"
+							style="font-weight: bold; font-size: 35px; color: aliceblue;">500</h2>
+						<p class="count-text" style="font-size: 18px;">Equipos Reparados</p>
+					</div>
+				</div>
+				<!-- Estadística 2 -->
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="counter-item text-center">
+						<div class="icon-box" style="font-size: 40px; margin-bottom: 10px; color: aliceblue;">
+							<i class="fa fa-hospital-o" aria-hidden="true"></i>
+						</div>
+						<a href="clientes.html">
+							<h2 class="timer count-title count-number" data-to="120" data-speed="1500"
+								style="font-weight: bold; font-size: 35px; color: aliceblue;">120</h2>
+
+						</a>
+						<p class="count-text" style="font-size: 18px;">Clínicas Atendidas</p>
+					</div>
+				</div>
+				<!-- Estadística 3 -->
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="counter-item text-center">
+						<div class="icon-box" style="font-size: 40px; margin-bottom: 10px;">
+							<i class="fa fa-cogs" aria-hidden="true"></i>
+						</div>
+						<h2 class="timer count-title count-number" data-to="10" data-speed="1500"
+							style="font-weight: bold; font-size: 35px; color: aliceblue;">10</h2>
+						<p class="count-text" style="font-size: 18px;">Años de Experiencia</p>
+					</div>
+				</div>
+				<!-- Estadística 4 -->
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="counter-item text-center">
+						<div class="icon-box" style="font-size: 40px; margin-bottom: 10px;">
+							<i class="fa fa-users" aria-hidden="true"></i>
+						</div>
+						<h2 class="timer count-title count-number" data-to="100" data-speed="1500"
+							style="font-weight: bold; font-size: 35px; color: aliceblue;">100</h2>
+						<p class="count-text" style="font-size: 18px;">% Clientes Satisfechos</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Counter Section -->
+
+	<!-- Start Reels Carousel -->
+
+	<div id="services" class="services-box" style="background-color: #FFF;">
+		<div class="container text-center">
+			<h2>Reels Institucionales</h2>
+			<p>Descubre más sobre DCG BIOMEDIC en nuestras redes sociales.</p>
+
+			<div class="owl-carousel owl-theme">
+
+				<!-- Reel 1 -->
+				<div class="item">
+					<div class="tiktok-wrapper">
+						<video width="100%" height="auto" autoplay muted loop playsinline poster="images/portada1.jpg"
+							style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: #000;">
+							<source src="videos/video1.mp4" type="video/mp4">
+							Tu navegador no soporta el formato de video.
+						</video>
+					</div>
+				</div>
+
+				<!-- Reel 2 -->
+				<div class="item">
+					<div class="tiktok-wrapper">
+						<video width="100%" height="auto" autoplay muted loop playsinline poster="images/portada1.jpg"
+							style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: #000;">
+							<source src="videos/video2.mp4" type="video/mp4">
+							Tu navegador no soporta el formato de video.
+						</video>
+					</div>
+				</div>
+
+				<!-- Reel 3 - TikTok -->
+				<div class="item">
+					<div class="tiktok-wrapper">
+						<video width="100%" height="auto" autoplay muted loop playsinline poster="images/portada1.jpg"
+							style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: #000;">
+							<source src="videos/video3.mp4" type="video/mp4">
+							Tu navegador no soporta el formato de video.
+						</video>
+					</div>
+				</div>
+
+				<!-- Reel 4 - TikTok -->
+				<div class="item">
+					<div class="tiktok-wrapper">
+						<video width="100%" height="auto" autoplay muted loop playsinline poster="images/portada1.jpg"
+							style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); background: #000;">
+							<source src="videos/video4.mp4" type="video/mp4">
+							Tu navegador no soporta el formato de video.
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Reels Carousel -->
+
+
+	<!-- Start About us -->
+	<div id="about" class="about-box">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-box">
+							<h2>Sobre Nosotros</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h2> DCG BIOMEDIC </h2>
+								<p>Somos una empresa consolidad en el rubro de Ingenieria Biomedica Mantenimiento
+									preventivo y Correctivo venta de equipos Medicos Imagenes Centro Quirurgico
+									Laboratorio Uci demas afines incorporando repuestos genuinos de Marcas de gama alta
+									a nivel Nacional</p>
+
+								<a href="nosotros.html" class="new-btn-d br-2">Leer más</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="about-m">
+									<div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/nosotros/equipoB.jpg" class="d-block w-100"
+													alt="Equipo biomédico">
+											</div>
+											<div class="carousel-item">
+												<img src="images/nosotros/EquipoDCG.jpg" class="d-block w-100"
+													alt="Laboratorio clínico">
+											</div>
+											<div class="carousel-item">
+												<img src="images/nosotros/trabajo.jpg" class="d-block w-100"
+													alt="Sala de operaciones">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About us -->
+
+	<!-- Start Services -->
+	<div id="services" class="services-box" style="background-color: #FFF;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Servicios Técnicos</h2>
+						<p>Soluciones biomédicas integrales con experiencia y calidad certificada.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="owl-carousel owl-theme">
+
+						<!-- Mantenimiento -->
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+								<h3 class="title">Mantenimiento</h3>
+								<p class="description">
+									Preventivo, predictivo y correctivo para garantizar el óptimo funcionamiento de sus
+									equipos médicos.
+								</p>
+								<a href="servicios.html" class="new-btn-d br-2">Ver Más</a>
+							</div>
+						</div>
+
+						<!-- Reparación -->
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-wrench" aria-hidden="true"></i></div>
+								<h3 class="title">Reparación</h3>
+								<p class="description">
+									Servicio especializado de reparación de equipos biomédicos con cobertura inmediata.
+								</p>
+								<a href="servicios.html" class="new-btn-d br-2">Ver Más</a>
+							</div>
+						</div>
+
+						<!-- Calibración -->
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-balance-scale" aria-hidden="true"></i></div>
+								<h3 class="title">Calibración</h3>
+								<p class="description">
+									Calibración de equipos médicos para asegurar precisión y cumplimiento de normativas.
+								</p>
+								<a href="servicios.html" class="new-btn-d br-2">Ver Más</a>
+
+							</div>
+						</div>
+
+						<!-- Instalación de software -->
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+								<h3 class="title">Instalación de Software</h3>
+								<p class="description">
+									Configuración e instalación de software especializado para equipos médicos.
+								</p>
+
+								<a href="servicios.html" class="new-btn-d br-2">Ver Más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Services -->
+
+	<!-- Start Team -->
+	<div id="team" class="team-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Equipo</h2>
+						<p>Conoce a nuestro equipo de profesionales altamente capacitados.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Ingeniero Biomédico -->
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/juanCarlos.jpg" alt="Ingeniero Biomédico">
+						</div>
+						<div class="team-content">
+							<h3 class="title">Juan Carlos Cadenillas Palma</h3>
+							<span class="post">Ingeniero Biomédico</span>
+							<ul class="social">
+								<li><a href="https://www.facebook.com/juancarlos.cadenillaspalma.5" target="_blank"><i
+											class="fa fa-facebook"></i></a></li>
+								<!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Técnico Especializado -->
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/gustavo.jpeg" alt="Técnico Especializado">
+						</div>
+						<div class="team-content">
+							<h3 class="title">Miguel Gustavo Mora Baldera</h3>
+							<span class="post">Técnico Electrónico</span>
+							<ul class="social">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Administrador -->
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/ing.jpg" alt="Ingeniero">
+						</div>
+						<div class="team-content">
+							<h3 class="title">Alexander Tomás Yllaconza Cayo</h3>
+							<span class="post">Ingeniero Biomédico</span>
+							<ul class="social">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- End Team -->
+
+	<!-- Start Contact -->
+	<div id="contact" class="contact-box" style="background-color: #FFF;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box text-center">
+						<h2>Contáctanos</h2>
+						<p>Visítanos en nuestra oficina o escríbenos directamente por WhatsApp.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Botón WhatsApp -->
+				<div class="col-md-6 text-center mb-4">
+					<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" class="btn btn-success btn-lg">
+						<i class="fa fa-whatsapp"></i> Enviar mensaje por WhatsApp
+					</a>
+				</div>
+
+				<!-- Información de contacto -->
+				<div class="col-md-6">
+					<h4><i class="fa fa-map-marker"></i> Dirección</h4>
+					<p>Urb. El Refugio Mz C Lt 03, Palma Bella, Chepén 13871</p>
+					<h4><i class="fa fa-phone"></i> Celular</h4>
+					<p><a href="tel:+51957745935">+51 957 745 935</a></p>
+					<h4><i class="fa fa-envelope"></i> Email</h4>
+					<p><a href="mailto:dcgbiomedic@gmail.com">dcgbiomedic@gmail.com</a></p>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- End Contact -->
+
+	<!-- Start Footer -->
+	<footer class="footer-box" style="background: #212529; color: #fff; padding: 60px 0 20px;">
+		<div class="container">
+			<div class="row">
+				<!-- Columna 1: Sobre la Empresa -->
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="footer-widget">
+						<img src="images/1-3ce20b1c.ico" alt="Logo" style="height: 80px; margin-bottom: 20px; ">
+						<p style="color: #bbb;">Líderes en ingeniería biomédica con más de 10 años de experiencia
+							brindando soporte técnico y soluciones integrales a centros de salud en todo el Perú.</p>
+						<div class="footer-social-icon mt-3">
+						<a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank" class="mr-3 text-white"><i
+								class="fa fa-facebook fa-lg"></i></a>
+						<a href="https://www.instagram.com/cadenillaspalma/" target="_blank" class="mr-3 text-white"><i
+									class="fa fa-instagram fa-lg"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Columna 2: Enlaces Rápidos -->
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="footer-widget px-lg-5">
+						<h3
+							style="color: #fff; border-bottom: 2px solid #007bff; display: inline-block; margin-bottom: 20px;">
+							Navegación</h3>
+						<ul class="list-unstyled">
+							<li><a href="index.html" class="text-white-50 py-1 d-block">Inicio</a></li>
+							<li><a href="nosotros.html" class="text-white-50 py-1 d-block">Empresa</a></li>
+							<li><a href="servicios.html" class="text-white-50 py-1 d-block">Servicios</a></li>
+							<li><a href="galeria.html" class="text-white-50 py-1 d-block">Galería</a></li>
+							<li><a href="contacto.html" class="text-white-50 py-1 d-block">Contacto</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Columna 3: Contacto Directo -->
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<div class="footer-widget">
+						<h3
+							style="color: #fff; border-bottom: 2px solid #007bff; display: inline-block; margin-bottom: 20px;">
+							Contacto</h3>
+						<ul class="list-unstyled">
+							<li class="text-white-50 mb-2">
+								<i class="fa fa-map-marker text-primary mr-2"></i> Lima y Provincias, Perú
+							</li>
+							<li class="text-white-50 mb-2">
+								<i class="fa fa-phone text-primary mr-2"></i> +51 957 745 935
+							</li>
+							<li class="text-white-50 mb-2">
+								<i class="fa fa-envelope text-primary mr-2"></i> dcgbiomedic@gmail.com
+							</li>
+							<li class="text-white-50">
+								<i class="fa fa-clock-o text-primary mr-2"></i> Lun - Sáb: 8:00 AM - 7:00 PM
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<hr style="border-color: #444; margin-top: 40px;">
+
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p class="footer-company-name mb-0" style="color: #888;">
+						Todos los derechos reservados &copy; 2026
+						<a href="#" style="color: #007bff; font-weight: bold;">DCG Biomedic</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Botón Flotante -->
+	<button type="button" class="btn-whatsapp-flotante whatsapp-modal-btn" style="border: none; background: linear-gradient(-45deg, #25d366, #128c7e, #25d366); background-size: 200% 200%; animation: coloresDinamicos 5s ease infinite; cursor: pointer;">
+		<i class="fa fa-whatsapp"></i>
+	</button>
+
+	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+	<!-- Modal Formulario WhatsApp -->
+	<div class="modal fade" id="whatsappModal" tabindex="-1" role="dialog" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="background-color: #00b141; border: none;">
+					<h5 class="modal-title" id="whatsappModalLabel" style="color: white; font-weight: bold;">Enviar mensaje por WhatsApp</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="whatsappForm">
+						<div class="form-group">
+							<label for="userName">Nombre Completo</label>
+							<input type="text" class="form-control" id="userName" placeholder="Tu nombre" required>
+						</div>
+						<div class="form-group">
+							<label for="userEmail">Correo Electrónico</label>
+							<input type="email" class="form-control" id="userEmail" placeholder="tu@email.com" required>
+						</div>
+						<div class="form-group">
+							<label for="userPhone">Teléfono</label>
+							<input type="tel" class="form-control" id="userPhone" placeholder="+51 9XX XXX XXX">
+						</div>
+						<div class="form-group">
+							<label for="userMessage">Mensaje</label>
+							<textarea class="form-control" id="userMessage" rows="4" placeholder="Cuéntanos cómo podemos ayudarte...">Hola DCG Biomedic, necesito más información sobre sus servicios.</textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer" style="border-top: 1px solid #e9ecef;">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-success" id="sendWhatsappBtn">
+						<i class="fa fa-whatsapp"></i> Enviar por WhatsApp
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin Modal WhatsApp -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.pogo-slider.min.js"></script>
+	<script src="js/slider-index.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+	<script src="js/contact-form-script.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/custom.js"></script>
+
+
+
+	<script>
+
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 15,
+			nav: true,
+			dots: true,
+			navText: [
+				"<i class='fa fa-chevron-left' style='font-size:40px; color:#1f3a56;'></i>",
+				"<i class='fa fa-chevron-right' style='font-size:40px; color:#1f3a56;'></i>"
+			],
+			responsive: {
+				0: { 
+					items: 1,
+					margin: 10,
+					stagePadding: 0
+				},
+				768: { 
+					items: 2,
+					margin: 12,
+					stagePadding: 0
+				},
+				1000: { 
+					items: 3,
+					margin: 15,
+					stagePadding: 0
+				}
+			}
+		});
+
+
+		// Animación de contadores
+		$('.count-number').each(function () {
+			$(this).prop('Counter', 0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 3000,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+		});
+
+
+
+	</script>
+
+
+</body>
+
+</html>

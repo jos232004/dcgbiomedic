@@ -1,0 +1,413 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+/* Estilos Modal WhatsApp */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: 2px solid #25d366;
+}
+
+#whatsappForm .form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+#whatsappForm .form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#whatsappForm .form-control:focus {
+    border-color: #25d366;
+    box-shadow: 0 0 0 0.2rem rgba(37, 211, 102, 0.25);
+}
+
+#sendWhatsappBtn {
+    background-color: #25d366;
+    border-color: #25d366;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#sendWhatsappBtn:hover {
+    background-color: #128c7e;
+    border-color: #128c7e;
+    transform: scale(1.05);
+}
+
+/* Estilos Página de Productos */
+.grid-item {
+    /* Isotope maneja sus propias transiciones */
+}
+
+.grid-item .card {
+    height: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.grid-item .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    border-color: #25d366;
+}
+
+.grid-item .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #f5f5f5;
+}
+
+.grid-item .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.25rem;
+    min-height: 150px;
+}
+
+.grid-item .card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    min-height: 2.2em;
+}
+
+.grid-item .card-text {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.grid-item .btn {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    margin-top: auto;
+}
+
+.grid-item .btn-success {
+    background-color: #25d366;
+    color: white;
+}
+
+.grid-item .btn-success:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+/* Badge de Categoría */
+.category-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    z-index: 5;
+}
+
+/* Botones de Filtro */
+.filter-btn {
+    border: 2px solid #ddd !important;
+    color: #666 !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 8px !important;
+    margin-bottom: 8px;
+    background-color: #fff !important;
+}
+
+.filter-btn:hover {
+    border-color: #25d366 !important;
+    color: #25d366 !important;
+    background-color: #f0fdf4 !important;
+}
+
+.filter-btn.active {
+    background-color: #25d366 !important;
+    border-color: #25d366 !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+/* Contenedor de Filtros */
+.list-group {
+    border: none;
+}
+
+.list-group-item {
+    border: 2px solid #ddd;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+/* Responsive Productos */
+@media (max-width: 768px) {
+    .grid-item .card {
+        margin-bottom: 12px;
+    }
+    
+    .col-md-3,
+    .col-md-9 {
+        margin-bottom: 12px;
+    }
+    
+    .grid-item .card:hover {
+        transform: translateY(-4px);
+    }
+}
+
+/* Estilos Página de Clientes */
+.clients-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%) !important;
+    padding: 80px 0 !important;
+}
+
+.clients-box .title-box {
+    margin-bottom: 50px;
+}
+
+.clients-box .title-box h2 {
+    font-weight: 700;
+    color: #1f3a56;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.clients-box .title-box p {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.clients-box .owl-carousel.owl-theme .owl-item {
+    padding: 15px;
+}
+
+.clients-box .owl-carousel.owl-theme .item {
+    background: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-box .owl-carousel.owl-theme .item:hover {
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.15);
+    transform: translateY(-8px);
+    border-color: rgba(37, 211, 102, 0.3);
+}
+
+.clients-box .owl-carousel.owl-theme .item img {
+    max-height: 80px !important;
+    max-width: 90% !important;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    /* filter: grayscale(100%); */
+    
+}
+
+.clients-box .owl-carousel.owl-theme .item:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+.clients-box .owl-carousel.owl-theme .item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Controles del Carrusel - Clientes */
+.clients-box .owl-carousel.owl-theme .owl-nav {
+    margin-top: 30px;
+}
+
+.clients-box .owl-carousel.owl-theme .owl-nav .owl-prev,
+.clients-box .owl-carousel.owl-theme .owl-nav .owl-next {
+    background: #25d366 !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 50px !important;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 24px;
+}
+
+.clients-box .owl-carousel.owl-theme .owl-nav .owl-prev:hover,
+.clients-box .owl-carousel.owl-theme .owl-nav .owl-next:hover {
+    background: #128c7e !important;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+/* Responsive Clientes */
+@media (max-width: 768px) {
+    .clients-box .title-box h2 {
+        font-size: 2rem;
+    }
+    
+    .clients-box .owl-carousel.owl-theme .item {
+        height: 140px;
+        padding: 20px 15px;
+    }
+    
+    .clients-box .owl-carousel.owl-theme .item img {
+        max-height: 70px !important;
+    }
+
+    /* Ensure carousel items display horizontally on mobile */
+    .clients-box .owl-carousel.owl-theme .owl-item {
+        float: left !important;
+        display: block !important;
+    }
+
+    .clients-box .owl-carousel.owl-theme .owl-stage {
+        display: flex !important;
+    }
+}
+
+/* Responsive Videos y Reels */
+@media (max-width: 768px) {
+    /* Sección de Reels/Videos */
+    #services.services-box {
+        padding: 40px 0;
+    }
+    
+    #services.services-box .container {
+        padding: 0 10px;
+    }
+    
+    #services.services-box h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    #services.services-box p {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    /* Video wrapper responsive */
+    .tiktok-wrapper {
+        padding: 8px;
+        margin: 0 !important;
+        max-width: 100%;
+    }
+
+    .tiktok-wrapper video {
+        width: 100%;
+        height: auto !important;
+        display: block;
+        border-radius: 12px;
+    }
+
+    /* Owl carousel items responsive */
+    .owl-carousel.owl-theme .owl-item {
+        width: 100% !important;
+        padding: 5px !important;
+    }
+
+    .owl-carousel.owl-theme .owl-nav {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .owl-carousel.owl-theme .owl-nav button {
+        font-size: 30px !important;
+        padding: 10px 15px;
+    }
+
+    /* Hide dots in mobile if needed */
+    .owl-carousel.owl-theme .owl-dots {
+        margin-top: 15px;
+    }
+
+    /* Serviceox responsive */
+    .services-box .owl-carousel .item {
+        padding: 0 !important;
+    }
+
+    .serviceBox {
+        padding: 20px 15px 15px !important;
+        margin: 10px 0;
+        border: 1px solid #16567f !important;
+    }
+
+    /* Ensure carousel items display horizontally on mobile */
+    .services-box .owl-carousel.owl-theme .owl-item {
+        float: left !important;
+        display: block !important;
+    }
+
+    .services-box .owl-carousel.owl-theme .owl-stage {
+        display: flex !important;
+    }
+
+    .serviceBox .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .serviceBox .description {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 10px 0;
+    }
+
+    .serviceBox .service-icon {
+        width: 60px !important;
+        height: 60px !important;
+        line-height: 60px !important;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .serviceBox:before {
+        border-top: 15px solid #16567f;
+        border-left: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        top: 5px;
+        right: 5px;
+    }
+}
