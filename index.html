@@ -244,7 +244,8 @@
 						<!--<li><a class="nav-link" href="#blog">Blog</a></li>-->
 						<li><a class="nav-link" href="contacto.html">Contacto</a></li>
 						<li> <!-- Botón WhatsApp -->
-							<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
+							<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
+								target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
 								<i class="fa fa-whatsapp"></i> WhatsApp
 							</a>
 						</li>
@@ -265,7 +266,7 @@
 						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
 							<div class="lbox-details">
 								<h1>Conoce nuestro catálogo de productos y servicios</h1>
-								
+
 								<a href="productos.html" class="btn">Ver Catálogo</a>
 							</div>
 						</div>
@@ -284,7 +285,8 @@
 						style="background-image:url(images/banner3.png);">
 						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
 							<div class="lbox-details">
-								<h1>Brindamos soporte técnico y soluciones integrales a centros de salud en todo el Perú.</h1>
+								<h1>Brindamos soporte técnico y soluciones integrales a centros de salud en todo el
+									Perú.</h1>
 
 								<a href="contacto.html" class="btn">Contactanos</a>
 							</div>
@@ -408,7 +410,7 @@
 		</div>
 	</div>
 	<!-- End Reels Carousel -->
-	
+
 
 
 	<!-- Start About us -->
@@ -620,7 +622,8 @@
 			<div class="row">
 				<!-- Botón WhatsApp -->
 				<div class="col-md-6 text-center mb-4">
-					<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" class="btn btn-success btn-lg">
+					<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
+						target="_blank" class="btn btn-success btn-lg">
 						<i class="fa fa-whatsapp"></i> Enviar mensaje por WhatsApp
 					</a>
 				</div>
@@ -640,6 +643,44 @@
 		</div>
 	</div>
 	<!-- End Contact -->
+	<!--Aqui va el el chat bot-->
+	<link href="css/chat.css" rel="stylesheet" />
+	<style>
+		:root {
+			--chat--window--bottom: 70px;
+			--chat--window--right: 20px;
+			--chat--window--z-index: 10020;
+			--chat--window--border-radius: 1rem;
+			--chat--toggle--background: #001663;
+			--chat--toggle--hover--background: #050089;
+			--chat--toggle--color: #ffffff;
+			--chat--header--background: #062539;
+			--chat--header--color: #ffffff;
+			--chat--window--border: 1px solid rgba(0,0,0,0.12);
+		}
+		.chat-window-wrapper .chat-window-toggle {
+			box-shadow: 0 14px 28px rgba(0,0,0,0.22);
+		}
+		.chat-window-wrapper .chat-window {
+			border-radius: 1rem;
+			overflow: hidden;
+		}
+		.chat-window-wrapper .chat-window-header {
+			background: #062539;
+			color: #ffffff;
+		}
+		.chat-window-wrapper .chat-window-header .chat-window-title,
+		.chat-window-wrapper .chat-window-header .chat-window-subtitle {
+			color: #ffffff;
+		}
+	</style>
+	<script type="module">
+		import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+		createChat({
+			webhookUrl: 'https://hjose.app.n8n.cloud/webhook/bc0ce522-ee1b-4f4a-9be5-d8c43d09659a/chat'
+		});
+	</script>
 
 	<!-- Start Footer -->
 	<footer class="footer-box" style="background: #212529; color: #fff; padding: 60px 0 20px;">
@@ -652,10 +693,10 @@
 						<p style="color: #bbb;">Líderes en ingeniería biomédica con más de 10 años de experiencia
 							brindando soporte técnico y soluciones integrales a centros de salud en todo el Perú.</p>
 						<div class="footer-social-icon mt-3">
-						<a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank" class="mr-3 text-white"><i
-								class="fa fa-facebook fa-lg"></i></a>
-						<a href="https://www.instagram.com/cadenillaspalma/" target="_blank" class="mr-3 text-white"><i
-									class="fa fa-instagram fa-lg"></i></a>
+							<a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank"
+								class="mr-3 text-white"><i class="fa fa-facebook fa-lg"></i></a>
+							<a href="https://www.instagram.com/cadenillaspalma/" target="_blank"
+								class="mr-3 text-white"><i class="fa fa-instagram fa-lg"></i></a>
 						</div>
 					</div>
 				</div>
@@ -715,18 +756,21 @@
 	<!-- End Footer -->
 
 	<!-- Botón Flotante -->
-	<button type="button" class="btn-whatsapp-flotante whatsapp-modal-btn" style="border: none; background: linear-gradient(-45deg, #25d366, #128c7e, #25d366); background-size: 200% 200%; animation: coloresDinamicos 5s ease infinite; cursor: pointer;">
+	<button type="button" class="btn-whatsapp-flotante whatsapp-modal-btn"
+		style="border: none; background: linear-gradient(-45deg, #25d366, #128c7e, #25d366); background-size: 200% 200%; animation: coloresDinamicos 5s ease infinite; cursor: pointer;">
 		<i class="fa fa-whatsapp"></i>
 	</button>
 
 	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
 
 	<!-- Modal Formulario WhatsApp -->
-	<div class="modal fade" id="whatsappModal" tabindex="-1" role="dialog" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+	<div class="modal fade" id="whatsappModal" tabindex="-1" role="dialog" aria-labelledby="whatsappModalLabel"
+		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header" style="background-color: #00b141; border: none;">
-					<h5 class="modal-title" id="whatsappModalLabel" style="color: white; font-weight: bold;">Enviar mensaje por WhatsApp</h5>
+					<h5 class="modal-title" id="whatsappModalLabel" style="color: white; font-weight: bold;">Enviar
+						mensaje por WhatsApp</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -747,7 +791,8 @@
 						</div>
 						<div class="form-group">
 							<label for="userMessage">Mensaje</label>
-							<textarea class="form-control" id="userMessage" rows="4" placeholder="Cuéntanos cómo podemos ayudarte...">Hola DCG Biomedic, necesito más información sobre sus servicios.</textarea>
+							<textarea class="form-control" id="userMessage" rows="4"
+								placeholder="Cuéntanos cómo podemos ayudarte...">Hola DCG Biomedic, necesito más información sobre sus servicios.</textarea>
 						</div>
 					</form>
 				</div>
@@ -791,17 +836,17 @@
 				"<i class='fa fa-chevron-right' style='font-size:40px; color:#1f3a56;'></i>"
 			],
 			responsive: {
-				0: { 
+				0: {
 					items: 1,
 					margin: 10,
 					stagePadding: 0
 				},
-				768: { 
+				768: {
 					items: 2,
 					margin: 12,
 					stagePadding: 0
 				},
-				1000: { 
+				1000: {
 					items: 3,
 					margin: 15,
 					stagePadding: 0
