@@ -15,6 +15,37 @@
 @import url(owl.carousel.min.css);
 @import url(flaticon.css);
 
+
+/*------------------------------------------------------------------
+	SCROLL TO TOP
+
+-------------------------------------------------------------------*/
+
+/* 1. Ancho y alto de la barra */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 12px;
+}
+
+/* 2. El fondo de la barra (el carril) */
+::-webkit-scrollbar-track {
+	background: #002b46;
+	
+	
+}
+
+/* 3. La parte desplazable (thumb) */
+::-webkit-scrollbar-thumb {
+	background: #7af2ff;
+	border-radius: 10px;
+}
+
+/* 4. Efecto hover en el thumb */
+::-webkit-scrollbar-thumb:hover {
+	background: #00d5ff;
+}
+
+
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
@@ -510,7 +541,7 @@ button:focus {
 }
 
 .lbox-details h1 {
-	font-size: 54px;
+	font-size: 45px;
 	font-family: 'Catamaran', sans-serif;
 	color: #ffffff;
 	font-weight: 600;
@@ -527,6 +558,7 @@ button:focus {
 }
 
 .lbox-details p {
+	font-size: 20px;
 	color: #ffffff;
 	position: relative;
 	z-index: 3;

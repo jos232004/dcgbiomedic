@@ -16,11 +16,11 @@
 			var telefono = $('#userPhone').val().trim();
 			var mensaje = $('#userMessage').val().trim();
 
-			// Validación básica
+			/* Validación básica
 			if (!nombre || !email) {
 				alert('Por favor completa tu nombre y correo electrónico');
 				return;
-			}
+			}*/
 
 			// Construir el mensaje final
 			var mensajeFinal = "*Datos de contacto:*\n";

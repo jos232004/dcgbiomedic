@@ -1,201 +1,267 @@
 /* only small desktops */
 /* tablets */
 @media (min-width: 992px) and (max-width: 1190px) {
-	.countdown{
+	.countdown {
 		height: 285px;
 	}
-	.top-header .navbar .navbar-collapse ul li a{
+
+	.top-header .navbar .navbar-collapse ul li a {
 		font-size: 14px;
 	}
-	.lbox-details h2{
+
+	.lbox-details h2 {
 		font-size: 26px;
 	}
-	.right-top ul li a{
+
+	.right-top ul li a {
 		padding: 0px 15px;
 	}
 }
+
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
-	.top-header .navbar .navbar-collapse ul li a{
+	.top-header .navbar .navbar-collapse ul li a {
 		padding: 5px 15px;
 	}
-	.about-img{
+
+	.about-img {
 		margin-bottom: 30px;
 		margin-top: 30px;
 	}
-	.gallery-box ul li{
+
+	.gallery-box ul li {
 		width: 33.33%;
 	}
-	.top-header{
+
+	.top-header {
 		position: relative;
 	}
-	.lbox-details{
+
+	.lbox-details {
 		display: block;
 		position: relative;
 		width: 100%;
 	}
-	.countdown #timer div#days, .countdown #timer div#hours, .countdown #timer div#minutes, .countdown #timer div#seconds{
+
+	.countdown #timer div#days,
+	.countdown #timer div#hours,
+	.countdown #timer div#minutes,
+	.countdown #timer div#seconds {
 		position: inherit;
 		margin: 12px 0px;
 	}
-	.lbox-details::before{
+
+	.lbox-details::before {
 		background: rgba(0, 0, 0, 0.512);
 	}
-	.countdown{
+
+	.countdown {
 		height: 188px;
 		border-radius: 0px;
 	}
-	.countdown #timer div{
+
+	.countdown #timer div {
 		width: 23%;
 		font-size: 24px;
 	}
-	figure.effect-service h2{
+
+	figure.effect-service h2 {
 		font-size: 12px;
 	}
-	.left-top{
+
+	.left-top {
 		display: inline-block;
 		width: 100%;
 	}
-	.mail-b{
+
+	.mail-b {
 		float: right;
 	}
-	.right-top{
+
+	.right-top {
 		float: left;
 	}
 }
 
 /* mobile or only mobile */
 @media (max-width: 767px) {
-	.navbar-brand{
+	.navbar-brand {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	.top-header .navbar .navbar-collapse ul li a{
+
+	.top-header .navbar .navbar-collapse ul li a {
 		padding: 5px 15px;
 	}
-	.right-top{
+
+	.right-top {
 		float: none;
 		margin: 0 auto;
 		display: block;
 		text-align: center;
 	}
-	.left-top{
+
+	.left-top {
 		text-align: center;
 	}
-	.left-top a{
+
+	.left-top a {
 		float: none;
 		padding: 5px 20px;
 	}
-	.wel-nots{
+
+	.wel-nots {
 		float: none;
 		margin: 0;
 		text-align: center;
 		/*Podemos quitar esto para volver a mostrar el bienvenido y las redes sociales*/
 	}
-	.right-top ul li{
+
+	.right-top ul li {
 		float: none;
 		display: inline-block;
 		/*Podemos quitar esto para volver a mostrar el bienvenido y las redes sociales*/
 	}
-	.mail-b{
+
+	.mail-b {
 		float: none;
 		/*Podemos quitar esto para volver a mostrar el correo en celular*/
 	}
-	.mail-b a{
+
+	.mail-b a {
 		padding: 5px 20px;
 	}
-	.lbox-details h1{
-		font-size: 18px;/*Aqui modificamos las letras del banner*/
+
+	.lbox-details h1 {
+		font-size: 18px;
+		/*Aqui modificamos las letras del banner*/
 	}
-	.lbox-details h2{
+
+	.lbox-details h2 {
 		font-size: 18px;
 	}
-	.lbox-details p strong{
+
+	.lbox-details p strong {
 		font-size: 20px;
 	}
-	.lbox-details a.btn{
-		display: none;
+
+	.lbox-details a.btn {
+		background: #12557f;
+		padding: 10px 20px;
+		font-size: 14px;
+		text-transform: capitalize;
+		color: #ffffff;
+		border-radius: 0px;
+		border: 2px solid #ffffff;
+		position: relative;
+		display: inline-block;
+		z-index: 3;
 	}
-	.title-box h2{
+
+	.title-box h2 {
 		font-size: 38px;
 	}
-	.about-main-info h2{
+
+	.about-main-info h2 {
 		font-size: 24px;
 	}
-	.about-img{
+
+	.about-img {
 		margin-bottom: 30px;
 	}
-	.main-timeline-box .separline::before{
+
+	.main-timeline-box .separline::before {
 		left: 15px !important;
 	}
-	.main-timeline-box .iconBackground{
+
+	.main-timeline-box .iconBackground {
 		left: 15px !important;
 	}
-	.main-timeline-box .timeline-text-content{
+
+	.main-timeline-box .timeline-text-content {
 		margin-left: 0px;
 	}
-	.main-timeline-box .reverse .timeline-text-content{
+
+	.main-timeline-box .reverse .timeline-text-content {
 		margin-right: 0px;
 	}
-	.main-timeline-box .time-line-date-content{
+
+	.main-timeline-box .time-line-date-content {
 		margin-right: 0px;
 	}
-	.main-timeline-box .time-line-date-content p{
+
+	.main-timeline-box .time-line-date-content p {
 		float: left;
 	}
-	.main-timeline-box .timeline-element{
+
+	.main-timeline-box .timeline-element {
 		padding: 0px 15px;
 	}
 
-	.top-header{
+	.top-header {
 		position: relative;
 	}
-	.lbox-details{
+
+	.lbox-details {
 		position: relative;
 		width: 100%;
 		padding: 5% 0%;
 	}
-	.about-m{
+
+	.about-m {
 		margin-top: 30px;
 	}
-	.countdown #timer div#days, .countdown #timer div#hours, .countdown #timer div#minutes, .countdown #timer div#seconds{
+
+	.countdown #timer div#days,
+	.countdown #timer div#hours,
+	.countdown #timer div#minutes,
+	.countdown #timer div#seconds {
 		position: inherit;
 		margin: 12px 0px;
 	}
-	.lbox-details::before{
+
+	.lbox-details::before {
 		background: rgba(0, 0, 0, 0.512);
 	}
-	.countdown{
+
+	.countdown {
 		height: 188px;
 		border-radius: 0px;
 	}
-	.countdown #timer div{
+
+	.countdown #timer div {
 		width: 23%;
 		font-size: 24px;
 	}
-	.about-m{
+
+	.about-m {
 		margin-bottom: 30px;
 	}
-	.timeLine .row .item{
+
+	.timeLine .row .item {
 		margin-bottom: 30px;
 	}
-	figure.effect-service h2{
+
+	figure.effect-service h2 {
 		font-size: 14px;
 	}
-	.filter-button-group button{
+
+	.filter-button-group button {
 		margin-bottom: 5px;
 	}
-	.well-block{
+
+	.well-block {
 		margin-bottom: 30px;
 	}
-	.well-block .well-title h2{
+
+	.well-block .well-title h2 {
 		font-size: 24px;
 	}
-	.blog-inner a{
+
+	.blog-inner a {
 		padding: 10px 6px;
 	}
-	.cont-line{
-		
-	}
-	
+
+	.cont-line {}
+
 }
