@@ -159,6 +159,31 @@
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
+.pagination-container {
+    margin-top: 30px;
+    display: none;
+}
+
+.pagination-container .page-item .page-link {
+    border-radius: 50px;
+    padding: 0.65rem 1rem;
+    color: #062539;
+    border: 1px solid #dee2e6;
+    margin: 0 4px;
+}
+
+.pagination-container .page-item.active .page-link {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: #fff;
+}
+
+.pagination-container .page-link:hover {
+    background-color: #e7f9ee;
+    color: #062539;
+    border-color: #25d366;
+}
+
 /* Contenedor de Filtros */
 .list-group {
     border: none;

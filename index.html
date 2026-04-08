@@ -656,19 +656,23 @@
 			--chat--toggle--color: #ffffff;
 			--chat--header--background: #062539;
 			--chat--header--color: #ffffff;
-			--chat--window--border: 1px solid rgba(0,0,0,0.12);
+			--chat--window--border: 1px solid rgba(0, 0, 0, 0.12);
 		}
+
 		.chat-window-wrapper .chat-window-toggle {
-			box-shadow: 0 14px 28px rgba(0,0,0,0.22);
+			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
 		}
+
 		.chat-window-wrapper .chat-window {
 			border-radius: 1rem;
 			overflow: hidden;
 		}
+
 		.chat-window-wrapper .chat-window-header {
 			background: #062539;
 			color: #ffffff;
 		}
+
 		.chat-window-wrapper .chat-window-header .chat-window-title,
 		.chat-window-wrapper .chat-window-header .chat-window-subtitle {
 			color: #ffffff;
@@ -678,7 +682,21 @@
 		import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
 		createChat({
-			webhookUrl: 'https://hjose.app.n8n.cloud/webhook/bc0ce522-ee1b-4f4a-9be5-d8c43d09659a/chat'
+			webhookUrl: 'https://hjose.app.n8n.cloud/webhook/bc0ce522-ee1b-4f4a-9be5-d8c43d09659a/chat',
+			
+			initialMessages: [
+				'¡Hola! 👋',
+				'Soy Milo, el asistente experto de DCG BIOMEDIC. ¿En qué puedo ayudarle hoy?'
+			],
+			i18n: {
+				en: {
+					title: '¡Hola!',
+					subtitle: 'Soporte y Asesoría Técnica Especializada',
+					footer: '',
+					getStarted: 'Empezar a chatear',
+					inputPlaceholder: 'Escribe tu mensaje aquí...',
+				}
+			}
 		});
 	</script>
 
@@ -787,19 +805,20 @@
 						</div>
 						<div class="form-group">
 							<label for="userPhone">Teléfono</label>
-							<input type="tel" class="form-control" id="userPhone" placeholder="+51 9XX XXX XXX">
+							<input type="tel" class="form-control" id="userPhone" placeholder="+51 9XX XXX XXX"
+								required>
 						</div>
 						<div class="form-group">
 							<label for="userMessage">Mensaje</label>
 							<textarea class="form-control" id="userMessage" rows="4"
-								placeholder="Cuéntanos cómo podemos ayudarte...">Hola DCG Biomedic, necesito más información sobre sus servicios.</textarea>
+								placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
 						</div>
 					</form>
 				</div>
 				<div class="modal-footer" style="border-top: 1px solid #e9ecef;">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 					<button type="button" class="btn btn-success" id="sendWhatsappBtn">
-						<i class="fa fa-whatsapp"></i> Enviar por WhatsApp
+						<i class="fa fa-whatsapp"></i> Enviar
 					</button>
 				</div>
 			</div>

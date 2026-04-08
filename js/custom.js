@@ -9,18 +9,18 @@
 			$('#whatsappModal').modal('show');
 		});
 
-		// Botón enviar en el modal
+		// Botón enviar en el modalD
 		$('#sendWhatsappBtn').on('click', function() {
 			var nombre = $('#userName').val().trim();
 			var email = $('#userEmail').val().trim();
 			var telefono = $('#userPhone').val().trim();
 			var mensaje = $('#userMessage').val().trim();
 
-			/* Validación básica
+			
 			if (!nombre || !email) {
 				alert('Por favor completa tu nombre y correo electrónico');
 				return;
-			}*/
+			}
 
 			// Construir el mensaje final
 			var mensajeFinal = "*Datos de contacto:*\n";
