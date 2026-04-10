@@ -167,6 +167,83 @@
     </div>
     <!-- End Productos Banner -->
 
+    <!-- Start Categorías de Productos -->
+    <section class="category-grid-section py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-lg-8">
+                    <div class="title-box">
+                        <h2>Categorías de Equipos</h2>
+                        <p>Explora rápidamente las líneas principales de producto en nuestro catálogo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row category-grid">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-1 category-filter" data-filter=".rayos-x">
+                        <img src="images/Categoria/rayosx.svg" alt="Rayos X" class="category-card-img">
+                        <span>Rayos X</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-2 category-filter" data-filter=".ecografos">
+                        <img src="images/Categoria/ecografos.png" alt="Ecógrafos" class="category-card-img">
+                        <span>Ecógrafos</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-3 category-filter" data-filter=".mamografos">
+                        <img src="images/Categoria/mamografos.png" alt="Mamógrafos" class="category-card-img">
+                        <span>Mamógrafos</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-4 category-filter" data-filter=".tomografos">
+                        <img src="images/Categoria/tomografos.png" alt="Tomógrafos" class="category-card-img">
+                        <span>Tomógrafos</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-5 category-filter" data-filter=".digitalizacion">
+                        <img src="images/Categoria/digitalizacion.png" alt="Digitalización" class="category-card-img">
+                        <span>Digitalización</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-1 category-filter" data-filter=".impresoras">
+                        <img src="images/Categoria/impresoras.png" alt="Impresoras" class="category-card-img">
+                        <span>Impresoras</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-2 category-filter" data-filter=".desitometros">
+                        <img src="images/Categoria/densimetros.png" alt="Densitómetros" class="category-card-img">
+                        <span>Densitómetros</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-3 category-filter" data-filter=".procesadoras">
+                        <img src="images/Categoria/procesadora.png" alt="Procesadora" class="category-card-img">
+                        <span>Procesadora</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-4 category-filter" data-filter=".monitores">
+                        <img src="images/Categoria/monitores.png" alt="Monitoreo de Paciente" class="category-card-img">
+                        <span>Monitores</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="category-card bg-blue-5 category-filter" data-filter=".mesas">
+                        <img src="images/Categoria/mesas.png" alt="Mesa de Operaciones" class="category-card-img">
+                        <span>Mesas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Categorías de Productos -->
+
     <!-- Start Productos -->
     <div id="productos" class="productos-box py-5 bg-light">
         <div class="container">
@@ -294,7 +371,7 @@
             <hr style="border: 2px solid #25d366; margin: 60px 0; opacity: 0.3;">
 
             <!-- Sección de Todos los Productos -->
-            <div class="row">
+            <div id="productos-todos" class="row">
                 <div class="col-lg-12">
                     <div class="title-box">
                         <h2>Todos nuestros Equipos</h2>
@@ -330,7 +407,9 @@
                             <button class="list-group-item list-group-item-action filter-btn"
                                 data-filter=".impresoras">Impresoras</button>
                             <button class="list-group-item list-group-item-action filter-btn"
-                                data-filter=".desitometros">Desitómetros</button>
+                                data-filter=".densitometros">Densitómetros</button>
+                            <button class="list-group-item list-group-item-action filter-btn"
+                                data-filter=".procesadoras">Procesadora</button>
                             <button class="list-group-item list-group-item-action filter-btn"
                                 data-filter=".monitores">Monitores</button>
                             <button class="list-group-item list-group-item-action filter-btn" data-filter=".mesas">Mesas
@@ -363,6 +442,24 @@
                                 </div>
                             </div>
 
+                            <!--Densitómetros-->
+                            <div class="col-md-4 mb-4 grid-item densitometros">
+                                <div class="card h-100">
+                                    <span class="category-badge">Densitómetros</span>
+                                    <img src="images/productos/Densitometros/densi-de-cuerpo-completo.png"
+                                        class="card-img-top" alt="Densitómetro de Cuerpo Completo">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Densitómetro de Cuerpo Completo</h5>
+                                        <p class="card-text">OSTEOSYS PRIMUS</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Densitómetro%20de%20Cuerpo%20Completo%20OSTEOSYS%20PRIMUS."
+                                            target="_blank" class="btn btn-success">
+                                            <i class="fa fa-whatsapp"></i> Cotizar por WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <!--Tomografos-->
                             <div class="col-md-4 mb-4 grid-item tomografos">
                                 <div class="card h-100">
@@ -373,6 +470,23 @@
                                         <h5 class="card-title">Tomógrafo</h5>
                                         <p class="card-text">ANATOM 128 FITs</p>
                                         <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Tomógrafo%20ANATOM%20128%20FITs."
+                                            target="_blank" class="btn btn-success">
+                                            <i class="fa fa-whatsapp"></i> Cotizar por WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Procesadora-->
+                            <div class="col-md-4 mb-4 grid-item procesadoras">
+                                <div class="card h-100">
+                                    <span class="category-badge">Procesadora</span>
+                                    <img src="images/productos/Procesadora/procesadora-rayosx.png" class="card-img-top"
+                                        alt="Procesadora de Rayos X">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Procesadora de Rayos X</h5>
+                                        <p class="card-text">JP-33</p>
+                                        <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20la%20Procesadora%20de%20Rayos%20X%20JP-33."
                                             target="_blank" class="btn btn-success">
                                             <i class="fa fa-whatsapp"></i> Cotizar por WhatsApp
                                         </a>
@@ -924,7 +1038,7 @@
                                 </div>
                             </div>
 
-                             <!--Impresoras-->
+                            <!--Impresoras-->
                             <div class="col-md-4 mb-4 grid-item impresoras">
                                 <div class="card h-100">
                                     <span class="category-badge">Impresoras</span>
@@ -941,12 +1055,12 @@
                                 </div>
                             </div>
 
-                             <!--Impresoras-->
+                            <!--Impresoras-->
                             <div class="col-md-4 mb-4 grid-item impresoras">
                                 <div class="card h-100">
                                     <span class="category-badge">Impresoras</span>
-                                    <img src="images/productos/Impresoras/impresora-agfa.png"
-                                        class="card-img-top" alt="Impresora de Rayos X Agfa">
+                                    <img src="images/productos/Impresoras/impresora-agfa.png" class="card-img-top"
+                                        alt="Impresora de Rayos X Agfa">
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Impresora de Rayos X y Tomografia</h5>
                                         <p class="card-text">AGFA</p>
@@ -1046,7 +1160,7 @@
 
 
                         </div>
-                        
+
                         <div class="pagination-container">
                             <nav aria-label="Paginación de productos">
                                 <ul class="pagination justify-content-center"></ul>
@@ -1270,6 +1384,21 @@
             refreshGrid();
         });
 
+        // Evento para las tarjetas de categoría
+        $('.category-filter').on('click', function () {
+            var filterValue = $(this).attr('data-filter');
+            $('.filter-btn').removeClass('active');
+            $('.filter-btn[data-filter="' + filterValue + '"]').addClass('active');
+            currentFilter = filterValue;
+            currentPage = 1;
+            refreshGrid();
+
+            // Scroll suave a la sección de productos
+            $('html, body').animate({
+                scrollTop: $('#productos-todos').offset().top - 120
+            }, 300);
+        });
+
         $('.pagination').on('click', 'a.page-link', function (event) {
             event.preventDefault();
             var page = parseInt($(this).attr('data-page'), 10);
@@ -1280,12 +1409,32 @@
             refreshGrid();
 
             $('html, body').animate({
-                scrollTop: $('.pagination-container').offset().top - 120
+                scrollTop: $('#productos-todos').offset().top - 120
             }, 300);
         });
 
         $(window).on('load', function () {
+
+            var hash = window.location.hash; // Captura el #rayos-x de la URL
+            if (hash) {
+                // Convertimos el hash en clase (ej: #rayos-x -> .rayos-x)
+                var filterValue = '.' + hash.replace('#', '');
+
+                // Buscamos si existe un botón con ese filtro
+                var $targetBtn = $('.filter-btn[data-filter="' + filterValue + '"]');
+
+                if ($targetBtn.length > 0) {
+                    $('.filter-btn').removeClass('active');
+                    $targetBtn.addClass('active');
+                    currentFilter = filterValue;
+                    currentPage = 1;
+                }
+                $('html, body').animate({
+                    scrollTop: $('#productos-todos').offset().top - 120
+                }, 300);
+            }
             refreshGrid();
+
         });
     </script>
 </body>
