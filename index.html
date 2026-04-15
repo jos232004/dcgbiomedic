@@ -41,6 +41,193 @@
     <![endif]-->
 
 	<style>
+		:root {
+			--cyan: #00e5ff;
+			--cyan-dim: #00b8cc;
+			--cyan-glow: rgba(0, 229, 255, 0.18);
+			--blue: #0d6efd;
+			--dark: #050d1a;
+			--dark2: #0a1628;
+			--dark3: #0f1e35;
+			--dark4: #162540;
+			--text: #e8f4ff;
+			--text-muted: #7a9bbf;
+			--text-dim: #3a5a7a;
+			--border: rgba(0, 229, 255, 0.15);
+			--border-bright: rgba(0, 229, 255, 0.4);
+			--font-main: 'Exo 2', sans-serif;
+			--font-mono: 'Space Mono', monospace;
+		}
+
+		/* ─── HERO ─── */
+		#inicio {
+			min-height: 100px;
+			display: flex;
+			align-items: center;
+			padding: 120px 5% 80px;
+			overflow: hidden;
+			background-color: #0a1628f2
+		}
+
+		.hero-bg {
+			position: absolute;
+			inset: 0;
+			background: radial-gradient(ellipse 80% 60% at 60% 50%, rgba(0, 100, 180, 0.12) 0%, transparent 70%),
+				radial-gradient(ellipse 40% 40% at 80% 20%, rgba(0, 229, 255, 0.06) 0%, transparent 60%);
+		}
+
+		.hero-content {
+			position: relative;
+			max-width: 680px;
+		}
+
+		.hero-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 6px 14px;
+			border: 1px solid rgba(0, 229, 255, 0.4);
+			;
+			border-radius: 30px;
+			font-family: 'Space Mono', monospace;
+			font-size: 11px;
+			color: #00e5ff;
+			letter-spacing: 2px;
+			margin-bottom: 28px;
+			background: rgba(0, 229, 255, 0.05);
+		}
+
+		.hero-badge::before {
+			content: '';
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #00e5ff;
+			animation: pulse 2s infinite;
+		}
+
+		@keyframes pulse {
+
+			0%,
+			100% {
+				opacity: 1;
+			}
+
+			50% {
+				opacity: 0.3;
+			}
+		}
+
+		.hero-title {
+			font-size: clamp(42px, 6vw, 80px);
+			font-weight: 900;
+			line-height: 1.05;
+			margin-bottom: 24px;
+		}
+
+		.hero-title .line1 {
+			display: block;
+			color: var(--text);
+			letter-spacing: -1px;
+		}
+
+		.hero-title .line2 {
+			display: block;
+			color: #00e5ff;
+			letter-spacing: -1px;
+			position: relative;
+		}
+
+		.hero-subtitle {
+			font-size: 17px;
+			line-height: 1.7;
+			color: var(--text-muted);
+			max-width: 520px;
+			margin-bottom: 40px;
+		}
+
+		.hero-actions {
+			display: flex;
+			gap: 16px;
+			flex-wrap: wrap;
+		}
+
+		.btn-primary {
+			padding: 14px 32px;
+			background: #00e5ff;
+			color: var(--dark);
+			font-family: var(--font-main);
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			text-decoration: none;
+			display: inline-block;
+			transition: box-shadow 0.2s, transform 0.15s;
+		}
+
+		.btn-primary:hover {
+			box-shadow: 0 0 30px rgba(0, 229, 255, 0.4);
+			transform: translateY(-2px);
+		}
+
+		.btn-secondary {
+			padding: 13px 32px;
+			background: transparent;
+			color: var(--text);
+			font-family: var(--font-main);
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			border: 1px solid var(--border-bright);
+			border-radius: 4px;
+			cursor: pointer;
+			text-decoration: none;
+			display: inline-block;
+			transition: background 0.2s, color 0.2s;
+		}
+
+		.btn-secondary:hover {
+			background: rgba(255, 255, 255, 0.05);
+			color: #00e5ff;
+		}
+
+		.hero-visual {
+			position: absolute;
+			right: 5%;
+			top: 50%;
+			transform: translateY(-50%);
+			width: min(500px, 45%);
+			opacity: 0.6;
+		}
+
+		.hero-stats {
+			display: flex;
+			gap: 40px;
+			margin-top: 64px;
+			padding-top: 40px;
+			border-top: 1px solid var(--border);
+		}
+
+		.hero-stat-num {
+			font-size: 32px;
+			font-weight: 700;
+			color: var(--cyan);
+			font-family: var(--font-mono);
+		}
+
+		.hero-stat-label {
+			font-size: 12px;
+			color: var(--text-muted);
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin-top: 4px;
+		}
+
 		#aboutCarousel .carousel-item img {
 			height: 350px;
 			width: 100%;
@@ -192,7 +379,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="left-top">
-						<!--<a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>-->
+
 						<div class="mail-b"><a href="mailto:dcgbiomedic@gmail.com"><i class="fa fa-envelope-o"
 									aria-hidden="true"></i>
 								dcgbiomedic@gmail.com</a></div>
@@ -206,11 +393,9 @@
 						<ul>
 							<li><a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank"><i
 										class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+
 							<li><a href="https://www.instagram.com/cadenillaspalma/" target="_blank"><i
 										class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<!--<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
-
 						</ul>
 					</div>
 				</div>
@@ -255,9 +440,60 @@
 		</nav>
 	</header>
 	<!-- End header -->
+	<!-- HERO -->
+	<section id="inicio">
+		<div class="hero-bg"></div>
+		<div class="hero-content">
+			<div class="hero-badge">DCG BIOMEDIC – CHEPÉN, PERÚ</div>
+			<h1 class="hero-title">
+				<span class="line1">Equipos Médicos</span>
+				<span class="line2">de Alta Tecnología</span>
+			</h1>
+			<p class="hero-subtitle">
+				Líderes en la venta, instalación y mantenimiento de equipos biomédicos a nivel nacional. Garantizamos la
+				operatividad y seguridad de los dispositivos médicos más avanzados.
+			</p>
+			<div class="hero-actions">
+				<a href="productos.html" class="btn-primary">Ver Catálogo</a>
+				<a href="contacto.html" class="btn-secondary">Solicitar Cotización</a>
 
+			</div>
+
+		</div>
+
+		<!-- Hero SVG decorative -->
+		<div class="hero-visual">
+			<svg class="hero-svg" viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="230" cy="230" r="180" stroke="rgba(0,229,255,0.15)" stroke-width="1" />
+				<circle cx="230" cy="230" r="130" stroke="rgba(0,229,255,0.2)" stroke-width="1" />
+				<circle cx="230" cy="230" r="80" stroke="rgba(0,229,255,0.25)" stroke-width="1.5" />
+				<circle cx="230" cy="230" r="30" fill="rgba(0,229,255,0.12)" stroke="#00e5ff" stroke-width="1.5" />
+				<!-- Cross -->
+				<rect x="218" y="210" width="24" height="40" rx="3" fill="rgba(0,229,255,0.5)" />
+				<rect x="210" y="218" width="40" height="24" rx="3" fill="rgba(0,229,255,0.5)" />
+				<!-- Scan lines -->
+				<line x1="50" y1="230" x2="150" y2="230" stroke="rgba(0,229,255,0.3)" stroke-width="1"
+					stroke-dasharray="4 4" />
+				<line x1="310" y1="230" x2="410" y2="230" stroke="rgba(0,229,255,0.3)" stroke-width="1"
+					stroke-dasharray="4 4" />
+				<line x1="230" y1="50" x2="230" y2="150" stroke="rgba(0,229,255,0.3)" stroke-width="1"
+					stroke-dasharray="4 4" />
+				<line x1="230" y1="310" x2="230" y2="410" stroke="rgba(0,229,255,0.3)" stroke-width="1"
+					stroke-dasharray="4 4" />
+				<!-- Dots at corners of inner ring -->
+				<circle cx="230" cy="100" r="4" fill="#00e5ff" />
+				<circle cx="360" cy="230" r="4" fill="#00e5ff" />
+				<circle cx="230" cy="360" r="4" fill="#00e5ff" />
+				<circle cx="100" cy="230" r="4" fill="#00e5ff" />
+				<!-- Heartbeat line -->
+				<polyline
+					points="60,280 100,280 115,240 130,310 145,230 160,280 190,280 230,280 245,255 255,300 265,260 275,280 400,280"
+					stroke="#00e5ff" stroke-width="1.5" fill="none" opacity="0.5" />
+			</svg>
+		</div>
+	</section>
 	<!-- Start Banner -->
-	<div class="ulockd-home-slider">
+	<!--<div class="ulockd-home-slider">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="pogoSlider" id="js-main-slider">
@@ -276,7 +512,7 @@
 						<div class="lbox-caption pogoSlider-slide-element" data-start="0" data-duration="600">
 							<div class="lbox-details">
 								<h1>¡Líderes en ingeniería biomédica con más de 10 años de experiencia!</h1>
-								<!--<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum</p>-->
+								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum</p>
 								<a href="contacto.html" class="btn">Contactanos</a>
 							</div>
 						</div>
@@ -293,10 +529,10 @@
 						</div>
 
 					</div>
-				</div><!-- .pogoSlider -->
+				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- End Banner -->
 	<!-- Start Counter Section -->
 	<div class="counter-section section-padding" style="background: #0a1628; padding: 15px 0; color: white;">
@@ -653,6 +889,15 @@
 						<div class="category-card bg-blue-5">
 							<img src="images/Categoria/mesas.png" alt="Mesa de Operaciones" class="category-card-img">
 							<span>Mesas</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 mb-4">
+					<a href="consumibles.html">
+						<div class="category-card bg-blue-5">
+							<img src="images/Categoria/consumibles.png" alt="Consumibles"
+								class="category-card-img">
+							<span>Consumibles</span>
 						</div>
 					</a>
 				</div>
@@ -1074,12 +1319,12 @@
 		</div>
 	</footer>
 	<!-- End Footer -->
-	
+
 	<!-- Botón Flotante -->
 	<a href="contacto.html"><button type="button" class="btn-whatsapp-flotante whatsapp-modal-btn"
-		style="border: none; background: linear-gradient(-45deg, #25d366, #128c7e, #25d366); background-size: 200% 200%; animation: coloresDinamicos 5s ease infinite; cursor: pointer;">
-		<i class="fa fa-whatsapp"></i>
-	</button></a>
+			style="border: none; background: linear-gradient(-45deg, #25d366, #128c7e, #25d366); background-size: 200% 200%; animation: coloresDinamicos 5s ease infinite; cursor: pointer;">
+			<i class="fa fa-whatsapp"></i>
+		</button></a>
 
 	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
 

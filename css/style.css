@@ -30,8 +30,8 @@
 /* 2. El fondo de la barra (el carril) */
 ::-webkit-scrollbar-track {
 	background: #002b46;
-	
-	
+
+
 }
 
 /* 3. La parte desplazable (thumb) */
@@ -260,6 +260,13 @@ button:focus {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+@media (max-width: 767px) {
+	.main-top {
+		display: none;
+	}
+
+}
+
 .left-top a {
 	display: inline-block;
 	color: #ffffff;
@@ -399,7 +406,7 @@ button:focus {
 
 
 .top-header .navbar .navbar-collapse ul li a.active {
-	background: #00cb86;
+	background: #2a80b5;
 	color: #ffffff;
 	-webkit-transition: all 0.5s ease-in-out 0s;
 	-moz-transition: all 0.5s ease-in-out 0s;
@@ -434,7 +441,7 @@ button:focus {
 }
 
 .top-header .navbar .navbar-collapse ul li a:hover {
-	background: #00cb86;
+	background: #2a80b5;
 	color: #ffffff;
 }
 
@@ -485,7 +492,7 @@ button:focus {
 }
 
 .navbar-toggler:hover {
-	border: 1px solid #00cb86;
+	border: 1px solid #097188;
 }
 
 .navbar-toggler:hover span {
