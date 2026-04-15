@@ -40,7 +40,7 @@
       <script src="https://oss.maxcdn.com"></script>
     <![endif]-->
 
-    
+
 
     <!-- Datos estructurados corregidos para Google -->
     <script type="application/ld+json">
@@ -51,7 +51,7 @@
 	  "url": "https://jos232004.github.io/dcgbiomedic/"
 	}
 	</script>
-    
+
 </head>
 
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
@@ -121,7 +121,8 @@
                         <!--<li><a class="nav-link" href="#blog">Blog</a></li>-->
                         <li><a class="nav-link active" href="contacto.html">Contacto</a></li>
                         <li> <!-- Botón WhatsApp -->
-                            <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
+                            <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
+                                target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
                                 <i class="fa fa-whatsapp"></i> WhatsApp
                             </a>
                         </li>
@@ -138,29 +139,86 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-box text-center">
-                        <h2>Contáctanos</h2>
-                        <p>Visítanos en nuestra oficina o escríbenos directamente por WhatsApp.</p>
+                        <h2>¿Tienes alguna consulta?</h2>
+                        <p>Nuestro equipo está listo para asesorarte en la selección del equipo médico que mejor se
+                            adapte a tus necesidades o para programar un servicio de mantenimiento.</p>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <!-- Botón WhatsApp -->
-                <div class="col-md-6 text-center mb-4">
-                    <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20más%20información%20sobre%20sus%20servicios."
-                        target="_blank" class="btn btn-success btn-lg">
-                        <i class="fa fa-whatsapp"></i> Enviar mensaje por WhatsApp
-                    </a>
-                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-form-box" style="background: #0e203b; padding: 30px; border-radius: 20px;">
 
-                <!-- Información de contacto -->
-                <div class="col-md-6">
-                    <h4><i class="fa fa-map-marker"></i> Dirección</h4>
-                    <p>Urb. El Refugio Mz C Lt 03, Palma Bella, Chepén 13871</p>
-                    <h4><i class="fa fa-phone"></i> Celular</h4>
-                    <p><a href="tel:+51957745935">+51 957 745 935</a></p>
-                    <h4><i class="fa fa-envelope"></i> Email</h4>
-                    <p><a href="mailto:dcgbiomedic@gmail.com">dcgbiomedic@gmail.com</a></p>
+                        <form id="whatsappForm">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="userName" style="color: #7a9bbf;">Nombre</label>
+                                    <input type="text"
+                                        style="background-color: #0f1e35; color: #ffffff; border: 1px solid rgba(0, 229, 255, 0.15);"
+                                        class="form-control" id="userName" placeholder="Tu nombre completo" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="userInstitution" style="color: #7a9bbf;">Institución</label>
+                                    <input type="text"
+                                        style="background-color: #0f1e35; color: #ffffff; border: 1px solid rgba(0, 229, 255, 0.15);"
+                                        class="form-control" id="userInstitution" placeholder="Hospital / Clínica">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="userEmail" style="color: #7a9bbf;">Email</label>
+                                    <input type="email"
+                                        style="background-color: #0f1e35; color: #ffffff; border: 1px solid rgba(0, 229, 255, 0.15);"
+                                        class="form-control" id="userEmail" placeholder="correo@ejemplo.com" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="userPhone" style="color: #7a9bbf;">Teléfono</label>
+                                    <input type="tel"
+                                        style="background-color: #0f1e35; color: #ffffff; border: 1px solid rgba(0, 229, 255, 0.15);"
+                                        class="form-control" id="userPhone" placeholder="+51 9XX XXX XXX">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultaTipo" style="color: #7a9bbf;">Tipo de consulta</label>
+                                <select class="form-control" id="consultaTipo"
+                                    style="background-color: #0f1e35; color: #ffffff; border: 1px solid rgba(0, 229, 255, 0.15);"
+                                    required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="Solicitud de mantenimiento">Solicitud de mantenimiento</option>
+                                    <option value="Calibración / Verificación">Calibración / Verificación</option>
+                                    <option value="Instalación de software">Instalación de software</option>
+                                    <option value="Capacitación">Capacitación</option>
+                                    <option value="Compra de repuestos">Compra de repuestos</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="userMessage" style="color: #7a9bbf;">Mensaje</label>
+                                <textarea class="form-control"
+                                    style="background-color: #0f1e35; color: #ffffff; border: 1px solid rgba(0, 229, 255, 0.15);"
+                                    id="userMessage" rows="5"
+                                    placeholder="Describe tu consulta o requerimiento..."></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" id="sendWhatsappBtn"
+                                style="color: #050d1a; background-color: #00e5ff; border: 1px solid rgba(0, 229, 255, 0.15);">Enviar solicitud</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info-box"
+                        style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px;">
+                        
+                        <p><strong><i class="fa fa-map-marker"></i> Dirección:</strong><br>Urb. El Refugio Mz C Lt 03,
+                            Palma Bella, Chepén 13871</p>
+                        <p><strong><i class="fa fa-phone"></i> Celular:</strong><br><a href="tel:+51957745935"
+                                class="text-dark">+51 957 745 935</a></p>
+                        <p><strong><i class="fa fa-envelope"></i> Email:</strong><br><a
+                                href="mailto:dcgbiomedic@gmail.com" class="text-dark">dcgbiomedic@gmail.com</a></p>
+                        <p><strong><i class="fa fa-clock-o"></i> Horario:</strong><br>Lun - Sáb: 8:00 AM - 7:00 PM</p>
+                        <p><strong><i class="fa fa-whatsapp"></i> WhatsApp directo:</strong><br><a
+                                href="https://wa.me/51957745935" target="_blank" class="text-dark">Iniciar chat</a></p>
+                    </div>
                 </div>
             </div>
 
@@ -180,7 +238,7 @@
     <!-- End Contact -->
 
     <!-- Start Footer -->
-    <footer class="footer-box" style="background: #212529; color: #fff; padding: 60px 0 20px;">
+    <footer class="footer-box" style="background: #212529; color: #ffffff; padding: 60px 0 20px;">
         <div class="container">
             <div class="row">
                 <!-- Columna 1: Sobre la Empresa -->
@@ -190,10 +248,10 @@
                         <p style="color: #bbb;">Líderes en ingeniería biomédica con más de 10 años de experiencia
                             brindando soporte técnico y soluciones integrales a centros de salud en todo el Perú.</p>
                         <div class="footer-social-icon mt-3">
-                            <a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank" class="mr-3 text-white"><i
-                                    class="fa fa-facebook fa-lg"></i></a>
-                            <a href="https://www.instagram.com/cadenillaspalma/" target="_blank" class="mr-3 text-white"><i
-                                    class="fa fa-instagram fa-lg"></i></a>
+                            <a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank"
+                                class="mr-3 text-white"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a href="https://www.instagram.com/cadenillaspalma/" target="_blank"
+                                class="mr-3 text-white"><i class="fa fa-instagram fa-lg"></i></a>
                         </div>
                     </div>
                 </div>
@@ -252,48 +310,9 @@
     </footer>
     <!-- End Footer -->
 
-    <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+    <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
+        target="_blank" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
 
-    <!-- Modal Formulario WhatsApp -->
-    <div class="modal fade" id="whatsappModal" tabindex="-1" role="dialog" aria-labelledby="whatsappModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #25d366; border: none;">
-                    <h5 class="modal-title" id="whatsappModalLabel" style="color: white; font-weight: bold;">Enviar mensaje por WhatsApp</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="whatsappForm">
-                        <div class="form-group">
-                            <label for="userName">Nombre Completo</label>
-                            <input type="text" class="form-control" id="userName" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="userEmail">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="userEmail" placeholder="tu@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="userPhone">Teléfono</label>
-                            <input type="tel" class="form-control" id="userPhone" placeholder="+51 9XX XXX XXX">
-                        </div>
-                        <div class="form-group">
-                            <label for="userMessage">Mensaje</label>
-                            <textarea class="form-control" id="userMessage" rows="4" placeholder="Cuéntanos cómo podemos ayudarte...">Hola DCG Biomedic, necesito más información sobre sus servicios.</textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer" style="border-top: 1px solid #e9ecef;">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success" id="sendWhatsappBtn">
-                        <i class="fa fa-whatsapp"></i> Enviar por WhatsApp
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fin Modal WhatsApp -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
