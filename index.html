@@ -59,14 +59,16 @@
 			--font-mono: 'Space Mono', monospace;
 		}
 
+		
+
 		/* ─── HERO ─── */
 		#inicio {
-			min-height: 100px;
+			min-height: 100vh;
 			display: flex;
 			align-items: center;
-			padding: 120px 5% 80px;
+			padding: 5px 5% 150px;
 			overflow: hidden;
-			background-color: #0a1628f2
+			background-color: #061021;
 		}
 
 		.hero-bg {
@@ -198,11 +200,11 @@
 
 		.hero-visual {
 			position: absolute;
-			right: 5%;
-			top: 50%;
+			right: 100px;
+			top: 451.875px;
 			transform: translateY(-50%);
 			width: min(500px, 45%);
-			opacity: 0.6;
+			opacity: 1.6;
 		}
 
 		.hero-stats {
@@ -226,6 +228,12 @@
 			letter-spacing: 1px;
 			text-transform: uppercase;
 			margin-top: 4px;
+		}
+
+		/* SVG diagram */
+		.hero-svg {
+			width: 100%;
+			opacity: 0.5;
 		}
 
 		#aboutCarousel .carousel-item img {
@@ -262,6 +270,7 @@
 			align-items: center;
 			min-height: auto;
 		}
+		
 
 		/* Botón de WhatsApp Flotante */
 		.btn-whatsapp-flotante {
@@ -294,6 +303,10 @@
 
 
 		@media (max-width: 768px) {
+			#inicio {
+				padding: 60px 5% 80px;
+			}
+
 			.btn-whatsapp-flotante {
 				width: 50px;
 				height: 50px;
@@ -648,13 +661,13 @@
 	<!-- End Reels Carousel -->
 
 	<!--Star Slider Productos-->
-	<div id="services" class="services-box" style="background-color: #ffffff;">
+	<div id="services" class="services-box" style="background-color: #0a1628;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Equipos de alta gama</h2>
-						<p>Descubre nuestra selección de equipos médicos de la más alta calidad.</p>
+						<h2 style="color: white;">Venta de <span style="color: #71c9ff; text-decoration: none;">Equipos Médicos</span></h2>
+						<p style="color: #FFF;">Descubre nuestra selección de equipos médicos de la más alta calidad.</p>
 					</div>
 				</div>
 			</div>
@@ -666,16 +679,16 @@
 						<!-- Producto 1 -->
 						<div class="item">
 							<div class="productBox text-center"
-								style="background: white; border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
+								style="border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
 								<div
-									style="height: 200px; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); display: flex; align-items: center; justify-content: center; border-radius: 15px; margin-bottom: 20px; overflow: hidden;">
+									style="height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 10px; border: 3px solid #71c9ff; margin-bottom: 20px; overflow: hidden;">
 									<img src="images/productos/MesaOperaciones.jpeg" alt="Mesa de Operaciones"
 										style="max-width: 85%; max-height: 85%; object-fit: contain;">
 								</div>
 								<h3 class="title"
-									style="color: #025a8f; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
+									style="color: #71c9ff; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
 									Mesa de Operaciones</h3>
-								<p class="description" style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
+								<p class="description" style="color: #ffffff; font-size: 0.95rem; margin-bottom: 15px;">
 									BENQ MEDICAL - DR. MAX 7000S SERIES</p>
 								<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20la%20Mesa%20de%20Operaciones%20BENQ%20MEDICAL%20-%20DR.%20MAX%207000S%20SERIES."
 									target="_blank" class="btn btn-success"
@@ -687,16 +700,16 @@
 						<!-- Producto 2 -->
 						<div class="item">
 							<div class="productBox text-center"
-								style="background: white; border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
+								style="border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
 								<div
-									style="height: 200px; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); display: flex; align-items: center; justify-content: center; border-radius: 15px; margin-bottom: 20px; overflow: hidden;">
+									style="height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 10px; border: 3px solid #71c9ff; margin-bottom: 20px; overflow: hidden;">
 									<img src="images/productos/MonitorPaciente.jpeg" alt="Monitor de Paciente"
 										style="max-width: 85%; max-height: 85%; object-fit: contain;">
 								</div>
 								<h3 class="title"
-									style="color: #025a8f; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
+									style="color: #71c9ff; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
 									Monitor de Paciente</h3>
-								<p class="description" style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
+								<p class="description" style="color: #ffffff; font-size: 0.95rem; margin-bottom: 15px;">
 									NIHON KOHDEN - LIFE SCOPE G7</p>
 								<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Monitor%20de%20Paciente%20NIHON%20KOHDEN%20-%20LIFE%20SCOPE%20G7."
 									target="_blank" class="btn btn-success"
@@ -708,17 +721,17 @@
 						<!-- Producto 3 -->
 						<div class="item">
 							<div class="productBox text-center"
-								style="background: white; border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
+								style="border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
 								<div
-									style="height: 200px; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); display: flex; align-items: center; justify-content: center; border-radius: 15px; margin-bottom: 20px; overflow: hidden;">
+									style="height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 10px; border: 3px solid #71c9ff; margin-bottom: 20px; overflow: hidden;">
 									<img src="images/productos/Mamografos/mamografo-convencional.png"
 										alt="Mamógrafo Digital"
 										style="max-width: 85%; max-height: 85%; object-fit: contain;">
 								</div>
 								<h3 class="title"
-									style="color: #025a8f; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
+									style="color: #71c9ff; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
 									Mamógrafo Digital</h3>
-								<p class="description" style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">BMI
+								<p class="description" style="color: #ffffff; font-size: 0.95rem; margin-bottom: 15px;">BMI
 									MILADY</p>
 								<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Mamógrafo%20Digital%20BMI%20MILADY."
 									target="_blank" class="btn btn-success"
@@ -730,16 +743,16 @@
 						<!-- Producto 4 -->
 						<div class="item">
 							<div class="productBox text-center"
-								style="background: white; border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
+								style="border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
 								<div
-									style="height: 200px; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); display: flex; align-items: center; justify-content: center; border-radius: 15px; margin-bottom: 20px; overflow: hidden;">
+									style="height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 10px; border: 3px solid #71c9ff; margin-bottom: 20px; overflow: hidden;">
 									<img src="images/productos/RayosX/rayosx-arco-en-u.png" alt="Equipo de Rayos X"
 										style="max-width: 85%; max-height: 85%; object-fit: contain;">
 								</div>
 								<h3 class="title"
-									style="color: #025a8f; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
+									style="color: #71c9ff; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
 									Equipo de Rayos X</h3>
-								<p class="description" style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
+								<p class="description" style="color: #ffffff; font-size: 0.95rem; margin-bottom: 15px;">
 									DX-D 300</p>
 								<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Equipo%20de%20Rayos%20X%20DX-D%20300."
 									target="_blank" class="btn btn-success"
@@ -751,16 +764,16 @@
 						<!-- Producto 5 -->
 						<div class="item">
 							<div class="productBox text-center"
-								style="background: white; border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
+								style="border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
 								<div
-									style="height: 200px; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); display: flex; align-items: center; justify-content: center; border-radius: 15px; margin-bottom: 20px; overflow: hidden;">
+									style="height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 10px; border: 3px solid #71c9ff; margin-bottom: 20px; overflow: hidden;">
 									<img src="images/productos/EcoGrafos/EcografoSonoScape.png" alt="Ecógrafo"
 										style="max-width: 85%; max-height: 85%; object-fit: contain;">
 								</div>
 								<h3 class="title"
-									style="color: #025a8f; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
+									style="color: #71c9ff; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
 									Ecógrafo</h3>
-								<p class="description" style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
+								<p class="description" style="color: #ffffff; font-size: 0.95rem; margin-bottom: 15px;">
 									SonoScape</p>
 								<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Ecógrafo%20SonoScape."
 									target="_blank" class="btn btn-success"
@@ -772,16 +785,16 @@
 						<!-- Producto 6 -->
 						<div class="item">
 							<div class="productBox text-center"
-								style="background: white; border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
+								style="border-radius: 20px; overflow: hidden; padding: 25px; transition: transform 0.3s ease;">
 								<div
-									style="height: 200px; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); display: flex; align-items: center; justify-content: center; border-radius: 15px; margin-bottom: 20px; overflow: hidden;">
+									style="height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 10px; border: 3px solid #71c9ff; margin-bottom: 20px; overflow: hidden;">
 									<img src="images/productos/Tomografos/ANATOM128FIT-removebg-preview.png"
 										alt="Tomógrafo" style="max-width: 85%; max-height: 85%; object-fit: contain;">
 								</div>
 								<h3 class="title"
-									style="color: #025a8f; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
+									style="color: #71c9ff; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
 									Tomógrafo</h3>
-								<p class="description" style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
+								<p class="description" style="color: #ffffff; font-size: 0.95rem; margin-bottom: 15px;">
 									ANATOM 128 FIT</p>
 								<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Tomógrafo%20ANATOM%20128%20FIT."
 									target="_blank" class="btn btn-success"
@@ -895,8 +908,7 @@
 				<div class="col-6 col-md-4 col-lg-2 mb-4">
 					<a href="consumibles.html">
 						<div class="category-card bg-blue-5">
-							<img src="images/Categoria/consumibles.png" alt="Consumibles"
-								class="category-card-img">
+							<img src="images/Categoria/consumibles.png" alt="Consumibles" class="category-card-img">
 							<span>Consumibles</span>
 						</div>
 					</a>

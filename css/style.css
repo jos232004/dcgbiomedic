@@ -23,21 +23,21 @@
 
 /* 1. Ancho y alto de la barra */
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 12px;
+	width: 6px;
+	
 }
 
 /* 2. El fondo de la barra (el carril) */
 ::-webkit-scrollbar-track {
-	background: #002b46;
+	background: #0a1628;
 
 
 }
 
 /* 3. La parte desplazable (thumb) */
 ::-webkit-scrollbar-thumb {
-	background: #7af2ff;
-	border-radius: 10px;
+	background: #00b8cc;
+	border-radius: 3px;
 }
 
 /* 4. Efecto hover en el thumb */
@@ -406,7 +406,7 @@ button:focus {
 
 
 .top-header .navbar .navbar-collapse ul li a.active {
-	background: #2a80b5;
+	background: #1c5274;
 	color: #ffffff;
 	-webkit-transition: all 0.5s ease-in-out 0s;
 	-moz-transition: all 0.5s ease-in-out 0s;
@@ -441,7 +441,7 @@ button:focus {
 }
 
 .top-header .navbar .navbar-collapse ul li a:hover {
-	background: #2a80b5;
+	background: #1c5274;
 	color: #ffffff;
 }
 

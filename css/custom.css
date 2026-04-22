@@ -1,5 +1,18 @@
 /** ADD YOUR AWESOME CODES HERE **/
 
+/* ─── GRID OVERLAY ─── */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
 /* Estilos Modal WhatsApp */
 .modal-content {
     border-radius: 15px;
@@ -561,8 +574,8 @@
 
     .productos-banner h1 {
         font-size: 2rem !important;
-        color: #000000 !important;
-        text-shadow: #ddd 1px 1px 2px !important;
+        color: #fff !important;
+        
     }
 
     .productos-banner p {
