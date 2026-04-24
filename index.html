@@ -34,332 +34,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/personalize.css">
 
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com"></script>
       <script src="https://oss.maxcdn.com"></script>
     <![endif]-->
 
-	<style>
-		:root {
-			--cyan: #00e5ff;
-			--cyan-dim: #00b8cc;
-			--cyan-glow: rgba(0, 229, 255, 0.18);
-			--blue: #0d6efd;
-			--dark: #050d1a;
-			--dark2: #0a1628;
-			--dark3: #0f1e35;
-			--dark4: #162540;
-			--text: #e8f4ff;
-			--text-muted: #7a9bbf;
-			--text-dim: #3a5a7a;
-			--border: rgba(0, 229, 255, 0.15);
-			--border-bright: rgba(0, 229, 255, 0.4);
-			--font-main: 'Exo 2', sans-serif;
-			--font-mono: 'Space Mono', monospace;
-		}
 
-		
-
-		/* ─── HERO ─── */
-		#inicio {
-			min-height: 100vh;
-			display: flex;
-			align-items: center;
-			padding: 5px 5% 150px;
-			overflow: hidden;
-			background-color: #061021;
-		}
-
-		.hero-bg {
-			position: absolute;
-			inset: 0;
-			background: radial-gradient(ellipse 80% 60% at 60% 50%, rgba(0, 100, 180, 0.12) 0%, transparent 70%),
-				radial-gradient(ellipse 40% 40% at 80% 20%, rgba(0, 229, 255, 0.06) 0%, transparent 60%);
-		}
-
-		.hero-content {
-			position: relative;
-			max-width: 680px;
-		}
-
-		.hero-badge {
-			display: inline-flex;
-			align-items: center;
-			gap: 8px;
-			padding: 6px 14px;
-			border: 1px solid rgba(0, 229, 255, 0.4);
-			;
-			border-radius: 30px;
-			font-family: 'Space Mono', monospace;
-			font-size: 11px;
-			color: #00e5ff;
-			letter-spacing: 2px;
-			margin-bottom: 28px;
-			background: rgba(0, 229, 255, 0.05);
-		}
-
-		.hero-badge::before {
-			content: '';
-			width: 6px;
-			height: 6px;
-			border-radius: 50%;
-			background: #00e5ff;
-			animation: pulse 2s infinite;
-		}
-
-		@keyframes pulse {
-
-			0%,
-			100% {
-				opacity: 1;
-			}
-
-			50% {
-				opacity: 0.3;
-			}
-		}
-
-		.hero-title {
-			font-size: clamp(42px, 6vw, 80px);
-			font-weight: 900;
-			line-height: 1.05;
-			margin-bottom: 24px;
-		}
-
-		.hero-title .line1 {
-			display: block;
-			color: var(--text);
-			letter-spacing: -1px;
-		}
-
-		.hero-title .line2 {
-			display: block;
-			color: #00e5ff;
-			letter-spacing: -1px;
-			position: relative;
-		}
-
-		.hero-subtitle {
-			font-size: 17px;
-			line-height: 1.7;
-			color: var(--text-muted);
-			max-width: 520px;
-			margin-bottom: 40px;
-		}
-
-		.hero-actions {
-			display: flex;
-			gap: 16px;
-			flex-wrap: wrap;
-		}
-
-		.btn-primary {
-			padding: 14px 32px;
-			background: #00e5ff;
-			color: var(--dark);
-			font-family: var(--font-main);
-			font-size: 14px;
-			font-weight: 700;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			text-decoration: none;
-			display: inline-block;
-			transition: box-shadow 0.2s, transform 0.15s;
-		}
-
-		.btn-primary:hover {
-			box-shadow: 0 0 30px rgba(0, 229, 255, 0.4);
-			transform: translateY(-2px);
-		}
-
-		.btn-secondary {
-			padding: 13px 32px;
-			background: transparent;
-			color: var(--text);
-			font-family: var(--font-main);
-			font-size: 14px;
-			font-weight: 600;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			border: 1px solid var(--border-bright);
-			border-radius: 4px;
-			cursor: pointer;
-			text-decoration: none;
-			display: inline-block;
-			transition: background 0.2s, color 0.2s;
-		}
-
-		.btn-secondary:hover {
-			background: rgba(255, 255, 255, 0.05);
-			color: #00e5ff;
-		}
-
-		.hero-visual {
-			position: absolute;
-			right: 100px;
-			top: 451.875px;
-			transform: translateY(-50%);
-			width: min(500px, 45%);
-			opacity: 1.6;
-		}
-
-		.hero-stats {
-			display: flex;
-			gap: 40px;
-			margin-top: 64px;
-			padding-top: 40px;
-			border-top: 1px solid var(--border);
-		}
-
-		.hero-stat-num {
-			font-size: 32px;
-			font-weight: 700;
-			color: var(--cyan);
-			font-family: var(--font-mono);
-		}
-
-		.hero-stat-label {
-			font-size: 12px;
-			color: var(--text-muted);
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			margin-top: 4px;
-		}
-
-		/* SVG diagram */
-		.hero-svg {
-			width: 100%;
-			opacity: 0.5;
-		}
-
-		#aboutCarousel .carousel-item img {
-			height: 350px;
-			width: 100%;
-			object-fit: contain;
-			background-color: #fff;
-		}
-
-		/* Videos/Reels Responsive */
-		.tiktok-wrapper {
-			display: flex;
-			justify-content: center;
-			padding: 10px;
-			max-width: 100%;
-			overflow: hidden;
-		}
-
-		.tiktok-wrapper video {
-			width: 100%;
-			max-width: 100%;
-			height: auto;
-			display: block;
-		}
-
-		.owl-carousel.owl-theme .owl-stage {
-			display: flex;
-			flex-wrap: nowrap;
-		}
-
-		.owl-carousel.owl-theme .owl-item {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			min-height: auto;
-		}
-		
-
-		/* Botón de WhatsApp Flotante */
-		.btn-whatsapp-flotante {
-			position: fixed;
-			width: 60px;
-			height: 60px;
-			bottom: 55px;
-			right: 20px;
-			background-color: #25d366;
-			color: #FFF;
-			border-radius: 50px;
-			text-align: center;
-			font-size: 35px;
-			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-			z-index: 9999;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			transition: all 0.3s ease;
-			background: linear-gradient(-45deg, #25d366, #128c7e, #25d366);
-			background-size: 200% 200%;
-			animation: coloresDinamicos 5s ease infinite;
-		}
-
-		.btn-whatsapp-flotante:hover {
-			background-color: #128c7e;
-			color: #FFF;
-			transform: scale(1.1);
-		}
-
-
-		@media (max-width: 768px) {
-			#inicio {
-				padding: 60px 5% 80px;
-			}
-
-			.btn-whatsapp-flotante {
-				width: 50px;
-				height: 50px;
-				bottom: 65px;
-				right: 20px;
-				font-size: 25px;
-			}
-
-			/* Responsive Videos */
-			.tiktok-wrapper {
-				padding: 5px;
-				margin: 0 auto;
-			}
-
-			.tiktok-wrapper video {
-				width: 100%;
-				height: auto;
-			}
-
-			.owl-carousel.owl-theme .owl-item {
-				width: 100%;
-				padding: 5px;
-			}
-
-			#services .container {
-				padding: 0 10px;
-			}
-
-			#services.services-box h2 {
-				font-size: 1.5rem;
-				margin-bottom: 10px;
-			}
-
-			#services.services-box p {
-				font-size: 0.9rem;
-			}
-
-			/* Serviceox responsive */
-			.serviceBox {
-				padding: 20px 15px 15px !important;
-				margin-bottom: 15px;
-			}
-
-			.serviceBox .title {
-				font-size: 16px;
-			}
-
-			.serviceBox .description {
-				font-size: 13px;
-				line-height: 20px;
-			}
-		}
-	</style>
 
 	<!-- Datos estructurados corregidos para Google -->
 	<script type="application/ld+json">
@@ -468,6 +150,7 @@
 			</p>
 			<div class="hero-actions">
 				<a href="productos.html" class="btn-primary">Ver Catálogo</a>
+				<a href="servicios.html" class="btn-secondary">Mantenimiento</a>
 				<a href="contacto.html" class="btn-secondary">Solicitar Cotización</a>
 
 			</div>
@@ -660,14 +343,17 @@
 	</div>
 	<!-- End Reels Carousel -->
 
+
 	<!--Star Slider Productos-->
 	<div id="services" class="services-box" style="background-color: #0a1628;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2 style="color: white;">Venta de <span style="color: #71c9ff; text-decoration: none;">Equipos Médicos</span></h2>
-						<p style="color: #FFF;">Descubre nuestra selección de equipos médicos de la más alta calidad.</p>
+						<h2 style="color: white;">Venta de <span style="color: #71c9ff; text-decoration: none;"><strong>Equipos
+								Médicos</strong></span></h2>
+						<p style="color: #FFF;">Descubre nuestra selección de equipos médicos de la más alta calidad.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -731,7 +417,8 @@
 								<h3 class="title"
 									style="color: #71c9ff; font-weight: 700; margin-bottom: 8px; font-size: 1.2rem;">
 									Mamógrafo Digital</h3>
-								<p class="description" style="color: #ffffff; font-size: 0.95rem; margin-bottom: 15px;">BMI
+								<p class="description" style="color: #ffffff; font-size: 0.95rem; margin-bottom: 15px;">
+									BMI
 									MILADY</p>
 								<a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20quiero%20información%20sobre%20el%20Mamógrafo%20Digital%20BMI%20MILADY."
 									target="_blank" class="btn btn-success"
@@ -977,10 +664,145 @@
 	<section id="servicios">
 		<div class="section-header fade-up">
 			<div class="title-box text-white">
-				<h2 style="color: #fff;">Servicios Técnicos</h2>
+				<h2 style="color: #fff;">Mantenimiento <span style="color: #71c9ff; text-decoration: none;"><strong>Biomédico Integral</strong> </span></h2>
 				<p>Soluciones biomédicas integrales con experiencia y calidad certificada.</p>
 			</div>
 		</div>
+		<!-- 3 BIG CARDS -->
+		<div class="mant-cards fu">
+			<div class="mant-card">
+				<div class="mant-accent a-prev"></div>
+				<div class="mc-label cyan">// Mantenimiento 01</div>
+				<h3>Preventivo</h3>
+				<p>Inspecciones planificadas y sistemáticas que alargan la vida útil de los equipos y evitan fallas
+					antes de que ocurran. Seguimos protocolos del fabricante y normativas sanitarias.</p>
+				<ul class="mant-list">
+					<li>
+						<div class="dot cyan"></div>Inspección física y funcional completa
+					</li>
+					<li>
+						<div class="dot cyan"></div>Limpieza y lubricación de componentes
+					</li>
+					<li>
+						<div class="dot cyan"></div>Verificación de parámetros operativos
+					</li>
+					<li>
+						<div class="dot cyan"></div>Reemplazo de piezas de desgaste programado
+					</li>
+					<li>
+						<div class="dot cyan"></div>Actualización de firmware y software
+					</li>
+					<li>
+						<div class="dot cyan"></div>Reporte técnico detallado y certificado
+					</li>
+				</ul>
+				<div class="mc-footer">
+					<div class="mc-stat cyan">85%</div>
+					<div class="mc-stat-lbl">Reducción de fallas inesperadas</div>
+				</div>
+			</div>
+			<div class="mant-card">
+				<div class="mant-accent a-corr"></div>
+				<div class="mc-label orange">// Mantenimiento 02</div>
+				<h3>Correctivo</h3>
+				<p>Diagnóstico y reparación de fallas con la mayor rapidez posible. Contamos con stock de repuestos
+					originales y equipos de diagnóstico avanzado para reducir al mínimo el tiempo fuera de
+					operación.</p>
+				<ul class="mant-list">
+					<li>
+						<div class="dot orange"></div>Diagnóstico electrónico y funcional
+					</li>
+					<li>
+						<div class="dot orange"></div>Reparación de tarjetas electrónicas
+					</li>
+					<li>
+						<div class="dot orange"></div>Reemplazo de componentes defectuosos
+					</li>
+					<li>
+						<div class="dot orange"></div>Pruebas de seguridad eléctrica IEC
+					</li>
+					<li>
+						<div class="dot orange"></div>Verificación post-reparación completa
+					</li>
+					<li>
+						<div class="dot orange"></div>Garantía sobre la reparación realizada
+					</li>
+				</ul>
+				<div class="mc-footer">
+					<div class="mc-stat orange">&lt;24h</div>
+					<div class="mc-stat-lbl">Tiempo de respuesta garantizado</div>
+				</div>
+			</div>
+			<div class="mant-card">
+				<div class="mant-accent a-pred"></div>
+				<div class="mc-label purple">// Mantenimiento 03</div>
+				<h3>Predictivo</h3>
+				<p>Monitoreo continuo del estado de los equipos mediante análisis de tendencias y técnicas
+					diagnósticas avanzadas. Anticipamos fallas antes de que causen interrupciones críticas.</p>
+				<ul class="mant-list">
+					<li>
+						<div class="dot purple"></div>Análisis de vibraciones y señales
+					</li>
+					<li>
+						<div class="dot purple"></div>Termografía infrarroja de componentes
+					</li>
+					<li>
+						<div class="dot purple"></div>Medición de parámetros eléctricos
+					</li>
+					<li>
+						<div class="dot purple"></div>Historial de datos y curvas de tendencia
+					</li>
+					<li>
+						<div class="dot purple"></div>Alertas tempranas de degradación
+					</li>
+					<li>
+						<div class="dot purple"></div>Plan de mantenimiento personalizado
+					</li>
+				</ul>
+				<div class="mc-footer">
+					<div class="mc-stat purple">3x</div>
+					<div class="mc-stat-lbl">Extensión de vida útil del equipo</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- PROCESO -->
+		<div class="mant-process fu">
+			<div class="process-hd">Nuestro proceso de <span>mantenimiento</span></div>
+			<div class="process-steps">
+				<div class="ps">
+					<div class="ps-circle">📋</div>
+					<div class="ps-n">01</div>
+					<div class="ps-nm">Diagnóstico</div>
+					<div class="ps-d">Evaluación inicial del estado del equipo</div>
+				</div>
+				<div class="ps">
+					<div class="ps-circle">📝</div>
+					<div class="ps-n">02</div>
+					<div class="ps-nm">Planificación</div>
+					<div class="ps-d">Plan de mantenimiento con cronograma</div>
+				</div>
+				<div class="ps">
+					<div class="ps-circle">🔧</div>
+					<div class="ps-n">03</div>
+					<div class="ps-nm">Ejecución</div>
+					<div class="ps-d">Intervención técnica certificada</div>
+				</div>
+				<div class="ps">
+					<div class="ps-circle">✅</div>
+					<div class="ps-n">04</div>
+					<div class="ps-nm">Verificación</div>
+					<div class="ps-d">Pruebas y validación de parámetros</div>
+				</div>
+				<div class="ps">
+					<div class="ps-circle">📄</div>
+					<div class="ps-n">05</div>
+					<div class="ps-nm">Informe</div>
+					<div class="ps-d">Reporte técnico y certificado de mantenimiento</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="services-layout">
 			<div class="services-list">
 				<div class="service-item fade-up">
@@ -1075,7 +897,7 @@
 							<div class="guarantee-dot"></div>Informe técnico detallado
 						</div>
 						<div class="guarantee-item">
-							<div class="guarantee-dot"></div>Cobertura en toda La Libertad
+							<div class="guarantee-dot"></div>Cobertura nacional en todo el Perú
 						</div>
 					</div>
 				</div>
