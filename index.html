@@ -157,36 +157,56 @@
 
 		</div>
 
-		<!-- Hero SVG decorative -->
+		<!-- Hero SVG decorative con colores vibrantes -->
 		<div class="hero-visual">
 			<svg class="hero-svg" viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<circle cx="230" cy="230" r="180" stroke="rgba(0,229,255,0.15)" stroke-width="1" />
-				<circle cx="230" cy="230" r="130" stroke="rgba(0,229,255,0.2)" stroke-width="1" />
-				<circle cx="230" cy="230" r="80" stroke="rgba(0,229,255,0.25)" stroke-width="1.5" />
-				<circle cx="230" cy="230" r="30" fill="rgba(0,229,255,0.12)" stroke="#00e5ff" stroke-width="1.5" />
-				<!-- Cross -->
-				<rect x="218" y="210" width="24" height="40" rx="3" fill="rgba(0,229,255,0.5)" />
-				<rect x="210" y="218" width="40" height="24" rx="3" fill="rgba(0,229,255,0.5)" />
-				<!-- Scan lines -->
-				<line x1="50" y1="230" x2="150" y2="230" stroke="rgba(0,229,255,0.3)" stroke-width="1"
+				<!-- Filtro para el brillo -->
+				<defs>
+					<filter id="glow">
+						<feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+						<feMerge>
+							<feMergeNode in="coloredBlur" />
+							<feMergeNode in="SourceGraphic" />
+						</feMerge>
+					</filter>
+				</defs>
+
+				<!-- Anillos con mayor opacidad -->
+				<circle cx="230" cy="230" r="180" stroke="rgba(0, 242, 255, 0.3)" stroke-width="1" />
+				<circle cx="230" cy="230" r="130" stroke="rgba(0, 242, 255, 0.4)" stroke-width="1" />
+				<circle cx="230" cy="230" r="80" stroke="rgba(0, 242, 255, 0.5)" stroke-width="2" />
+
+				<!-- Círculo central más sólido -->
+				<circle cx="230" cy="230" r="30" fill="rgba(0, 242, 255, 0.2)" stroke="#00f2ff" stroke-width="2"
+					filter="url(#glow)" />
+
+				<!-- Cruz con color sólido vibrante -->
+				<rect x="218" y="210" width="24" height="40" rx="3" fill="#00f2ff" filter="url(#glow)" />
+				<rect x="210" y="218" width="40" height="24" rx="3" fill="#00f2ff" filter="url(#glow)" />
+
+				<!-- Líneas de escaneo más visibles -->
+				<line x1="50" y1="230" x2="150" y2="230" stroke="rgba(0, 242, 255, 0.6)" stroke-width="1.5"
 					stroke-dasharray="4 4" />
-				<line x1="310" y1="230" x2="410" y2="230" stroke="rgba(0,229,255,0.3)" stroke-width="1"
+				<line x1="310" y1="230" x2="410" y2="230" stroke="rgba(0, 242, 255, 0.6)" stroke-width="1.5"
 					stroke-dasharray="4 4" />
-				<line x1="230" y1="50" x2="230" y2="150" stroke="rgba(0,229,255,0.3)" stroke-width="1"
+				<line x1="230" y1="50" x2="230" y2="150" stroke="rgba(0, 242, 255, 0.6)" stroke-width="1.5"
 					stroke-dasharray="4 4" />
-				<line x1="230" y1="310" x2="230" y2="410" stroke="rgba(0,229,255,0.3)" stroke-width="1"
+				<line x1="230" y1="310" x2="230" y2="410" stroke="rgba(0, 242, 255, 0.6)" stroke-width="1.5"
 					stroke-dasharray="4 4" />
-				<!-- Dots at corners of inner ring -->
-				<circle cx="230" cy="100" r="4" fill="#00e5ff" />
-				<circle cx="360" cy="230" r="4" fill="#00e5ff" />
-				<circle cx="230" cy="360" r="4" fill="#00e5ff" />
-				<circle cx="100" cy="230" r="4" fill="#00e5ff" />
-				<!-- Heartbeat line -->
+
+				<!-- Puntos con brillo -->
+				<circle cx="230" cy="100" r="5" fill="#00f2ff" filter="url(#glow)" />
+				<circle cx="360" cy="230" r="5" fill="#00f2ff" filter="url(#glow)" />
+				<circle cx="230" cy="360" r="5" fill="#00f2ff" filter="url(#glow)" />
+				<circle cx="100" cy="230" r="5" fill="#00f2ff" filter="url(#glow)" />
+
+				<!-- Línea de latido con más presencia -->
 				<polyline
 					points="60,280 100,280 115,240 130,310 145,230 160,280 190,280 230,280 245,255 255,300 265,260 275,280 400,280"
-					stroke="#00e5ff" stroke-width="1.5" fill="none" opacity="0.5" />
+					stroke="#fff" stroke-width="1.5" fill="none" opacity="1" filter="url(#glow)" />
 			</svg>
 		</div>
+
 	</section>
 	<!-- Start Banner -->
 	<!--<div class="ulockd-home-slider">
@@ -350,8 +370,9 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2 style="color: white;">Venta de <span style="color: #71c9ff; text-decoration: none;"><strong>Equipos
-								Médicos</strong></span></h2>
+						<h2 style="color: white;">Venta de <span
+								style="color: #71c9ff; text-decoration: none;"><strong>Equipos
+									Médicos</strong></span></h2>
 						<p style="color: #FFF;">Descubre nuestra selección de equipos médicos de la más alta calidad.
 						</p>
 					</div>
@@ -664,7 +685,8 @@
 	<section id="servicios">
 		<div class="section-header fade-up">
 			<div class="title-box text-white">
-				<h2 style="color: #fff;">Mantenimiento <span style="color: #71c9ff; text-decoration: none;"><strong>Biomédico Integral</strong> </span></h2>
+				<h2 style="color: #fff;">Mantenimiento <span
+						style="color: #71c9ff; text-decoration: none;"><strong>Biomédico Integral</strong> </span></h2>
 				<p>Soluciones biomédicas integrales con experiencia y calidad certificada.</p>
 			</div>
 		</div>

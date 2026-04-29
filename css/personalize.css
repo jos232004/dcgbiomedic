@@ -31,7 +31,7 @@
     align-items: center;
     padding: 5px 5% 150px;
     overflow: hidden;
-    background-color: #061021;
+    background-color: #072849;
 }
 
 .hero-bg {
@@ -43,7 +43,7 @@
 
 .hero-content {
     position: relative;
-    
+
 }
 
 .hero-badge {
@@ -106,7 +106,7 @@
 .hero-subtitle {
     font-size: 17px;
     line-height: 1.7;
-    color: var(--text-muted);
+    color: #fff;
     max-width: 520px;
     margin-bottom: 40px;
 }
@@ -272,7 +272,7 @@
         align-items: center;
         padding: 20px 10% 80px;
         overflow: hidden;
-        background-color: #061021;
+        background-color: #072849;
 
     }
 
