@@ -26,23 +26,37 @@
 
 /* ─── HERO ─── */
 #inicio {
+    position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 5px 5% 150px;
     overflow: hidden;
     background-color: #072849;
+    z-index: 1;
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.55);
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 60% 50%, rgba(0, 100, 180, 0.12) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 40% at 80% 20%, rgba(0, 229, 255, 0.06) 0%, transparent 60%);
+    background: radial-gradient(ellipse 80% 60% at 60% 50%, rgba(0, 100, 180, 0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 80% 20%, rgba(0, 229, 255, 0.08) 0%, transparent 60%);
+    z-index: 1;
 }
 
 .hero-content {
     position: relative;
+    z-index: 2;
 
 }
 
@@ -164,7 +178,7 @@
 .hero-visual {
     position: absolute;
     right: 100px;
-    top: 451.875px;
+    top: 300.875px;
     transform: translateY(-50%);
     width: min(500px, 45%);
     opacity: 1.6;
