@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Si el usuario escribe /productos.html, lo redirige a /productos
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [L,R=301]
+
+# Si el usuario pide /productos, el servidor busca internamente productos.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
