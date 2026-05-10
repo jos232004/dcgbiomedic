@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jos232004.github.io/dcgbiomedic/sitemap.xml

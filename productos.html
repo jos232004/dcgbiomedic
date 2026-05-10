@@ -23,8 +23,10 @@
     <meta property="og:image" content="https://jos232004.github.io/dcgbiomedic/images/1-3ce20b1c.ico">
     <meta property="og:url" content="https://jos232004.github.io/dcgbiomedic/">
     <meta property="og:type" content="website">
-
-    <!-- Site Icons -->
+    <meta property="og:locale" content="es_PE">
+    <link rel="canonical" href="https://jos232004.github.io/dcgbiomedic/">
+    <meta name="robots" content="index, follow">
+<!-- Site Icons -->
     <link rel="shortcut icon" href="images/1-3ce20b1c.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
@@ -43,13 +45,41 @@
 
     <!-- Datos estructurados corregidos para Google -->
     <script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "WebSite",
-	  "name": "DCG BIOMEDIC",
-	  "url": "https://jos232004.github.io/dcgbiomedic/"
-	}
-	</script>
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "DCG BIOMEDIC",
+          "url": "https://jos232004.github.io/dcgbiomedic/",
+          "logo": "https://jos232004.github.io/dcgbiomedic/images/1-3ce20b1c.ico",
+          "sameAs": [
+            "https://www.facebook.com/dcgbiomedic1/?locale=es_LA",
+            "https://www.instagram.com/cadenillaspalma/"
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+51 957 745 935",
+              "contactType": "customer service",
+              "areaServed": "PE",
+              "availableLanguage": "es"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "DCG BIOMEDIC",
+          "url": "https://jos232004.github.io/dcgbiomedic/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://jos232004.github.io/dcgbiomedic/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
 
 </head>
 
@@ -97,7 +127,7 @@
     <!-- End top bar -->
 
     <!-- Start header -->
-    <header class="top-header"> 
+    <header class="top-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="./">
@@ -187,7 +217,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="category-card bg-blue-2 category-filter" data-filter=".ecografos">  
+                    <div class="category-card bg-blue-2 category-filter" data-filter=".ecografos">
                         <img src="images/Categoria/ecografos.png" alt="Ecógrafos" class="category-card-img">
                         <span>Ecógrafos</span>
                     </div>
@@ -331,8 +361,7 @@
                                 <span
                                     style="background: #fce4ec; color: #c2185b; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem;">MANIOBRAS</span>
                             </div>
-                            <a href="productos/mesa-operaciones.html"
-                                class="btn btn-success btn-block"
+                            <a href="productos/mesa-operaciones.html" class="btn btn-success btn-block"
                                 style="background: #25d366; border: none; font-weight: 600;">
                                 <i class="fa fa-whatsapp"></i> Consultar Disponibilidad
                             </a>
@@ -443,8 +472,7 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Mesa de Operaciones</h5>
                                         <p class="card-text">DR. MAX 7000S SERIES</p>
-                                        <a href="productos_detalles/mesa-operaciones.html"
-                                            class="btn btn-success">
+                                        <a href="productos_detalles/mesa-operaciones.html" class="btn btn-success">
                                             Ver Detalles
                                         </a>
                                     </div>
@@ -460,14 +488,137 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Densitómetro de Cuerpo Completo</h5>
                                         <p class="card-text">OSTEOSYS PRIMUS</p>
-                                        <a href="productos_detalles/densitometro-cuerpo-completo-osteosys-primus.html" class="btn btn-success">
+                                        <a href="productos_detalles/densitometro-cuerpo-completo-osteosys-primus.html"
+                                            class="btn btn-success">
                                             Ver Detalles
                                         </a>
                                     </div>
                                 </div>
                             </div>
 
+                            <!--Procesadora-->
+                            <div class="col-md-4 mb-4 grid-item procesadoras">
+                                <div class="card h-100">
+                                    <span class="category-badge">Procesadora</span>
+                                    <img src="images/productos/Procesadora/procesadora-rayosx.png" class="card-img-top"
+                                        alt="Procesadora de Rayos X">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Procesadora de Rayos X</h5>
+                                        <p class="card-text">JP-33</p>
+                                        <a href="productos_detalles/procesadora-rayos-x-jp-33.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <!-- Producto 2 -->
+                            <div class="col-md-4 mb-4 grid-item otros">
+                                <div class="card h-100">
+                                    <span class="category-badge">Otros</span>
+                                    <img src="images/productos/Incubadora.jpeg" class="card-img-top"
+                                        alt="Incubadora Neonatal">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Incubadora Neonatal</h5>
+                                        <p class="card-text">BISTOS BT-500</p>
+                                        <a href="productos_detalles/incubadora-neonatal-bistos-bt-500.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Categoria digitalizacion-->
+
+                            <!--Digitalizacion-->
+                            <div class="col-md-4 mb-4 grid-item digitalizacion">
+                                <div class="card h-100">
+                                    <span class="category-badge">Digitalización</span>
+                                    <img src="images/productos/Digitalizacion/cr10-X.png" class="card-img-top"
+                                        alt="Digitalizadora CR 10-X">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Digitalizadora</h5>
+                                        <p class="card-text">CR 10-X</p>
+                                        <a href="productos_detalles/digitalizadora-cr-10-x.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Digitalizacion-->
+                            <div class="col-md-4 mb-4 grid-item digitalizacion">
+                                <div class="card h-100">
+                                    <span class="category-badge">Digitalización</span>
+                                    <img src="images/productos/Digitalizacion/CR-30XM-removebg-preview.png"
+                                        class="card-img-top" alt="Digitalizadora CR 30XM">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">CR Rayos X y Mamógrafos</h5>
+                                        <p class="card-text">CR 30XM</p>
+                                        <a href="productos_detalles/cr-rayos-x-mamografos-cr-30xm.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Digitalizacion-->
+                            <div class="col-md-4 mb-4 grid-item digitalizacion">
+                                <div class="card h-100">
+                                    <span class="category-badge">Digitalización</span>
+                                    <img src="images/productos/Digitalizacion/IRAY_14X17-removebg-preview.png"
+                                        class="card-img-top" alt="Digitalizadora Flat Panel">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Flat Panel</h5>
+                                        <p class="card-text">IRAY 14X17</p>
+                                        <a href="productos_detalles/flat-panel-iray-14x17.html" class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Digitalizacion-->
+                            <div class="col-md-4 mb-4 grid-item digitalizacion">
+                                <div class="card h-100">
+                                    <span class="category-badge">Digitalización</span>
+                                    <img src="images/productos/Digitalizacion/IMAGEN-DEST.-11.1-600x600.png"
+                                        class="card-img-top" alt="Digitalizadora Flat Panel">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Flat Panel</h5>
+                                        <p class="card-text">INALAMBRICO 17X17</p>
+                                        <a href="productos_detalles/flat-panel-inalambrico-17x17.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Digitalizacion-->
+                            <div class="col-md-4 mb-4 grid-item digitalizacion">
+                                <div class="card h-100">
+                                    <span class="category-badge">Digitalización</span>
+                                    <img src="images/productos/Digitalizacion/flaPanel-Inalambrico.png"
+                                        class="card-img-top" alt="Digitalizadora Flat Panel">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Flat Panel Inalambrico</h5>
+                                        <p class="card-text">24x30 MAMÓGRAFIA</p>
+                                        <a href="productos_detalles/flat-panel-inalambrico-24x30-mamografia.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fin De Categoria digitalizacion-->
+
+                            <!-- Categoria tomografos-->
                             <!--Tomografos-->
                             <div class="col-md-4 mb-4 grid-item tomografos">
                                 <div class="card h-100">
@@ -485,38 +636,26 @@
                                 </div>
                             </div>
 
-                            <!--Procesadora-->
-                            <div class="col-md-4 mb-4 grid-item procesadoras">
+                            <!--Tomografos-->
+                            <div class="col-md-4 mb-4 grid-item tomografos">
                                 <div class="card h-100">
-                                    <span class="category-badge">Procesadora</span>
-                                    <img src="images/productos/Procesadora/procesadora-rayosx.png" class="card-img-top"
-                                        alt="Procesadora de Rayos X">
+                                    <span class="category-badge">Tomógrafos</span>
+                                    <img src="images/productos/Tomografos/Anatom32.png" class="card-img-top"
+                                        alt="Tomógrafo ANATOM 32 & 64 FIT">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Procesadora de Rayos X</h5>
-                                        <p class="card-text">JP-33</p>
-                                        <a href="productos_detalles/procesadora-rayos-x-jp-33.html" class="btn btn-success">
+                                        <h5 class="card-title">Tomógrafo</h5>
+                                        <p class="card-text">ANATOM 32 & 64 FIT</p>
+                                        <a href="productos_detalles/tomografo-anatom-32-64-fit.html"
+                                            class="btn btn-success">
                                             Ver Detalles
                                         </a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Producto 2 -->
-                            <div class="col-md-4 mb-4 grid-item otros">
-                                <div class="card h-100">
-                                    <span class="category-badge">Otros</span>
-                                    <img src="images/productos/Incubadora.jpeg" class="card-img-top"
-                                        alt="Incubadora Neonatal">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Incubadora Neonatal</h5>
-                                        <p class="card-text">BISTOS BT-500</p>
-                                        <a href="productos_detalles/incubadora-neonatal-bistos-bt-500.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- Fin de Categoria tomografos-->
 
+                            <!-- Categoria rayos-->
                             <!--Rayos X-->
                             <div class="col-md-4 mb-4 grid-item rayos-x">
                                 <div class="card h-100">
@@ -551,16 +690,16 @@
                                 </div>
                             </div>
 
-                            <!-- Producto 3 -->
-                            <div class="col-md-4 mb-4 grid-item monitores">
+                            <!--Rayos X-->
+                            <div class="col-md-4 mb-4 grid-item rayos-x">
                                 <div class="card h-100">
-                                    <span class="category-badge">Monitores</span>
-                                    <img src="images/productos/MonitorPaciente.jpeg" class="card-img-top"
-                                        alt="Monitor de Paciente">
+                                    <span class="category-badge">Rayos X</span>
+                                    <img src="images/productos/RayosX/rayosx-estacionario-digital.png"
+                                        class="card-img-top" alt="Equipo de Rayos X Estacionario Digital Directo">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Monitor de Paciente</h5>
-                                        <p class="card-text">LIFE SCOPE G7 CSM-1701/1702</p>
-                                        <a href="productos_detalles/monitor-paciente-life-scope-g7.html"
+                                        <h5 class="card-title">Equipo de Rayos x Estacionario Digital Directo</h5>
+                                        <p class="card-text">FUJIFILM FDR SMART X</p>
+                                        <a href="productos_detalles/equipo-rayos-x-estacionario-digital-fujifilm-fdr-smart-x.html"
                                             class="btn btn-success">
                                             Ver Detalles
                                         </a>
@@ -568,6 +707,160 @@
                                 </div>
                             </div>
 
+                            <!--Rayos X-->
+                            <div class="col-md-4 mb-4 grid-item rayos-x">
+                                <div class="card h-100">
+                                    <span class="category-badge">Rayos X</span>
+                                    <img src="images/productos/RayosX/rayosx-portatil.png" class="card-img-top"
+                                        alt="Equipo de Rayos X Portátil">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Equipo de Rayos x Portátil</h5>
+                                        <p class="card-text">BROWNIER</p>
+                                        <a href="productos_detalles/equipo-rayos-x-portatil-brownie.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Rayos X-->
+                            <div class="col-md-4 mb-4 grid-item rayos-x">
+                                <div class="card h-100">
+                                    <span class="category-badge">Rayos X</span>
+                                    <img src="images/productos/RayosX/rayosx-portatil-drgem.png" class="card-img-top"
+                                        alt="Equipo de Rayos X Portátil">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Equipo de Rayos x Portátil</h5>
+                                        <p class="card-text">DRGEM</p>
+                                        <a href="productos_detalles/equipo-rayos-x-portatil-drgem.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Rayos X-->
+                            <div class="col-md-4 mb-4 grid-item rayos-x">
+                                <div class="card h-100">
+                                    <span class="category-badge">Rayos X</span>
+                                    <img src="images/productos/RayosX/rayosx-arco-en-c.png" class="card-img-top"
+                                        alt="Equipo de Rayos X Arco en C">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Equipo de Rayos X Arco en C</h5>
+                                        <p class="card-text">SIEMENS ARCADIS AVANTIC</p>
+                                        <a href="productos_detalles/equipo-rayos-x-arco-en-c-siemens-arcadis-avantic.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Rayos X-->
+                            <div class="col-md-4 mb-4 grid-item rayos-x">
+                                <div class="card h-100">
+                                    <span class="category-badge">Rayos X</span>
+                                    <img src="images/productos/RayosX/estativo-rayosx.png" class="card-img-top"
+                                        alt="Estativo para Rayos X">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Estativo para Rayos X</h5>
+                                        <p class="card-text"></p>
+                                        <a href="productos_detalles/estativo-para-rayos-x.html" class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Rayos X-->
+                            <div class="col-md-4 mb-4 grid-item rayos-x">
+                                <div class="card h-100">
+                                    <span class="category-badge">Rayos X</span>
+                                    <img src="images/productos/RayosX/mesa-fija-radiologica.png" class="card-img-top"
+                                        alt="Mesa Fija Radiológica">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Mesa Fija Radiológica</h5>
+                                        <p class="card-text"></p>
+                                        <a href="productos_detalles/mesa-fija-radiologica.html" class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Rayos X-->
+                            <div class="col-md-4 mb-4 grid-item rayos-x">
+                                <div class="card h-100">
+                                    <span class="category-badge">Rayos X</span>
+                                    <img src="images/productos/RayosX/parrilla-rayosx.png" class="card-img-top"
+                                        alt="Parrilla para Rayos X">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Parrilla para Rayos X</h5>
+                                        <p class="card-text"></p>
+                                        <a href="productos_detalles/parrilla-para-rayos-x.html" class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Final de Categoria rayos-->
+
+                            <!-- Categoria ecografos-->
+                            <!--Ecografos-->
+                            <div class="col-md-4 mb-4 grid-item ecografos">
+                                <div class="card h-100">
+                                    <span class="category-badge">Ecógrafos</span>
+                                    <img src="images/productos/EcoGrafos/EcografoSonoScape.png" class="card-img-top"
+                                        alt="Ecógrafo SonoScape">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Ecógrafo SonoScape</h5>
+                                        <p class="card-text">MINDRAY</p>
+                                        <a href="productos_detalles/ecografo-sonoscape-mindray.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Ecografos-->
+                            <div class="col-md-4 mb-4 grid-item ecografos">
+                                <div class="card h-100">
+                                    <span class="category-badge">Ecógrafos</span>
+                                    <img src="images/productos/EcoGrafos/Ecografos-de-consola.png" class="card-img-top"
+                                        alt="Ecógrafo de Consola">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Ecógrafos de consola 2D-3D-4D-5D-6D</h5>
+                                        <p class="card-text"></p>
+                                        <a href="productos_detalles/ecografos-de-consola-2d-3d-4d-5d-6d.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Ecografos-->
+                            <div class="col-md-4 mb-4 grid-item ecografos">
+                                <div class="card h-100">
+                                    <span class="category-badge">Ecógrafos</span>
+                                    <img src="images/productos/EcoGrafos/EcogradosPortatil.png" class="card-img-top"
+                                        alt="Ecógrafo Portátil">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Ecógrafos Portátiles 2D-3D</h5>
+                                        <p class="card-text"></p>
+                                        <a href="productos_detalles/ecografo-portatil-2d-3d.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fin de Categoria ecografos-->
+
+                            <!-- Categoria mamografos-->
                             <!--Mamografos-->
                             <div class="col-md-4 mb-4 grid-item mamografos">
                                 <div class="card h-100">
@@ -585,39 +878,6 @@
                                 </div>
                             </div>
 
-                            <!--Tomografos-->
-                            <div class="col-md-4 mb-4 grid-item tomografos">
-                                <div class="card h-100">
-                                    <span class="category-badge">Tomógrafos</span>
-                                    <img src="images/productos/Tomografos/Anatom32.png" class="card-img-top"
-                                        alt="Tomógrafo ANATOM 32 & 64 FIT">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Tomógrafo</h5>
-                                        <p class="card-text">ANATOM 32 & 64 FIT</p>
-                                        <a href="productos_detalles/tomografo-anatom-32-64-fit.html"
-                                            class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Producto 4 -->
-                            <div class="col-md-4 mb-4 grid-item monitores">
-                                <div class="card h-100">
-                                    <span class="category-badge">Monitores</span>
-                                    <img src="images/productos/MonitorP2.jpeg" class="card-img-top"
-                                        alt="Monitor de Paciente">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Monitor de Paciente</h5>
-                                        <p class="card-text">UCI / UCC</p>
-                                        <a href="productos_detalles/monitor-paciente-uci-ucc.html"
-                                           class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                             <!--Mamografos-->
                             <div class="col-md-4 mb-4 grid-item mamografos">
                                 <div class="card h-100">
@@ -635,16 +895,35 @@
                                 </div>
                             </div>
 
-                            <!--Rayos X-->
-                            <div class="col-md-4 mb-4 grid-item rayos-x">
+                            <!-- Fin de Categoria mamografos-->
+
+                            <!-- Producto 3 -->
+                            <div class="col-md-4 mb-4 grid-item monitores">
                                 <div class="card h-100">
-                                    <span class="category-badge">Rayos X</span>
-                                    <img src="images/productos/RayosX/rayosx-estacionario-digital.png"
-                                        class="card-img-top" alt="Equipo de Rayos X Estacionario Digital Directo">
+                                    <span class="category-badge">Monitores</span>
+                                    <img src="images/productos/MonitorPaciente.jpeg" class="card-img-top"
+                                        alt="Monitor de Paciente">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Equipo de Rayos x Estacionario Digital Directo</h5>
-                                        <p class="card-text">FUJIFILM FDR SMART X</p>
-                                        <a href="productos_detalles/equipo-rayos-x-estacionario-digital-fujifilm-fdr-smart-x.html"
+                                        <h5 class="card-title">Monitor de Paciente</h5>
+                                        <p class="card-text">LIFE SCOPE G7 CSM-1701/1702</p>
+                                        <a href="productos_detalles/monitor-paciente-life-scope-g7.html"
+                                            class="btn btn-success">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Producto 4 -->
+                            <div class="col-md-4 mb-4 grid-item monitores">
+                                <div class="card h-100">
+                                    <span class="category-badge">Monitores</span>
+                                    <img src="images/productos/MonitorP2.jpeg" class="card-img-top"
+                                        alt="Monitor de Paciente">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Monitor de Paciente</h5>
+                                        <p class="card-text">UCI / UCC</p>
+                                        <a href="productos_detalles/monitor-paciente-uci-ucc.html"
                                             class="btn btn-success">
                                             Ver Detalles
                                         </a>
@@ -696,44 +975,13 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Detector de latidos Fetales</h5>
                                         <p class="card-text">BISTOS BT-220</p>
-                                        <a href="productos_detalles/detector-latidos-fetales-bistos-bt-220.html" class="btn btn-success">Ver Detalles</a>
+                                        <a href="productos_detalles/detector-latidos-fetales-bistos-bt-220.html"
+                                            class="btn btn-success">Ver Detalles</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--Rayos X-->
-                            <div class="col-md-4 mb-4 grid-item rayos-x">
-                                <div class="card h-100">
-                                    <span class="category-badge">Rayos X</span>
-                                    <img src="images/productos/RayosX/rayosx-portatil.png" class="card-img-top"
-                                        alt="Equipo de Rayos X Portátil">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Equipo de Rayos x Portátil</h5>
-                                        <p class="card-text">BROWNIER</p>
-                                        <a href="productos_detalles/equipo-rayos-x-portatil-brownie.html"
-                                            class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!--Rayos X-->
-                            <div class="col-md-4 mb-4 grid-item rayos-x">
-                                <div class="card h-100">
-                                    <span class="category-badge">Rayos X</span>
-                                    <img src="images/productos/RayosX/rayosx-portatil-drgem.png" class="card-img-top"
-                                        alt="Equipo de Rayos X Portátil">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Equipo de Rayos x Portátil</h5>
-                                        <p class="card-text">DRGEM</p>
-                                        <a href="productos_detalles/equipo-rayos-x-portatil-drgem.html"
-                                            class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- Coches Hospitalarios -->
                             <div class="col-md-4 mb-4 grid-item otros">
@@ -750,37 +998,7 @@
                                 </div>
                             </div>
 
-                            <!--Ecografos-->
-                            <div class="col-md-4 mb-4 grid-item ecografos">
-                                <div class="card h-100">
-                                    <span class="category-badge">Ecógrafos</span>
-                                    <img src="images/productos/EcoGrafos/EcografoSonoScape.png" class="card-img-top"
-                                        alt="Ecógrafo SonoScape">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Ecógrafo SonoScape</h5>
-                                        <p class="card-text">MINDRAY</p>
-                                        <a href="productos_detalles/ecografo-sonoscape-mindray.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!--Ecografos-->
-                            <div class="col-md-4 mb-4 grid-item ecografos">
-                                <div class="card h-100">
-                                    <span class="category-badge">Ecógrafos</span>
-                                    <img src="images/productos/EcoGrafos/Ecografos-de-consola.png" class="card-img-top"
-                                        alt="Ecógrafo de Consola">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Ecógrafos de consola 2D-3D-4D-5D-6D</h5>
-                                        <p class="card-text"></p>
-                                        <a href="productos_detalles/ecografos-de-consola-2d-3d-4d-5d-6d.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- Maquina de Anestesia -->
                             <div class="col-md-4 mb-4 grid-item otros">
@@ -791,60 +1009,12 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Maquina de Anestesia</h5>
                                         <p class="card-text">AEON7200A FULL</p>
-                                        <a href="productos_detalles/maquina-de-anestesia-aeon7200a-full.html" class="btn btn-success">Ver Detalles</a>
+                                        <a href="productos_detalles/maquina-de-anestesia-aeon7200a-full.html"
+                                            class="btn btn-success">Ver Detalles</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--Ecografos-->
-                            <div class="col-md-4 mb-4 grid-item ecografos">
-                                <div class="card h-100">
-                                    <span class="category-badge">Ecógrafos</span>
-                                    <img src="images/productos/EcoGrafos/EcogradosPortatil.png" class="card-img-top"
-                                        alt="Ecógrafo Portátil">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Ecógrafos Portátiles 2D-3D</h5>
-                                        <p class="card-text"></p>
-                                        <a href="productos_detalles/ecografo-portatil-2d-3d.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Rayos X-->
-                            <div class="col-md-4 mb-4 grid-item rayos-x">
-                                <div class="card h-100">
-                                    <span class="category-badge">Rayos X</span>
-                                    <img src="images/productos/RayosX/rayosx-arco-en-c.png" class="card-img-top"
-                                        alt="Equipo de Rayos X Arco en C">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Equipo de Rayos X Arco en C</h5>
-                                        <p class="card-text">SIEMENS ARCADIS AVANTIC</p>
-                                        <a href="productos_detalles/equipo-rayos-x-arco-en-c-siemens-arcadis-avantic.html"
-                                            class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Rayos X-->
-                            <div class="col-md-4 mb-4 grid-item rayos-x">
-                                <div class="card h-100">
-                                    <span class="category-badge">Rayos X</span>
-                                    <img src="images/productos/RayosX/estativo-rayosx.png" class="card-img-top"
-                                        alt="Estativo para Rayos X">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Estativo para Rayos X</h5>
-                                        <p class="card-text"></p>
-                                        <a href="productos_detalles/estativo-para-rayos-x.html"
-                                            class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- Bomba de Jeringa -->
                             <div class="col-md-4 mb-4 grid-item otros">
@@ -855,58 +1025,12 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Bomba de Jeringa</h5>
                                         <p class="card-text">ENMIND EN-S7 SMART</p>
-                                        <a href="productos_detalles/bomba-de-jeringa-enmind-en-s7-smart.html" class="btn btn-success">Ver Detalles</a>
+                                        <a href="productos_detalles/bomba-de-jeringa-enmind-en-s7-smart.html"
+                                            class="btn btn-success">Ver Detalles</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--Digitalizacion-->
-                            <div class="col-md-4 mb-4 grid-item digitalizacion">
-                                <div class="card h-100">
-                                    <span class="category-badge">Digitalización</span>
-                                    <img src="images/productos/Digitalizacion/cr10-X.png" class="card-img-top"
-                                        alt="Digitalizadora CR 10-X">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Digitalizadora</h5>
-                                        <p class="card-text">CR 10-X</p>
-                                        <a href="productos_detalles/digitalizadora-cr-10-x.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Digitalizacion-->
-                            <div class="col-md-4 mb-4 grid-item digitalizacion">
-                                <div class="card h-100">
-                                    <span class="category-badge">Digitalización</span>
-                                    <img src="images/productos/Digitalizacion/CR-30XM-removebg-preview.png"
-                                        class="card-img-top" alt="Digitalizadora CR 30XM">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">CR Rayos X y Mamógrafos</h5>
-                                        <p class="card-text">CR 30XM</p>
-                                        <a href="productos_detalles/cr-rayos-x-mamografos-cr-30xm.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Digitalizacion-->
-                            <div class="col-md-4 mb-4 grid-item digitalizacion">
-                                <div class="card h-100">
-                                    <span class="category-badge">Digitalización</span>
-                                    <img src="images/productos/Digitalizacion/IRAY_14X17-removebg-preview.png"
-                                        class="card-img-top" alt="Digitalizadora Flat Panel">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Flat Panel</h5>
-                                        <p class="card-text">IRAY 14X17</p>
-                                        <a href="productos_detalles/flat-panel-iray-14x17.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- Autoclave de Sobremesa -->
                             <div class="col-md-4 mb-4 grid-item otros">
@@ -917,76 +1041,12 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Autoclave de Sobremesa</h5>
                                         <p class="card-text">SHINVA MOST-T-B SERIES</p>
-                                        <a href="productos_detalles/autoclave-sobremesa-shinva-most-t-b-series.html" class="btn btn-success">Ver Detalles</a>
+                                        <a href="productos_detalles/autoclave-sobremesa-shinva-most-t-b-series.html"
+                                            class="btn btn-success">Ver Detalles</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--Digitalizacion-->
-                            <div class="col-md-4 mb-4 grid-item digitalizacion">
-                                <div class="card h-100">
-                                    <span class="category-badge">Digitalización</span>
-                                    <img src="images/productos/Digitalizacion/IMAGEN-DEST.-11.1-600x600.png"
-                                        class="card-img-top" alt="Digitalizadora Flat Panel">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Flat Panel</h5>
-                                        <p class="card-text">INALAMBRICO 17X17</p>
-                                        <a href="productos_detalles/flat-panel-inalambrico-17x17.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Digitalizacion-->
-                            <div class="col-md-4 mb-4 grid-item digitalizacion">
-                                <div class="card h-100">
-                                    <span class="category-badge">Digitalización</span>
-                                    <img src="images/productos/Digitalizacion/flaPanel-Inalambrico.png"
-                                        class="card-img-top" alt="Digitalizadora Flat Panel">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Flat Panel Inalambrico</h5>
-                                        <p class="card-text">24x30 MAMÓGRAFIA</p>
-                                        <a href="productos_detalles/flat-panel-inalambrico-24x30-mamografia.html" class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Rayos X-->
-                            <div class="col-md-4 mb-4 grid-item rayos-x">
-                                <div class="card h-100">
-                                    <span class="category-badge">Rayos X</span>
-                                    <img src="images/productos/RayosX/mesa-fija-radiologica.png" class="card-img-top"
-                                        alt="Mesa Fija Radiológica">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Mesa Fija Radiológica</h5>
-                                        <p class="card-text"></p>
-                                        <a href="productos_detalles/mesa-fija-radiologica.html"
-                                            class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Rayos X-->
-                            <div class="col-md-4 mb-4 grid-item rayos-x">
-                                <div class="card h-100">
-                                    <span class="category-badge">Rayos X</span>
-                                    <img src="images/productos/RayosX/parrilla-rayosx.png" class="card-img-top"
-                                        alt="Parrilla para Rayos X">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Parrilla para Rayos X</h5>
-                                        <p class="card-text"></p>
-                                        <a href="productos_detalles/parrilla-para-rayos-x.html"
-                                            class="btn btn-success">
-                                            Ver Detalles
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- Coches Hospitalarios 2 -->
                             <div class="col-md-4 mb-4 grid-item otros">
@@ -1012,7 +1072,8 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Mesa de Operaciones</h5>
                                         <p class="card-text">DRMAX 7000S SERIES</p>
-                                        <a href="productos_detalles/mesa-operaciones.html" class="btn btn-success">Ver Detalles</a>
+                                        <a href="productos_detalles/mesa-operaciones.html" class="btn btn-success">Ver
+                                            Detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1060,7 +1121,8 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Desfibrilador</h5>
                                         <p class="card-text">CARDIOLIFE TEC-5600</p>
-                                        <a href="productos_detalles/desfibrilador-cardiolife-tec-5600.html" class="btn btn-success">Ver Detalles</a>
+                                        <a href="productos_detalles/desfibrilador-cardiolife-tec-5600.html"
+                                            class="btn btn-success">Ver Detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1119,7 +1181,8 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Aspirador de Secreciones</h5>
                                         <p class="card-text">HOSPIVAC 350</p>
-                                        <a href="productos_detalles/aspirador-de-secreciones-hospivac-350.html" class="btn btn-success">Ver Detalles</a>
+                                        <a href="productos_detalles/aspirador-de-secreciones-hospivac-350.html"
+                                            class="btn btn-success">Ver Detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1219,7 +1282,7 @@
     <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
         target="_blank" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
 
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1365,3 +1428,5 @@
 </body>
 
 </html>
+
+
