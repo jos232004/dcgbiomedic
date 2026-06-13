@@ -126,43 +126,7 @@
     </div>
     <!-- End top bar -->
 
-    <!-- Start header -->
-    <header class="top-header">
-        <nav class="navbar header-nav navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="./">
-                    <img src="images/1-3ce20b1c.ico" alt="image" style="height: 100px; width: auto;">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
-                    aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link " href="./">Inicio</a></li>
-                        <li><a class="nav-link active" href="productos.html">Productos</a></li>
-                        <li><a class="nav-link" href="nosotros.html">Empresa</a></li>
-                        <li><a class="nav-link " href="servicios.html">Servicios</a></li>
-                        <li><a class="nav-link" href="galeria.html">Galería</a></li>
-                        <!--<li><a class="nav-link" href="equipo.html">Equipo</a></li>-->
-                        <li><a class="nav-link" href="clientes.html">Clientes</a></li>
-                        <!--<li><a class="nav-link" href="#blog">Blog</a></li>-->
-                        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
-                        <li> <!-- Botón WhatsApp -->
-                            <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
-                                target="_blank" class="btn btn-success btn-lg" style="margin-left: 5px;">
-                                <i class="fa fa-whatsapp"></i> WhatsApp
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- End header -->
-
+    <div id="global-header"></div>
 
     <!-- Start Productos Banner -->
     <div class="productos-banner"
@@ -1298,6 +1262,13 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/images-loded.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/global.js"></script>
+    <script>
+        // Al cargar la página, mandamos a llamar al Header y Footer diciéndole cuál activar
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarComponentesComunes('productos'); // <- Cambia este string en cada HTML diferente
+        });
+    </script>
     <script>
         // Inicializar Isotope
         var $grid = $('.grid').isotope({
