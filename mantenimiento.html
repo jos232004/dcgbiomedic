@@ -35,56 +35,63 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/pogo-slider.min.css">
+    <!-- Font Awesome CSS (Asegura compatibilidad de íconos serios) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/mantenimiento.css">
-
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com"></script>
       <script src="https://oss.maxcdn.com"></script>
     <![endif]-->
 
-
     <!-- Datos estructurados de informacion para Google -->
     <script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@graph": [
-	    {
-	      "@type": "Organization",
-	      "name": "DCG BIOMEDIC",
-	      "url": "https://jos232004.github.io/dcgbiomedic/",
-	      "logo": "https://jos232004.github.io/dcgbiomedic/images/1-3ce20b1c.ico",
-	      "sameAs": [
-	        "https://www.facebook.com/dcgbiomedic1/?locale=es_LA",
-	        "https://www.instagram.com/cadenillaspalma/"
-	      ],
-	      "contactPoint": [
-	        {
-	          "@type": "ContactPoint",
-	          "telephone": "+51 957 745 935",
-	          "contactType": "customer service",
-	          "areaServed": "PE",
-	          "availableLanguage": "es"
-	        }
-	      ]
-	    },
-	    {
-	      "@type": "WebSite",
-	      "name": "DCG BIOMEDIC",
-	      "url": "https://jos232004.github.io/dcgbiomedic/",
-	      "potentialAction": {
-	        "@type": "SearchAction",
-	        "target": "https://jos232004.github.io/dcgbiomedic/?s={search_term_string}",
-	        "query-input": "required name=search_term_string"
-	      }
-	    }
-	  ]
-	}
-	</script>
-
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "DCG BIOMEDIC",
+          "url": "https://jos232004.github.io/dcgbiomedic/",
+          "logo": "https://jos232004.github.io/dcgbiomedic/images/1-3ce20b1c.ico",
+          "sameAs": [
+            "https://www.facebook.com/dcgbiomedic1/?locale=es_LA",
+            "https://www.instagram.com/cadenillaspalma/"
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+51 957 745 935",
+              "contactType": "customer service",
+              "areaServed": "PE",
+              "availableLanguage": "es"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "DCG BIOMEDIC",
+          "url": "https://jos232004.github.io/dcgbiomedic/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://jos232004.github.io/dcgbiomedic/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
+    <style>
+        .lm-meta-ico .fa,
+        .ico .fa {
+            margin-right: 5px;
+            color: #00cb86;
+            /* O el color corporativo que estés manejando */
+        }
+    </style>
 </head>
 
 <body>
@@ -95,16 +102,15 @@
         </div>
     </div>
     <!-- END LOADER -->
+
     <!-- Start top bar -->
     <div class="main-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="left-top">
-
                         <div class="mail-b"><a href="mailto:dcgbiomedic@gmail.com"><i class="fa fa-envelope-o"
-                                    aria-hidden="true"></i>
-                                dcgbiomedic@gmail.com</a></div>
+                                    aria-hidden="true"></i> dcgbiomedic@gmail.com</a></div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -115,7 +121,6 @@
                         <ul>
                             <li><a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank"><i
                                         class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
                             <li><a href="https://www.instagram.com/cadenillaspalma/" target="_blank"><i
                                         class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
@@ -153,13 +158,12 @@
                         <a href="servicios.html" class="btn-primary">Explorar</a>
                     </div>
                 </div>
-
             </div>
 
             <div class="hero-stats">
                 <div class="hero-stat-card">
                     <div class="hero-stat-n">100<span>+</span></div>
-                    <div class="hero-stat-l">Trabajos registrados</div>
+                    <div class="hero-stat-l">Trabajos realizados</div>
                 </div>
                 <div class="hero-stat-card">
                     <div class="hero-stat-n">50<span>+</span></div>
@@ -192,28 +196,34 @@
         <!-- FILTER TABS -->
         <div class="lm-filter-wrap fu fu2" id="lmFilters">
             <button class="lm-btn active" data-area="all" onclick="filterArea('all')">
-                <span class="ico">🏥</span> Todas las Áreas <span class="cnt" id="cnt-all">0</span>
+                <span class="ico"><i class="fa fa-hospital-o"></i></span> Todas las Áreas <span class="cnt"
+                    id="cnt-all">0</span>
             </button>
             <button class="lm-btn" data-area="uci" onclick="filterArea('uci')">
-                <span class="ico">💓</span> UCI / Emergencias <span class="cnt" id="cnt-uci">0</span>
+                <span class="ico"><i class="fa fa-heartbeat"></i></span> UCI / Emergencias <span class="cnt"
+                    id="cnt-uci">0</span>
             </button>
             <button class="lm-btn" data-area="imagen" onclick="filterArea('imagen')">
-                <span class="ico">🩻</span> Imágenes <span class="cnt" id="cnt-imagen">0</span>
+                <span class="ico"><i class="fa fa-id-card-o"></i></span> Imágenes <span class="cnt"
+                    id="cnt-imagen">0</span>
             </button>
             <button class="lm-btn" data-area="lab" onclick="filterArea('lab')">
-                <span class="ico">🧪</span> Laboratorio <span class="cnt" id="cnt-lab">0</span>
+                <span class="ico"><i class="fa fa-flask"></i></span> Laboratorio <span class="cnt" id="cnt-lab">0</span>
             </button>
             <button class="lm-btn" data-area="cirugia" onclick="filterArea('cirugia')">
-                <span class="ico">⚡</span> Cirugía / Anestesia <span class="cnt" id="cnt-cirugia">0</span>
+                <span class="ico"><i class="fa fa-scissors"></i></span> Cirugía / Anestesia <span class="cnt"
+                    id="cnt-cirugia">0</span>
             </button>
             <button class="lm-btn" data-area="rehab" onclick="filterArea('rehab')">
-                <span class="ico">🦾</span> Rehabilitación <span class="cnt" id="cnt-rehab">0</span>
+                <span class="ico"><i class="fa fa-wheelchair"></i></span> Rehabilitación <span class="cnt"
+                    id="cnt-rehab">0</span>
             </button>
         </div>
 
+        <!-- UCI -->
         <div class="lm-area-block fu" data-block="uci" id="block-uci">
             <div class="lm-area-header">
-                <div class="lm-area-ico">💓</div>
+                <div class="lm-area-ico " style="color: white;"><i class="fa fa-heartbeat"></i></div>
                 <div class="lm-area-info">
                     <div class="lm-area-name">UCI / Emergencias</div>
                     <div class="lm-area-desc">Unidad de Cuidados Intensivos · Emergencias · Neonatología</div>
@@ -223,9 +233,10 @@
             <div class="lm-grid"></div>
         </div>
 
+        <!-- IMAGEN -->
         <div class="lm-area-block fu" data-block="imagen" id="block-imagen">
             <div class="lm-area-header">
-                <div class="lm-area-ico">🩻</div>
+                <div class="lm-area-ico" style="color: white;"><i class="fa fa-id-card-o"></i></div>
                 <div class="lm-area-info">
                     <div class="lm-area-name">Diagnóstico por Imagen</div>
                     <div class="lm-area-desc">Ecografía · Rayos X · Fluoroscopía · Ultrasonido</div>
@@ -235,9 +246,10 @@
             <div class="lm-grid"></div>
         </div>
 
+        <!-- LAB -->
         <div class="lm-area-block fu" data-block="lab" id="block-lab">
             <div class="lm-area-header">
-                <div class="lm-area-ico">🧪</div>
+                <div class="lm-area-ico" style="color: white" ;><i class="fa fa-flask"></i></div>
                 <div class="lm-area-info">
                     <div class="lm-area-name">Laboratorio Clínico</div>
                     <div class="lm-area-desc">Hematología · Bioquímica · Microbiología · Inmunología</div>
@@ -247,9 +259,10 @@
             <div class="lm-grid"></div>
         </div>
 
+        <!-- CIRUGÍA -->
         <div class="lm-area-block fu" data-block="cirugia" id="block-cirugia">
             <div class="lm-area-header">
-                <div class="lm-area-ico">⚡</div>
+                <div class="lm-area-ico" style="color: white;"><i class="fa fa-scissors"></i></div>
                 <div class="lm-area-info">
                     <div class="lm-area-name">Cirugía / Anestesia</div>
                     <div class="lm-area-desc">Electrocirugía · Máquinas de Anestesia · Desfibriladores</div>
@@ -259,9 +272,10 @@
             <div class="lm-grid"></div>
         </div>
 
+        <!-- REHABILITACIÓN -->
         <div class="lm-area-block fu" data-block="rehab" id="block-rehab">
             <div class="lm-area-header">
-                <div class="lm-area-ico">🦾</div>
+                <div class="lm-area-ico" style="color: white;"><i class="fa fa-wheelchair"></i></div>
                 <div class="lm-area-info">
                     <div class="lm-area-name">Rehabilitación</div>
                     <div class="lm-area-desc">Fisioterapia · Electroterapia · Terapia Física</div>
@@ -271,26 +285,24 @@
             <div class="lm-grid"></div>
         </div>
     </div><!-- /lm-body -->
+
     <div id="global-footer"></div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-
     <script src="js/main.js"></script>
     <script src="js/isotope.min.js"></script>
     <script src="js/images-loded.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/global.js"></script>
     <script>
-        // Al cargar la página, mandamos a llamar al Header y Footer diciéndole cuál activar
         document.addEventListener('DOMContentLoaded', () => {
-            cargarComponentesComunes('servicios'); // <- Cambia este string en cada HTML diferente
+            cargarComponentesComunes('servicios');
         });
+
         let listadoMantenimientos = [];
 
-        // 1. Inicializar la carga de datos del archivo JSON
         async function initMantenimiento() {
             try {
                 const response = await fetch('./data/mantenimientos.json');
@@ -303,20 +315,16 @@
             }
         }
 
-        // 2. Calcular dinámicamente cuántos trabajos hay en cada área
         function actualizarContadores() {
-            // Contador global del botón "Todas las Áreas"
             document.getElementById('cnt-all').textContent = listadoMantenimientos.length;
 
             const areas = ['uci', 'imagen', 'lab', 'cirugia', 'rehab'];
             areas.forEach(area => {
                 const totalArea = listadoMantenimientos.filter(item => item.area === area).length;
 
-                // Actualizar número en el botón de filtro superior
                 const labelBoton = document.getElementById(`cnt-${area}`);
                 if (labelBoton) labelBoton.textContent = totalArea;
 
-                // Actualizar número en la cabecera de cada bloque
                 const block = document.getElementById(`block-${area}`);
                 if (block) {
                     const badgeBloque = block.querySelector('.lm-area-badge');
@@ -325,16 +333,15 @@
                     }
                 }
             });
-        }// Fin funcion actualizarContadores().
+        }
 
-        // 3. Renderizar las tarjetas en sus respectivos contenedores HTML
         function renderizarGridEquipos() {
             const areas = ['uci', 'imagen', 'lab', 'cirugia', 'rehab'];
             areas.forEach(area => {
                 const block = document.getElementById(`block-${area}`);
                 if (block) {
                     const grid = block.querySelector('.lm-grid');
-                    if (grid) grid.innerHTML = ''; // Limpiar grids antiguos
+                    if (grid) grid.innerHTML = '';
                 }
             });
 
@@ -347,7 +354,6 @@
                 const grid = block.querySelector('.lm-grid');
                 if (!grid) return;
 
-                // Contador interno para alternar efectos CSS escalonados (fu, fu2, fu3)
                 if (indicesPorArea[item.area] === undefined) {
                     indicesPorArea[item.area] = 1;
                 } else {
@@ -359,15 +365,15 @@
                 if (index % 3 === 2) animationClass = "fu fu2";
                 if (index % 3 === 0) animationClass = "fu fu3";
 
-                // Evaluar si tiene URL de imagen o muestra el marcador de posición con el emoji
+                // REEMPLAZO DE EMOJIS EN CONTENEDOR DE IMAGEN PENDIENTE (Marcador serio con ícono de herramientas)
                 const estructuraMedia = item.imagenUrl && item.imagenUrl.trim() !== ""
                     ? `<img src="${item.imagenUrl}" alt="${item.equipo}" style="width:100%; height:100%; object-fit:cover;">`
                     : `<div class="lm-placeholder">
-                <div class="lm-ph-ico">${item.emoji || '🏥'}</div>
-                <div class="lm-ph-txt">FOTO PENDIENTE</div>
-               </div>`;
+                        <div class="lm-ph-ico"><i class="fa fa-cogs"></i></div>
+                        <div class="lm-ph-txt">FOTO PENDIENTE</div>
+                       </div>`;
 
-                // Construir plantilla de la tarjeta de mantenimiento
+                // REEMPLAZO DE EMOJIS EN METADATOS DE TARJETAS (Establecimiento y Fecha)
                 const cardHTML = `
             <div class="lm-card ${item.tipo} ${animationClass}">
                 <div class="lm-photo">
@@ -380,12 +386,12 @@
                     <div class="lm-desc">${item.descripcion}</div>
                     <div class="lm-meta">
                         <div class="lm-meta-row">
-                            <span class="lm-meta-ico">🏥</span>
+                            <span class="lm-meta-ico"><i class="fa fa-hospital-o"></i></span>
                             <span class="lm-meta-lbl">Establecimiento:&nbsp;</span>
                             <span class="lm-meta-val">${item.establecimiento}</span>
                         </div>
                         <div class="lm-meta-row">
-                            <span class="lm-meta-ico">📅</span>
+                            <span class="lm-meta-ico"><i class="fa fa-calendar"></i></span>
                             <span class="lm-meta-lbl">Fecha:&nbsp;</span>
                             <span class="lm-meta-val">${item.fecha}</span>
                         </div>
@@ -397,11 +403,9 @@
                 grid.insertAdjacentHTML('beforeend', cardHTML);
             });
 
-            // Ejecutar el observador de scroll una vez insertadas las tarjetas en el DOM
             vincularAnimacionesScroll();
         }
 
-        // 4. Gestionar los filtros superiores con soporte de re-animación
         function filterArea(selectedArea) {
             const buttons = document.querySelectorAll('#lmFilters .lm-btn');
             buttons.forEach(btn => {
@@ -415,7 +419,6 @@
                 if (selectedArea === 'all' || blockArea === selectedArea) {
                     block.style.display = '';
                     block.classList.remove('v');
-                    // Doble requestAnimationFrame para forzar el reflow del navegador y reiniciar transiciones
                     requestAnimationFrame(() => {
                         requestAnimationFrame(() => { block.classList.add('v'); });
                     });
@@ -425,7 +428,6 @@
             });
         }
 
-        // 5. IntersectionObserver para activar la clase `.v` cuando los elementos entren en pantalla
         function vincularAnimacionesScroll() {
             const obs = new IntersectionObserver(entries => {
                 entries.forEach(e => {
@@ -436,7 +438,6 @@
             document.querySelectorAll('.fu').forEach(el => obs.observe(el));
         }
 
-        // Lanzar la inicialización al cargar el documentoo
         document.addEventListener('DOMContentLoaded', initMantenimiento);
     </script>
 </body>

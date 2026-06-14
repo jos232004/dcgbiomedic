@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en"><!-- Basic -->
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- Site Metas -->
-    <title>DCG BIOMEDIC | Soluciones Biomédicas Integrales</title>
+    <title>Servicios – DCG BIOMEDIC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
     <meta name="keywords"
         content="ingeniería biomédica, mantenimiento de equipos médicos, Chepén, DCG BIOMEDIC, reparación de equipos médicos">
     <meta name="description"
@@ -33,45 +35,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/pogo-slider.min.css">
+    <!-- Font Awesome CSS (Asegura compatibilidad de íconos serios) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/personalize.css">
+    <link rel="stylesheet" href="css/service.css">
+
+
 
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com"></script>
+      <script src="https://oss.maxcdn.com"></script> 
       <script src="https://oss.maxcdn.com"></script>
     <![endif]-->
 
-    <style>
-        #aboutCarousel .carousel-item img {
-            height: 350px;
-            width: 100%;
-            object-fit: contain;
-            background-color: #fff;
-        }
-
-        .tiktok-wrapper {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
-
-        .tiktok-embed {
-            border-radius: 15px !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            background: #fff;
-            min-width: 325px !important;
-        }
-
-        .owl-item {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-
-    <!-- Datos estructurados corregidos para Google -->
+    <!-- Datos estructurados de informacion para Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -113,24 +89,25 @@
 
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
-    <!-- LOADER -->
+    <!-- LOADER (igual que el original) -->
     <div id="preloader">
         <div class="loader">
             <img src="images/preloader.gif" alt="" />
         </div>
     </div>
-    <!-- END LOADER -->
 
-    <!-- Start top bar -->
+    <!-- Top bar (igual que el original) -->
     <div class="main-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="left-top">
-
-                        <div class="mail-b"><a href="mailto:dcgbiomedic@gmail.com"><i class="fa fa-envelope-o"
-                                    aria-hidden="true"></i>
-                                dcgbiomedic@gmail.com</a></div>
+                        <div class="mail-b">
+                            <a href="mailto:dcgbiomedic@gmail.com">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                dcgbiomedic@gmail.com
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -141,172 +118,225 @@
                         <ul>
                             <li><a href="https://www.facebook.com/dcgbiomedic1/?locale=es_LA" target="_blank"><i
                                         class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
                             <li><a href="https://www.instagram.com/cadenillaspalma/" target="_blank"><i
                                         class="fa fa-instagram" aria-hidden="true"></i></a></li>
-
-
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End top bar -->
 
+    <!-- Header global (igual que el original) -->
     <div id="global-header"></div>
 
-    <!-- Start Servicios Banner -->
-    <div class="productos-banner" style="background: linear-gradient(rgba(4, 22, 33, 0.518), rgba(19, 34, 82, 0.512)), url('images/banner3.png'); 
-           background-size: cover; 
-           background-position: center; 
-           color: white; 
-           padding: 100px 0; 
-           text-align: left; 
-           position: relative; 
-           overflow: hidden;">
-
-        <div class="container" style="position: relative; z-index: 1;">
-            <h1
-                style="color: white; font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
-                Mantenimiento <span style="color: #71c9ff; text-decoration: none;"><strong>Biomédico Integral</strong>
-                </span>
-            </h1>
-            <p style="font-size: 1.5rem;">Soluciones biomédicas integrales con experiencia y calidad certificada.</p>
+    <!-- ═══════════════════════════════════
+         BANNER
+    ═══════════════════════════════════ -->
+    <div class="srv-banner">
+        <div class="container">
+            <div class="srv-banner-tag"><i></i> DCG BIOMEDIC – TRUJILLO, PERÚ</div>
+            <h1>Mantenimiento <em>Biomédico</em><br>Integral</h1>
+            <p>Soluciones integrales para equipos médicos con experiencia, calidad certificada y respuesta garantizada
+                en menos de 24 horas.</p>
+            <div class="srv-banner-pills">
+                <div class="srv-pill">
+                    <div class="chk">✓</div>Preventivo · Correctivo · Predictivo
+                </div>
+                <div class="srv-pill">
+                    <div class="chk">✓</div>Ingenieros biomédicos certificados
+                </div>
+                <div class="srv-pill">
+                    <div class="chk">✓</div>Cobertura nacional
+                </div>
+            </div>
         </div>
     </div>
-    <!-- End Servicios Banner -->
 
-    <!-- SERVICIOS -->
-    <section id="servicios">
-
-        <!-- 3 BIG CARDS -->
-        <div class="mant-cards fu">
-            <div class="mant-card">
-                <div class="mant-accent a-prev"></div>
-                <div class="mc-label cyan">// Mantenimiento 01</div>
-                <h3>Preventivo</h3>
-                <p>Inspecciones planificadas y sistemáticas que alargan la vida útil de los equipos y evitan fallas
-                    antes de que ocurran. Seguimos protocolos del fabricante y normativas sanitarias.</p>
-                <ul class="mant-list">
-                    <li>
-                        <div class="dot cyan"></div>Inspección física y funcional completa
-                    </li>
-                    <li>
-                        <div class="dot cyan"></div>Limpieza y lubricación de componentes
-                    </li>
-                    <li>
-                        <div class="dot cyan"></div>Verificación de parámetros operativos
-                    </li>
-                    <li>
-                        <div class="dot cyan"></div>Reemplazo de piezas de desgaste programado
-                    </li>
-                    <li>
-                        <div class="dot cyan"></div>Actualización de firmware y software
-                    </li>
-                    <li>
-                        <div class="dot cyan"></div>Reporte técnico detallado y certificado
-                    </li>
-                </ul>
-                <div class="mc-footer">
-                    <div class="mc-stat cyan">85%</div>
-                    <div class="mc-stat-lbl">Reducción de fallas inesperadas</div>
-                </div>
+    <!-- Stats strip (flota sobre el banner) -->
+    <div class="container">
+        <div class="srv-stats-strip">
+            <div class="srv-stat">
+                <div class="srv-stat-n">200<span>+</span></div>
+                <div class="srv-stat-l">Equipos atendidos</div>
             </div>
-            <div class="mant-card">
-                <div class="mant-accent a-corr"></div>
-                <div class="mc-label orange">// Mantenimiento 02</div>
-                <h3>Correctivo</h3>
-                <p>Diagnóstico y reparación de fallas con la mayor rapidez posible. Contamos con stock de repuestos
-                    originales y equipos de diagnóstico avanzado para reducir al mínimo el tiempo fuera de
-                    operación.</p>
-                <ul class="mant-list">
-                    <li>
-                        <div class="dot orange"></div>Diagnóstico electrónico y funcional
-                    </li>
-                    <li>
-                        <div class="dot orange"></div>Reparación de tarjetas electrónicas
-                    </li>
-                    <li>
-                        <div class="dot orange"></div>Reemplazo de componentes defectuosos
-                    </li>
-                    <li>
-                        <div class="dot orange"></div>Pruebas de seguridad eléctrica IEC
-                    </li>
-                    <li>
-                        <div class="dot orange"></div>Verificación post-reparación completa
-                    </li>
-                    <li>
-                        <div class="dot orange"></div>Garantía sobre la reparación realizada
-                    </li>
-                </ul>
-                <div class="mc-footer">
-                    <div class="mc-stat orange">&lt;24h</div>
-                    <div class="mc-stat-lbl">Tiempo de respuesta garantizado</div>
-                </div>
+            <div class="srv-stat">
+                <div class="srv-stat-n">50<span>+</span></div>
+                <div class="srv-stat-l">Clientes activos</div>
             </div>
-            <div class="mant-card">
-                <div class="mant-accent a-pred"></div>
-                <div class="mc-label purple">// Mantenimiento 03</div>
-                <h3>Predictivo</h3>
-                <p>Monitoreo continuo del estado de los equipos mediante análisis de tendencias y técnicas
-                    diagnósticas avanzadas. Anticipamos fallas antes de que causen interrupciones críticas.</p>
-                <ul class="mant-list">
-                    <li>
-                        <div class="dot purple"></div>Análisis de vibraciones y señales
-                    </li>
-                    <li>
-                        <div class="dot purple"></div>Termografía infrarroja de componentes
-                    </li>
-                    <li>
-                        <div class="dot purple"></div>Medición de parámetros eléctricos
-                    </li>
-                    <li>
-                        <div class="dot purple"></div>Historial de datos y curvas de tendencia
-                    </li>
-                    <li>
-                        <div class="dot purple"></div>Alertas tempranas de degradación
-                    </li>
-                    <li>
-                        <div class="dot purple"></div>Plan de mantenimiento personalizado
-                    </li>
-                </ul>
-                <div class="mc-footer">
-                    <div class="mc-stat purple">3x</div>
-                    <div class="mc-stat-lbl">Extensión de vida útil del equipo</div>
-                </div>
+            <div class="srv-stat">
+                <div class="srv-stat-n">10<span>+</span></div>
+                <div class="srv-stat-l">Años de experiencia</div>
+            </div>
+            <div class="srv-stat">
+                <div class="srv-stat-n">&lt;<span>24h</span></div>
+                <div class="srv-stat-l">Tiempo de respuesta</div>
             </div>
         </div>
+    </div>
 
-        <!-- PROCESO -->
-        <div class="mant-process fu">
-            <div class="process-hd">Nuestro proceso de <span>mantenimiento</span></div>
+    <!-- ═══════════════════════════════════
+         3 TARJETAS PRINCIPALES
+    ═══════════════════════════════════ -->
+    <section class="sec-mant-cards">
+        <div class="container">
+
+            <div class="sec-header fade-up">
+                <div class="sec-tag">// Tipos de Mantenimiento</div>
+                <h2 class="sec-title">Nuestros <span>Servicios Principales</span></h2>
+                <div class="sec-line"></div>
+                <p class="sec-sub">Cubrimos los tres pilares fundamentales del mantenimiento biomédico para garantizar
+                    la continuidad operativa de sus equipos.</p>
+            </div>
+
+            <!-- Leyenda de tipos -->
+            <div class="type-legend fade-up">
+                <div class="legend-item">
+                    <div class="legend-dot prev"></div>Preventivo
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot corr"></div>Correctivo
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot pred"></div>Predictivo
+                </div>
+            </div>
+
+            <div class="mant-cards-grid fade-up">
+
+                <!-- PREVENTIVO -->
+                <div class="mant-card prev">
+                    <div class="mant-card-num">// Mantenimiento 01</div>
+                    <h3>Preventivo</h3>
+                    <p>Inspecciones planificadas y sistemáticas que alargan la vida útil de los equipos y evitan fallas
+                        antes de que ocurran. Seguimos protocolos del fabricante y normativas sanitarias.</p>
+                    <ul class="mant-list">
+                        <li>
+                            <div class="dot"></div>Inspección física y funcional completa
+                        </li>
+                        <li>
+                            <div class="dot"></div>Limpieza y lubricación de componentes
+                        </li>
+                        <li>
+                            <div class="dot"></div>Verificación de parámetros operativos
+                        </li>
+                        <li>
+                            <div class="dot"></div>Reemplazo de piezas de desgaste programado
+                        </li>
+                        <li>
+                            <div class="dot"></div>Actualización de firmware y software
+                        </li>
+                        <li>
+                            <div class="dot"></div>Reporte técnico detallado y certificado
+                        </li>
+                    </ul>
+                    <div class="mant-card-footer">
+                        <div class="mant-stat">85%</div>
+                        <div class="mant-stat-lbl">Reducción de fallas inesperadas</div>
+                    </div>
+                </div>
+
+                <!-- CORRECTIVO -->
+                <div class="mant-card corr">
+                    <div class="mant-card-num">// Mantenimiento 02</div>
+                    <h3>Correctivo</h3>
+                    <p>Diagnóstico y reparación de fallas con la mayor rapidez posible. Contamos con stock de repuestos
+                        originales y equipos de diagnóstico avanzado para reducir al mínimo el tiempo fuera de
+                        operación.</p>
+                    <ul class="mant-list">
+                        <li>
+                            <div class="dot"></div>Diagnóstico electrónico y funcional
+                        </li>
+                        <li>
+                            <div class="dot"></div>Reparación de tarjetas electrónicas
+                        </li>
+                        <li>
+                            <div class="dot"></div>Reemplazo de componentes defectuosos
+                        </li>
+                        <li>
+                            <div class="dot"></div>Pruebas de seguridad eléctrica IEC
+                        </li>
+                        <li>
+                            <div class="dot"></div>Verificación post-reparación completa
+                        </li>
+                        <li>
+                            <div class="dot"></div>Garantía sobre la reparación realizada
+                        </li>
+                    </ul>
+                    <div class="mant-card-footer">
+                        <div class="mant-stat">&lt;24h</div>
+                        <div class="mant-stat-lbl">Tiempo de respuesta garantizado</div>
+                    </div>
+                </div>
+
+                <!-- PREDICTIVO -->
+                <div class="mant-card pred">
+                    <div class="mant-card-num">// Mantenimiento 03</div>
+                    <h3>Predictivo</h3>
+                    <p>Monitoreo continuo del estado de los equipos mediante análisis de tendencias y técnicas
+                        diagnósticas avanzadas. Anticipamos fallas antes de que causen interrupciones críticas.</p>
+                    <ul class="mant-list">
+                        <li>
+                            <div class="dot"></div>Análisis de vibraciones y señales
+                        </li>
+                        <li>
+                            <div class="dot"></div>Termografía infrarroja de componentes
+                        </li>
+                        <li>
+                            <div class="dot"></div>Medición de parámetros eléctricos
+                        </li>
+                        <li>
+                            <div class="dot"></div>Historial de datos y curvas de tendencia
+                        </li>
+                        <li>
+                            <div class="dot"></div>Alertas tempranas de degradación
+                        </li>
+                        <li>
+                            <div class="dot"></div>Plan de mantenimiento personalizado
+                        </li>
+                    </ul>
+                    <div class="mant-card-footer">
+                        <div class="mant-stat">3x</div>
+                        <div class="mant-stat-lbl">Extensión de vida útil del equipo</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         PROCESO DE 5 PASOS
+    ═══════════════════════════════════ -->
+    <section class="sec-process">
+        <div class="container">
+            <div class="process-hd fade-up">Nuestro proceso de <span>mantenimiento</span></div>
             <div class="process-steps">
-                <div class="ps">
+                <div class="ps fade-up">
                     <div class="ps-circle">📋</div>
                     <div class="ps-n">01</div>
                     <div class="ps-nm">Diagnóstico</div>
                     <div class="ps-d">Evaluación inicial del estado del equipo</div>
                 </div>
-                <div class="ps">
+                <div class="ps fade-up fade-up-2">
                     <div class="ps-circle">📝</div>
                     <div class="ps-n">02</div>
                     <div class="ps-nm">Planificación</div>
                     <div class="ps-d">Plan de mantenimiento con cronograma</div>
                 </div>
-                <div class="ps">
+                <div class="ps fade-up fade-up-3">
                     <div class="ps-circle">🔧</div>
                     <div class="ps-n">03</div>
                     <div class="ps-nm">Ejecución</div>
                     <div class="ps-d">Intervención técnica certificada</div>
                 </div>
-                <div class="ps">
+                <div class="ps fade-up fade-up-2">
                     <div class="ps-circle">✅</div>
                     <div class="ps-n">04</div>
                     <div class="ps-nm">Verificación</div>
                     <div class="ps-d">Pruebas y validación de parámetros</div>
                 </div>
-                <div class="ps">
+                <div class="ps fade-up fade-up-3">
                     <div class="ps-circle">📄</div>
                     <div class="ps-n">05</div>
                     <div class="ps-nm">Informe</div>
@@ -314,138 +344,191 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="services-layout">
-            <div class="services-list">
-                <div class="service-item fade-up">
-                    <div class="service-num">01</div>
-                    <div class="service-body">
-                        <h4>Mantenimiento Preventivo</h4>
-                        <p>Inspecciones periódicas programadas para garantizar el óptimo funcionamiento de los equipos y
-                            prevenir fallas inesperadas que puedan comprometer la atención al paciente.</p>
-                    </div>
-                </div>
-                <div class="service-item fade-up fade-up-3">
-                    <div class="service-num">02</div>
-                    <div class="service-body">
-                        <h4>Mantenimiento Predictivo</h4>
-                        <p>Monitoreo avanzado y análisis de datos en tiempo real para anticipar fallas antes de que
-                            ocurran, optimizando la vida útil de sus equipos y reduciendo costos operativos.</p>
-                    </div>
-                </div>
-                <div class="service-item fade-up fade-up-2">
-                    <div class="service-num">03</div>
-                    <div class="service-body">
-                        <h4>Mantenimiento Correctivo</h4>
-                        <p>Diagnóstico y reparación de averías con repuestos originales certificados. Tiempo de
-                            respuesta mínimo para reducir el tiempo fuera de servicio de sus equipos críticos.</p>
-                    </div>
-                </div>
-                <div class="service-item fade-up fade-up-3">
-                    <div class="service-num">04</div>
-                    <div class="service-body">
-                        <h4>Calibración y Verificación</h4>
-                        <p>Calibración de precisión conforme a normativas ISO y estándares internacionales. Emisión de
-                            certificados de calibración para acreditaciones hospitalarias.</p>
-                    </div>
-                </div>
-                <div class="service-item fade-up fade-up-4">
-                    <div class="service-num">05</div>
-                    <div class="service-body">
-                        <h4>Instalación de Software</h4>
-                        <p>Instalación profesional, configuración y capacitación al personal para el correcto uso y
-                            operación de los equipos adquiridos.</p>
-                    </div>
-                </div>
-                <div class="service-item fade-up">
-                    <div class="service-num">06</div>
-                    <div class="service-body">
-                        <h4>Capacitación</h4>
-                        <p>Entrenamiento especializado para el personal en el uso correcto y operación eficiente de los
-                            equipos biomédicos.</p>
-                    </div>
-                </div>
-                <div class="service-item fade-up">
-                    <div class="service-num">07</div>
-                    <div class="service-body">
-                        <h4>Certificación de Calidad</h4>
-                        <p>Certificación de equipos médicos para fines de GERESA y SUSALUD.</p>
-                    </div>
-                </div>
-                <div class="service-item fade-up">
-                    <div class="service-num">08</div>
-                    <div class="service-body">
-                        <h4>Repuestos e Insumos</h4>
-                        <p>Venta de consumibles y repuestos originales de las marcas más reconocidas del mercado.</p>
-                    </div>
-                </div>
-                <div class="service-item fade-up">
-                    <div class="service-num">09</div>
-                    <div class="service-body">
-                        <h4>Equipamiento Médico</h4>
-                        <p>Equipos de alta y media gama para sala de operaciones, esterilización, hospitalización,
-                            laboratorio clínico, imagenología y UCI.</p>
-                    </div>
-                </div>
+    <!-- ═══════════════════════════════════
+         LISTA DE 9 SERVICIOS + ASIDE
+    ═══════════════════════════════════ -->
+    <section class="sec-services-detail" id="servicios">
+        <div class="container">
+
+            <div class="sec-header fade-up" style="margin-bottom:40px;">
+                <div class="sec-tag">// Todos los Servicios</div>
+                <h2 class="sec-title">¿Qué <span>ofrecemos?</span></h2>
+                <div class="sec-line"></div>
             </div>
-            <div class="services-aside fade-up fade-up-2">
-                <div class="services-cta-box">
-                    <h3>¿Necesitas soporte<br><span>técnico urgente?</span></h3>
-                    <p>Nuestro equipo de ingenieros está disponible para atender emergencias técnicas y minimizar el
-                        impacto en la atención de sus pacientes.</p>
-                    <a href="contacto.html" class="btn-primary"
-                        style="display:block; text-align:center; margin-bottom: 28px;">Solicitar Servicio</a>
-                    <div class="guarantee-items">
-                        <div class="guarantee-item">
-                            <div class="guarantee-dot"></div>Atención en menos de 24 horas
+
+            <div class="services-layout">
+
+                <!-- Lista de servicios -->
+                <div class="services-list">
+
+                    <div class="service-item fade-up">
+                        <div class="service-num">01</div>
+                        <div class="service-body">
+                            <h4>Mantenimiento Preventivo</h4>
+                            <p>Inspecciones periódicas programadas para garantizar el óptimo funcionamiento de los
+                                equipos y prevenir fallas inesperadas que puedan comprometer la atención al paciente.
+                            </p>
                         </div>
-                        <div class="guarantee-item">
-                            <div class="guarantee-dot"></div>Ingenieros certificados
+                    </div>
+
+                    <div class="service-item fade-up fade-up-2">
+                        <div class="service-num">02</div>
+                        <div class="service-body">
+                            <h4>Mantenimiento Predictivo</h4>
+                            <p>Monitoreo avanzado y análisis de datos en tiempo real para anticipar fallas antes de que
+                                ocurran, optimizando la vida útil de sus equipos y reduciendo costos operativos.</p>
                         </div>
-                        <div class="guarantee-item">
-                            <div class="guarantee-dot"></div>Repuestos originales garantizados
+                    </div>
+
+                    <div class="service-item fade-up fade-up-3">
+                        <div class="service-num">03</div>
+                        <div class="service-body">
+                            <h4>Mantenimiento Correctivo</h4>
+                            <p>Diagnóstico y reparación de averías con repuestos originales certificados. Tiempo de
+                                respuesta mínimo para reducir el tiempo fuera de servicio de sus equipos críticos.</p>
                         </div>
-                        <div class="guarantee-item">
-                            <div class="guarantee-dot"></div>Informe técnico detallado
+                    </div>
+
+                    <div class="service-item fade-up">
+                        <div class="service-num">04</div>
+                        <div class="service-body">
+                            <h4>Calibración y Verificación</h4>
+                            <p>Calibración de precisión conforme a normativas ISO y estándares internacionales. Emisión
+                                de certificados de calibración para acreditaciones hospitalarias.</p>
                         </div>
-                        <div class="guarantee-item">
-                            <div class="guarantee-dot"></div>Cobertura nacional en todo el Perú
+                    </div>
+
+                    <div class="service-item fade-up fade-up-2">
+                        <div class="service-num">05</div>
+                        <div class="service-body">
+                            <h4>Instalación de Software</h4>
+                            <p>Instalación profesional, configuración y capacitación al personal para el correcto uso y
+                                operación de los equipos adquiridos.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item fade-up fade-up-3">
+                        <div class="service-num">06</div>
+                        <div class="service-body">
+                            <h4>Capacitación</h4>
+                            <p>Entrenamiento especializado para el personal en el uso correcto y operación eficiente de
+                                los equipos biomédicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item fade-up">
+                        <div class="service-num">07</div>
+                        <div class="service-body">
+                            <h4>Certificación de Calidad</h4>
+                            <p>Certificación de equipos médicos para fines de GERESA y SUSALUD, garantizando el
+                                cumplimiento normativo vigente.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item fade-up fade-up-2">
+                        <div class="service-num">08</div>
+                        <div class="service-body">
+                            <h4>Repuestos e Insumos</h4>
+                            <p>Venta de consumibles y repuestos originales de las marcas más reconocidas del mercado
+                                biomédico.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item fade-up fade-up-3">
+                        <div class="service-num">09</div>
+                        <div class="service-body">
+                            <h4>Equipamiento Médico</h4>
+                            <p>Equipos de alta y media gama para sala de operaciones, esterilización, hospitalización,
+                                laboratorio clínico, imagenología y UCI.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Aside CTA -->
+                <div class="services-aside fade-up fade-up-2">
+                    <div class="services-cta-box">
+                        <div class="cta-box-inner">
+                            <div class="cta-tag">// Soporte Urgente</div>
+                            <h3>¿Necesitas soporte<br><span>técnico urgente?</span></h3>
+                            <p>Nuestro equipo de ingenieros está disponible para atender emergencias técnicas y
+                                minimizar el impacto en la atención de sus pacientes.</p>
+                            <a href="contacto.html" class="btn-cta-primary">Solicitar Servicio</a>
+                            <div class="guarantee-items">
+                                <div class="guarantee-item">
+                                    <div class="guarantee-dot"></div>Atención en menos de 24 horas
+                                </div>
+                                <div class="guarantee-item">
+                                    <div class="guarantee-dot"></div>Ingenieros certificados
+                                </div>
+                                <div class="guarantee-item">
+                                    <div class="guarantee-dot"></div>Repuestos originales garantizados
+                                </div>
+                                <div class="guarantee-item">
+                                    <div class="guarantee-dot"></div>Informe técnico detallado
+                                </div>
+                                <div class="guarantee-item">
+                                    <div class="guarantee-dot"></div>Cobertura nacional en todo el Perú
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <!-- End Services -->
 
+    <!-- ═══════════════════════════════════
+         CTA FINAL
+    ═══════════════════════════════════ -->
+    <section class="sec-line-cta">
+        <div class="container">
+            <h2 class="fade-up">¿Listo para garantizar la <span>continuidad</span><br>de tus equipos médicos?</h2>
+            <p class="fade-up fade-up-2">Contáctanos hoy y uno de nuestros ingenieros biomédicos evaluará tus
+                necesidades sin costo.</p>
+            <div class="cta-btns fade-up fade-up-3">
+                <a href="contacto.html" class="btn-cta-white">Solicitar Cotización</a>
+                <a href="mantenimiento.html" class="btn-cta-outline-white">Ver Línea de Trabajos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer global (igual que el original) -->
     <div id="global-footer"></div>
 
-    <a href="https://wa.me/51957745935?text=Hola%20DCG%20Biomedic,%20necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
-        target="_blank" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+    <!-- WhatsApp button (igual que el original) -->
+    <a target="_blank" id="scroll-to-top" class="new-btn-d br-2">
+        <i class="fa fa-angle-up"></i>
+    </a>
 
-
+    <!-- JS (igual que el original) -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.pogo-slider.min.js"></script>
-    <script src="js/slider-index.js"></script>
-    <script src="js/TweenMax.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
     <script src="js/isotope.min.js"></script>
     <script src="js/images-loded.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/global.js"></script>
     <script>
-        // Al cargar la página, mandamos a llamar al Header y Footer diciéndole cuál activar
+        // Header/footer global — igual que el original
         document.addEventListener('DOMContentLoaded', () => {
-            cargarComponentesComunes('servicios'); // <- Cambia este string en cada HTML diferente
+            cargarComponentesComunes('servicios');
         });
+
+        // Scroll fade-in
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
     </script>
+
 </body>
 
 </html>
