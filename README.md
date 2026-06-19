@@ -1,6 +1,6 @@
 ## 🛠️ Tecnologías Usadas
 
-* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+* **Frontend:** HTML5, CSS3, JavaScript (ES6+).
 * **Gestión de Datos:** Formato **JSON** (para el almacenamiento y consumo dinámico de datos del sistema)
 * **Estilos adicionales:** SCSS / Bootstrap *(borra Bootstrap o SCSS si no los usaste en este proyecto)*
 
