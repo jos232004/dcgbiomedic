@@ -252,12 +252,10 @@ body::before {
     .grid-item .card {
         margin-bottom: 12px;
     }
-
     .col-md-3,
     .col-md-9 {
         margin-bottom: 12px;
     }
-
     .grid-item .card:hover {
         transform: translateY(-4px);
     }
@@ -315,7 +313,6 @@ body::before {
     object-fit: contain;
     transition: transform 0.3s ease;
     /* filter: grayscale(100%); */
-
 }
 
 .clients-box .owl-carousel.owl-theme .item:hover img {
